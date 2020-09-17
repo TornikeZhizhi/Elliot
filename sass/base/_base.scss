@@ -1,0 +1,32 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    list-style-type:none;
+     border: none;
+     text-decoration: none;
+
+}
+
+*:focus {
+    outline: none;
+}
+
+ul,h1,h2,h3,h4 {
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
