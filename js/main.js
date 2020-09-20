@@ -48,8 +48,9 @@ slick({
   cssEase: 'linear',
   prevArrow: false,
     nextArrow: false,
-    autoplay: false,
-  autoplaySpeed: 5000,
+    autoplay: true,
+  autoplaySpeed: 4000,
+  pauseOnHover:false,
     speed: 1000,
   infinite: true });
 

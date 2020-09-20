@@ -205,7 +205,7 @@ a:hover {
 .main_slider_section5 {
   background-color: #f9485c; }
   .main_slider_section5 .home_section_box {
-    padding-right: 10%; }
+    padding-right: 15%; }
 
 .main_slider_section6 {
   background-color: #43a041; }
@@ -275,22 +275,22 @@ a:hover {
   animation: flipInX 1s both .5s; }
 
 .main_slider_section4 img {
-  animation: backOutLeft 1s both; }
+  animation: bounceOutDown 1s both; }
 
 .main_slider_section4.slick-active img {
-  animation: backInLeft 1s both .5s; }
+  animation: bounceInDown 1s both .5s; }
 
 .main_slider_section5 img {
-  animation: fadeOutLeft 1s both; }
+  animation: fadeOutBottomRight 1s both; }
 
 .main_slider_section5.slick-active img {
-  animation: fadeInLeft 1s both .5s; }
+  animation: fadeInBottomRight 1s both .5s; }
 
 .main_slider_section6 .home_section_box > div {
   animation: fadeOutLeft 1s both; }
 
 .main_slider_section6.slick-active .home_section_box > div {
-  animation: fadeInLeft 1s both; }
+  animation: jackInTheBox 1s both; }
 
 @keyframes lightSpeedInLeft {
   from {
@@ -451,5 +451,9 @@ a:hover {
     fill: #f9485c; }
   .copyright.copyright_section3 span {
     color: #f9485c; }
+
+@media only screen and (min-width: 992px) {
+  .test {
+    display: flex; } }
 
 /*# sourceMappingURL=main.css.map */
