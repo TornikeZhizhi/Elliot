@@ -258,7 +258,7 @@ a:hover {
   animation: fadeInUp 1s both .5s; }
 
 .main_slider_section2 img {
-  animation: lightSpeedOut 1s both; }
+  animation: lightSpeedOutLeft 1s both; }
 .main_slider_section2.slick-active img {
   animation: lightSpeedInLeft 1.2s both .4s; }
 
@@ -451,9 +451,5 @@ a:hover {
     fill: #f9485c; }
   .copyright.copyright_section3 span {
     color: #f9485c; }
-
-@media only screen and (min-width: 992px) {
-  .test {
-    display: flex; } }
 
 /*# sourceMappingURL=main.css.map */

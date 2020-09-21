@@ -355,7 +355,7 @@
 .main_slider_section2{
 
 	img {
-          animation:lightSpeedOut 1s both ;
+          animation:lightSpeedOutLeft 1s both ;
 
 	}
 
@@ -650,9 +650,3 @@
 }
 
 
-@media only screen and (min-width: 992px) {
-  .test {
-
-  	display: flex;
-  }
-}
