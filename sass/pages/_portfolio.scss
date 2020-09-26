@@ -1,0 +1,142 @@
+.portfolio {
+  width: calc(100vw - 150px);
+  margin-left: auto;
+  background-color: #fff;
+  height: 100vh;
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    height: 100%;
+  }
+
+  &__topDecor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px 15px 200px;
+
+    img {
+      height: 75px;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .portfolio_bottom_decor {
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .portfolio_slider_footer {
+      padding: 10px 23px 10px 40px;
+      .portfolio__slider_arrow {
+        display: flex;
+      }
+
+      span {
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-family: "Conv_NEXA BOLD_0";
+        color: #0e1620;
+        margin-left: 12%;
+      }
+
+      div {
+        font-family: "Conv_NEXA BOLD_0";
+        color: #0e1620;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      #portfolio_right {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__slider {
+    height: calc(100vh - 260px);
+    width: calc(100% - 200px);
+    margin-left: auto;
+    .slick-list {
+      // height: calc(100% - 60px) !important;
+    }
+    &__item {
+      display: flex !important;
+      flex-wrap: wrap;
+      &__box {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-right: 1%;
+        height: 49%;
+        margin-bottom: 1%;
+        display: flex;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          .portfolio__slider__item__box__info {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .portfolio__text {
+              margin-top: 0;
+
+              p {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+        & > div {
+          width: 50%;
+          height: 100%;
+        }
+
+        &__info {
+          padding: 10px 45px 10px 20px;
+
+          h2 {
+            color: #000000;
+            font-size: 32px;
+            font-family: "HelveticaNeueLTGEOW82-75Bd";
+          }
+
+          .portfolio__text {
+            margin-top: 12px;
+            * {
+              color: #908c8c;
+              font-size: 11px;
+              font-family: "Nexa";
+            }
+          }
+        }
+
+        &__img {
+          background-color: #fd495c;
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          img {
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

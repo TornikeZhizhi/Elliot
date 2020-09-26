@@ -104,7 +104,7 @@ $sliderPortfolio
     // autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
-    speed: 700,
+    speed: 1500,
     infinite: true,
   });
 
