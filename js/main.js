@@ -1,3 +1,4 @@
+// Home slider
 var $slider = $("#main_slider");
 $slider
   .on("init reInit beforeChange", function (
@@ -39,7 +40,7 @@ $slider
   })
   .slick({
     dots: false,
-    fade: true,
+    fade: false,
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
@@ -49,12 +50,6 @@ $slider
     speed: 1000,
     infinite: true,
   });
-
-$slider.on("swipe", function (event, slick, direction) {
-  console.log(direction, event, slick);
-
-  // left
-});
 
 function mouseWheel($slider) {
   if ($(window).width() > 992) {
@@ -85,5 +80,51 @@ $(".menu__hamburger div").click(function () {
     x = true;
   }
 });
+
+// Portfolio slider
+
+// Home slider
+var $sliderPortfolio = $(".portfolio__slider");
+$sliderPortfolio
+  .on("init reInit beforeChange", function (
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    mouseWheel($sliderPortfolio);
+  })
+  .slick({
+    // dots: true,
+    fade: false,
+    cssEase: "linear",
+    arrows: true,
+    prevArrow: "#portfolio_left",
+    nextArrow: "#portfolio_right",
+    // autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    speed: 700,
+    infinite: true,
+  });
+
+function mouseWheelPortfolio($sliderPortfolio) {
+  if ($(window).width() > 992) {
+    $(window).on(
+      "wheel",
+      { $sliderPortfolio: $sliderPortfolio },
+      mouseWheelHandlerPortfolio
+    );
+  }
+}
+function mouseWheelHandlerPortfolio(event) {
+  var $sliderPortfolio = event.data.$sliderPortfolio;
+  var delta = event.originalEvent.deltaY;
+  if (delta > 0) {
+    $sliderPortfolio.slick("slickNext");
+  } else {
+    $sliderPortfolio.slick("slickPrev");
+  }
+}
 
 // CONTACT SCROLL
