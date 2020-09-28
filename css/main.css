@@ -82,23 +82,37 @@ a:hover {
     width: 100%; } }
 
 @font-face {
-  font-family: 'Conv_NEXA BOLD_0';
+  font-family: "Conv_NEXA BOLD_0";
   src: url("../fonts/NEXA BOLD_0.eot");
   src: local("☺"), url("../fonts/NEXA BOLD_0.woff") format("woff"), url("../fonts/NEXA BOLD_0.ttf") format("truetype"), url("../fonts/NEXA BOLD_0.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'HelveticaNeueLTGEOW82-75Bd';
+  font-family: "HelveticaNeueLTGEOW82-75Bd";
   src: url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Nexa';
+  font-family: "HelveticaNeueLTGEOW82-45Lt";
+  src: url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff2") format("woff2"), url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Nexa";
   src: url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "GL Gordeziani";
+  src: url("../fonts/GLGordeziani-Bold.woff2") format("woff2"), url("../fonts/GLGordeziani-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -617,3 +631,109 @@ a:hover {
             width: 70%;
             height: 70%;
             object-fit: contain; }
+
+.portfolioInner {
+  width: calc(100vw - 100px);
+  margin-left: auto; }
+  .portfolioInner .portfolio_inner_right_wrapper {
+    padding-top: 80px; }
+    .portfolioInner .portfolio_inner_right_wrapper li {
+      margin-right: 40px; }
+  .portfolioInner .portfolio_inner_right_content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    max-width: 500px;
+    flex: 0 0 500px; }
+    .portfolioInner .portfolio_inner_right_content .portfolio_inner_main_text * {
+      font-family: "HelveticaNeueLTGEOW82-75Bd";
+      font-size: 12px;
+      color: #000000; }
+    .portfolioInner .portfolio_inner_right_content .portfolio_inner_main_titles {
+      margin-bottom: 25px; }
+      .portfolioInner .portfolio_inner_right_content .portfolio_inner_main_titles span {
+        font-family: "HelveticaNeueLTGEOW82-45Lt";
+        color: #000000;
+        font-size: 24px; }
+      .portfolioInner .portfolio_inner_right_content .portfolio_inner_main_titles h3 {
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-size: 36px;
+        color: #000000; }
+  .portfolioInner .main {
+    height: 100vh;
+    overflow: hidden; }
+    .portfolioInner .main .mCSB_scrollTools {
+      opacity: 1 !important; }
+    .portfolioInner .main .mCSB_dragger {
+      display: block !important; }
+    .portfolioInner .main .content {
+      height: 100%; }
+      .portfolioInner .main .content .slider {
+        height: 100%; }
+        .portfolioInner .main .content .slider #carousel {
+          height: 100%; }
+          .portfolioInner .main .content .slider #carousel .mCSB_container {
+            height: 100%; }
+            .portfolioInner .main .content .slider #carousel .mCSB_container ul {
+              height: 100vh !important;
+              display: flex; }
+              .portfolioInner .main .content .slider #carousel .mCSB_container ul li {
+                display: flex; }
+
+.innerPortfolio {
+  display: flex;
+  overflow: hidden; }
+  .innerPortfolio .portfolio_inner_left_content {
+    background-image: url("../images/hualing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 0 0 550px;
+    max-width: 550px;
+    padding: 50px 60px;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .innerPortfolio .portfolio_inner_left_content.shrink1 {
+      flex: 0 0 350px;
+      max-width: 350px; }
+    .innerPortfolio .portfolio_inner_left_content.shrink2 {
+      flex: 0 0 150px;
+      max-width: 150px; }
+      .innerPortfolio .portfolio_inner_left_content.shrink2 .top_nav,
+      .innerPortfolio .portfolio_inner_left_content.shrink2 .portfolio_inner_left_title,
+      .innerPortfolio .portfolio_inner_left_content.shrink2 .portfolio_inner_left_text {
+        visibility: hidden;
+        opacity: 0;
+        display: none; }
+    .innerPortfolio .portfolio_inner_left_content .top_nav {
+      transition: all 0.3s; }
+      .innerPortfolio .portfolio_inner_left_content .top_nav ul {
+        display: flex; }
+        .innerPortfolio .portfolio_inner_left_content .top_nav ul li:not(:last-child) {
+          margin-right: 50px; }
+        .innerPortfolio .portfolio_inner_left_content .top_nav ul li a {
+          color: #fff;
+          font-family: "HelveticaNeueLTGEOW82-45Lt";
+          font-size: 12px; }
+  .innerPortfolio .portfolio_inner_left_title {
+    margin: 80px 0 50px;
+    transform: translateX(-7px);
+    min-width: 430px;
+    transition: all 0.3s; }
+    .innerPortfolio .portfolio_inner_left_title h3 {
+      font-family: "GL Gordeziani";
+      color: #fff;
+      font-size: 90px;
+      line-height: 80px; }
+  .innerPortfolio .portfolio_inner_left_text {
+    transition: all 0.3s;
+    min-width: 430px; }
+    .innerPortfolio .portfolio_inner_left_text * {
+      color: #fff;
+      font-family: "HelveticaNeueLTGEOW82-75Bd";
+      font-size: 12px; }
+
+.mCSB_dragger {
+  width: 50px !important; }
+
+.portfolio_right_img {
+  padding-top: 30px; }

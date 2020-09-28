@@ -40,7 +40,7 @@ $slider
   })
   .slick({
     dots: false,
-    fade: false,
+    fade: true,
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,

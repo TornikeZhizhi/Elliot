@@ -1,25 +1,43 @@
 @font-face {
-	font-family: 'Conv_NEXA BOLD_0';
-	src: url('../fonts/NEXA BOLD_0.eot');
-	src: local('☺'), url('../fonts/NEXA BOLD_0.woff') format('woff'), url('../fonts/NEXA BOLD_0.ttf') format('truetype'), url('../fonts/NEXA BOLD_0.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Conv_NEXA BOLD_0";
+  src: url("../fonts/NEXA BOLD_0.eot");
+  src: local("☺"), url("../fonts/NEXA BOLD_0.woff") format("woff"),
+    url("../fonts/NEXA BOLD_0.ttf") format("truetype"),
+    url("../fonts/NEXA BOLD_0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'HelveticaNeueLTGEOW82-75Bd';
-    src: url('../fonts/HelveticaNeueLTGEOW82-75Bd.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueLTGEOW82-75Bd.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "HelveticaNeueLTGEOW82-75Bd";
+  src: url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTGEOW82-45Lt";
+  src: url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Nexa";
+  src: url("../fonts/NexaLight.woff2") format("woff2"),
+    url("../fonts/NexaLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'Nexa';
-    src: url('../fonts/NexaLight.woff2') format('woff2'),
-        url('../fonts/NexaLight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "GL Gordeziani";
+  src: url("../fonts/GLGordeziani-Bold.woff2") format("woff2"),
+    url("../fonts/GLGordeziani-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }

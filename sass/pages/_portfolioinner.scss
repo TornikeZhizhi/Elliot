@@ -1,0 +1,163 @@
+.portfolioInner {
+  width: calc(100vw - 100px);
+  //   transform: translateX(0px);
+  margin-left: auto;
+
+  .portfolio_inner_right_wrapper {
+    padding-top: 80px;
+    li {
+      margin-right: 40px;
+    }
+  }
+
+  .portfolio_inner_right_content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    max-width: 500px;
+    flex: 0 0 500px;
+
+    .portfolio_inner_main_text {
+      * {
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-size: 12px;
+        color: #000000;
+      }
+    }
+
+    .portfolio_inner_main_titles {
+      margin-bottom: 25px;
+      span {
+        font-family: "HelveticaNeueLTGEOW82-45Lt";
+        color: #000000;
+        font-size: 24px;
+      }
+
+      h3 {
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-size: 36px;
+        color: #000000;
+      }
+    }
+  }
+
+  .main {
+    height: 100vh;
+    overflow: hidden;
+
+    .mCSB_scrollTools {
+      opacity: 1 !important;
+    }
+
+    .mCSB_dragger {
+      display: block !important;
+    }
+    .content {
+      height: 100%;
+
+      .slider {
+        height: 100%;
+
+        #carousel {
+          height: 100%;
+
+          .mCSB_container {
+            height: 100%;
+
+            ul {
+              height: 100vh !important;
+              display: flex;
+
+              li {
+                // min-width: 40vw;
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.innerPortfolio {
+  display: flex;
+  overflow: hidden;
+
+  .portfolio_inner_left_content {
+    background-image: url("../images/hualing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 0 0 550px;
+    max-width: 550px;
+    padding: 50px 60px;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &.shrink1 {
+      flex: 0 0 350px;
+      max-width: 350px;
+    }
+
+    &.shrink2 {
+      flex: 0 0 150px;
+      max-width: 150px;
+
+      .top_nav,
+      .portfolio_inner_left_title,
+      .portfolio_inner_left_text {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    .top_nav {
+      transition: all 0.3s;
+      ul {
+        display: flex;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 50px;
+          }
+          a {
+            color: #fff;
+            font-family: "HelveticaNeueLTGEOW82-45Lt";
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio_inner_left_title {
+    margin: 80px 0 50px;
+    transform: translateX(-7px);
+    min-width: 430px;
+    transition: all 0.3s;
+    h3 {
+      font-family: "GL Gordeziani";
+      color: #fff;
+      font-size: 90px;
+      line-height: 80px;
+    }
+  }
+
+  .portfolio_inner_left_text {
+    transition: all 0.3s;
+    min-width: 430px;
+    * {
+      color: #fff;
+      font-family: "HelveticaNeueLTGEOW82-75Bd";
+      font-size: 12px;
+    }
+  }
+}
+
+.mCSB_dragger {
+  width: 50px !important;
+}
+.portfolio_right_img {
+  padding-top: 30px;
+}
