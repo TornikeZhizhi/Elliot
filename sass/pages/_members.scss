@@ -1,0 +1,69 @@
+.members {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f9485c;
+  padding: 50px 60px;
+  &__logo {
+    transform: translateX(-70px);
+    svg {
+      width: 300px;
+      fill: #fff;
+    }
+  }
+
+  &__fluid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__slider {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  &__leftFluid {
+    max-width: 45%;
+    flex: 0 0 45%;
+  }
+  &__ {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+  &__info {
+    &--title {
+      * {
+        color: #fff;
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-size: 26px;
+      }
+    }
+
+    &--text {
+      margin-top: 35px;
+      * {
+        font-family: "HelveticaNeueLTGEOW82-45Lt";
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          font-family: "HelveticaNeueLTGEOW82-45Lt";
+          color: #fff;
+        }
+      }
+    }
+  }
+}

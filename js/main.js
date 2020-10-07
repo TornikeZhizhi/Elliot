@@ -70,10 +70,12 @@ var x = true;
 $(".menu__hamburger div").click(function () {
   if (x) {
     $(".menu__hamburger div").addClass("cross");
+    $(".menu").addClass("shrink");
     $(".menu__hamburger__wrapper").addClass("hide");
     x = false;
   } else {
     $(".menu__hamburger div").removeClass("cross");
+    $(".menu").removeClass("shrink");
     setTimeout(function () {
       $(".menu__hamburger__wrapper").removeClass("hide");
     }, 300);
@@ -83,7 +85,6 @@ $(".menu__hamburger div").click(function () {
 
 // Portfolio slider
 
-// Home slider
 var $sliderPortfolio = $(".portfolio__slider");
 $sliderPortfolio
   .on("init reInit beforeChange", function (
@@ -127,4 +128,72 @@ function mouseWheelHandlerPortfolio(event) {
   }
 }
 
-// CONTACT SCROLL
+// services slider
+var $sliderServices = $(".services__slider");
+$sliderServices
+  .on("init reInit beforeChange", function (
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    mouseWheel($sliderServices);
+  })
+  .slick({
+    // dots: true,
+    fade: true,
+    cssEase: "linear",
+    arrows: true,
+    prevArrow: "#Services_left",
+    nextArrow: "#Services_right",
+    // autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    speed: 500,
+    infinite: true,
+  });
+
+function mouseWheelServices($sliderServices) {
+  if ($(window).width() > 992) {
+    $(window).on(
+      "wheel",
+      { $sliderServices: $sliderServices },
+      mouseWheelHandlerServices
+    );
+  }
+}
+function mouseWheelHandlerServices(event) {
+  var $sliderServices = event.data.$sliderServices;
+  var delta = event.originalEvent.deltaY;
+  if (delta > 0) {
+    $sliderServices.slick("slickNext");
+  } else {
+    $sliderServices.slick("slickPrev");
+  }
+}
+
+// about slider
+
+$(".about__top--slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerPadding: "100px",
+  arrows: true,
+  prevArrow: " .top_dots .dots_left",
+  nextArrow: ".top_dots .dots_right",
+});
+
+$(".about_bottom_slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  centerPadding: "100px",
+  arrows: true,
+  prevArrow: ".about_bottom_dots .dots_left",
+  nextArrow: ".about_bottom_dots .dots_right",
+});

@@ -1,0 +1,90 @@
+.contact {
+  padding: 65px 65px 20px 65px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    * {
+      font-family: "Conv_NEXA BOLD_0";
+      color: #0e1620;
+    }
+  }
+  &__back {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    h3 {
+      color: #000000;
+      font-family: "HelveticaNeueLTGEOW82-75Bd";
+      font-size: 72px;
+    }
+  }
+  &__form {
+    .form_button {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        font-family: "HelveticaNeueLTGEOW82-45Lt";
+        background-color: #43a041;
+        border: none;
+        padding: 8px 70px;
+        border-radius: 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    form {
+      & > div {
+        margin-top: 30px;
+      }
+
+      .form-row {
+        justify-content: space-between;
+        .col {
+          width: 48%;
+          max-width: 48%;
+        }
+      }
+    }
+    input,
+    textarea {
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 0;
+      font-family: "HelveticaNeueLTGEOW82-45Lt";
+      color: #9f9f9f;
+      font-size: 24px;
+      padding-left: 30px;
+      resize: none;
+      color: #000;
+    }
+
+    input {
+      height: 54px;
+    }
+
+    textarea {
+      height: 30vh;
+    }
+  }
+
+  .contact_info {
+    a {
+      color: #000000;
+      font-family: "HelveticaNeueLTGEOW82-45Lt";
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}

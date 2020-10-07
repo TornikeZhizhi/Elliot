@@ -111,24 +111,6 @@
         display: none;
       }
     }
-
-    .top_nav {
-      transition: all 0.3s;
-      ul {
-        display: flex;
-
-        li {
-          &:not(:last-child) {
-            margin-right: 50px;
-          }
-          a {
-            color: #fff;
-            font-family: "HelveticaNeueLTGEOW82-45Lt";
-            font-size: 12px;
-          }
-        }
-      }
-    }
   }
 
   .portfolio_inner_left_title {
@@ -160,4 +142,22 @@
 }
 .portfolio_right_img {
   padding-top: 30px;
+}
+
+.top_nav {
+  transition: all 0.3s;
+  ul {
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+      a {
+        color: #fff;
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        font-size: 12px;
+      }
+    }
+  }
 }

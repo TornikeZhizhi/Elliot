@@ -525,16 +525,75 @@
   top: 0;
   left: 0;
   height: 100vh;
+  z-index: 1000;
+  transition: all 0.4s;
+
+  &.shrink {
+    width: 350px;
+
+    .menu__commonTabs {
+      span {
+        visibility: visible !important;
+        display: block;
+        animation: fade 1s 0.5s forwards;
+      }
+    }
+  }
+
+  &__commonTabs {
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    padding-top: 70px;
+
+    ul {
+      li {
+        label {
+          position: relative;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          cursor: pointer;
+        }
+
+        input {
+          display: none;
+
+          &:checked + span {
+            color: #f9485c;
+          }
+        }
+      }
+
+      span {
+        color: #fff;
+        font-family: "HelveticaNeueLTGEOW82-75Bd";
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 7px;
+        left: 47px;
+        white-space: nowrap;
+        transition: all 0.3s;
+        display: none;
+      }
+    }
+  }
 
   &__hamburger {
     text-align: center;
     margin-top: 25px;
     display: flex;
-    flex-direction: column;
     align-items: center;
 
     &__wrapper {
       position: relative;
+      margin-left: 27px;
+      cursor: pointer;
+      transform: scale(0.8);
 
       div {
         overflow: hidden;

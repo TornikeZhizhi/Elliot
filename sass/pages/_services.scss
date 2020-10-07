@@ -1,0 +1,124 @@
+.services {
+  width: calc(100vw - 150px);
+  margin-left: auto;
+  background-color: #fff;
+  height: 100vh;
+
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  &__slider {
+    height: 100%;
+
+    &__item {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2% 0px 0 3% !important;
+      &:first-child {
+        background: url("../images/services.png");
+        background-repeat: no-repeat;
+        background-size: 54%;
+        background-position: 85% 100px;
+      }
+      &:nth-child(2) {
+        background: url("../images/fullservice.png");
+        background-repeat: no-repeat;
+        background-size: 43%;
+        background-position: 90% -130px;
+      }
+
+      &--down {
+        .services_text {
+          max-width: 700px;
+          margin: 30px 0 70px;
+          * {
+            font-family: "HelveticaNeueLTGEOW82-45Lt";
+            font-size: 14px;
+            color: #000;
+          }
+        }
+        .services_likeshares {
+          display: flex;
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:not(:last-child) {
+              margin-right: 40px;
+            }
+            span {
+              &:first-child {
+                width: 50px;
+                flex: 0 0 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #000;
+                color: #fff;
+                font-family: "HelveticaNeueLTGEOW82-45Lt";
+                font-size: 14px;
+              }
+
+              &:last-child {
+                color: #000;
+                font-family: "HelveticaNeueLTGEOW82-75Bd";
+                font-size: 18px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      &--up {
+        .services_title {
+          * {
+            font-family: "HelveticaNeueLTGEOW82-75Bd";
+            color: #000000;
+            font-size: 72px;
+          }
+        }
+
+        .services_tabs {
+          margin-top: 35px;
+          padding-left: 12px;
+          ul {
+            display: flex;
+
+            li {
+              font-family: "HelveticaNeueLTGEOW82-45Lt";
+              font-size: 18px;
+              position: relative;
+
+              &::after {
+                position: absolute;
+                top: 11px;
+                left: -12px;
+                width: 0;
+                height: 0;
+                border-top: 3px solid transparent;
+                border-left: 7px solid #000;
+                border-bottom: 3px solid transparent;
+                z-index: 1;
+                content: "";
+              }
+
+              &:not(:last-child) {
+                margin-right: 15%;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
