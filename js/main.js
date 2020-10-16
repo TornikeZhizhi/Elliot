@@ -197,3 +197,10 @@ $(".about_bottom_slider").slick({
   prevArrow: ".about_bottom_dots .dots_left",
   nextArrow: ".about_bottom_dots .dots_right",
 });
+
+$(".day_night_box").click(function(){
+
+$(this).toggleClass("night")
+$(".portfolioInner").toggleClass("night")
+
+})

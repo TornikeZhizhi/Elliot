@@ -55,9 +55,11 @@ AI.carousel = (function () {
           }
 
           var result = (Number(leftPosition) / ww) * 100;
-          console.log(result);
+        
           if (result > 15) {
             $(".portfolio_inner_left_content").addClass("shrink1");
+            $(".mCSB_dragger_bar").addClass("pos");
+            $(".mCSB_scrollTools").addClass("pos");
           }
           if (result > 25) {
             $(".portfolio_inner_left_content").addClass("shrink2");
@@ -67,6 +69,8 @@ AI.carousel = (function () {
             $(".portfolio_inner_left_content").removeClass("shrink2");
           }
           if (result < 15) {
+            $(".mCSB_dragger_bar").removeClass("pos")
+            $(".mCSB_scrollTools").removeClass("pos")
             $(".portfolio_inner_left_content").removeClass("shrink1");
           }
 

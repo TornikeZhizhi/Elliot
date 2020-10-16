@@ -21,8 +21,9 @@
   top: 0;
   left: 100px;
   bottom: 0;
-  right: 0;
+  right: 10px;
   height: auto;
+  cursor: pointer;
 }
 .mCSB_scrollTools a + .mCSB_draggerContainer {
   margin: 20px 0;
@@ -87,6 +88,17 @@
   /* transform: translateX(-50%); */
   overflow: hidden;
 }
+.mCSB_scrollTools.pos {
+  left: 45% !important;
+  transform: translateX(-50%) !important;
+}
+.mCSB_scrollTools {
+  transition: all 0.3s;
+}
+.mCSB_dragger_bar.pos {
+  background-position: -6px 0px !important;
+}
+
 .mCSB_horizontal > .mCSB_scrollTools a + .mCSB_draggerContainer {
   margin: 0 20px;
 }
@@ -105,7 +117,7 @@
 .mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 100%;
   height: 4px;
-  margin: 6px auto;
+  margin: 3px auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -574,11 +586,11 @@
   > .mCSB_scrollTools
   .mCSB_dragger
   .mCSB_dragger_bar {
-  height: 10px;
+  height: 14px;
   background: url("../images/elliott.png");
   border-radius: 3px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 4px 1px;
   background-size: contain;
 }
 .slider ul {
@@ -639,4 +651,11 @@
 .slider figcaption > div > div {
   display: table-cell;
   vertical-align: middle;
+}
+
+.mCSB_draggerContainer {
+  background-image: url("../images/isari-copy.png"),
+    url("../images/logo_right.png");
+  background-repeat: no-repeat;
+  background-position: 0px 5px, right;
 }
