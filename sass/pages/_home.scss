@@ -517,7 +517,13 @@
     }
   }
 }
-
+.top_nav.common {
+  li {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+}
 .menu {
   background-color: #0e1620;
   width: 150px;
@@ -533,6 +539,14 @@
 
     .menu__commonTabs {
       span {
+        visibility: visible !important;
+        display: block;
+        animation: fade 1s 0.5s forwards;
+      }
+    }
+
+    .top_nav {
+      li {
         visibility: visible !important;
         display: block;
         animation: fade 1s 0.5s forwards;

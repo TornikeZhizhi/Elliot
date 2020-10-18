@@ -476,6 +476,11 @@ a:hover {
   .copyright.copyright_section3 span {
     color: #f9485c; }
 
+.top_nav.common li {
+  visibility: hidden;
+  opacity: 0;
+  display: none; }
+
 .menu {
   background-color: #0e1620;
   width: 150px;
@@ -488,6 +493,10 @@ a:hover {
   .menu.shrink {
     width: 350px; }
     .menu.shrink .menu__commonTabs span {
+      visibility: visible !important;
+      display: block;
+      animation: fade 1s 0.5s forwards; }
+    .menu.shrink .top_nav li {
       visibility: visible !important;
       display: block;
       animation: fade 1s 0.5s forwards; }
@@ -843,8 +852,6 @@ a:hover {
             .portfolioInner .main .content .slider #carousel .mCSB_container ul {
               height: 100vh !important;
               display: flex; }
-              .portfolioInner .main .content .slider #carousel .mCSB_container ul li {
-                display: flex; }
 
 .innerPortfolio {
   display: flex;
@@ -904,6 +911,8 @@ a:hover {
       color: #fff;
       font-family: "HelveticaNeueLTGEOW82-75Bd";
       font-size: 12px; }
+  .top_nav.common li:not(:last-child) {
+    margin-right: 20px !important; }
 
 .toggle-btn {
   position: relative;
@@ -1099,29 +1108,28 @@ input[type="checkbox"] {
               color: #000000; }
 
 .about {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 70px 50px 0 70px !important;
   /* the parent */ }
   .about__top {
     position: relative; }
-    .about__top--wrapper .dots_left {
-      position: absolute;
-      top: 50%;
-      left: -35px;
-      transform: translateY(-50%);
-      z-index: 10;
-      cursor: pointer;
-      display: block; }
-    .about__top--wrapper .dots_right {
-      position: absolute;
-      top: 50%;
-      right: -35px;
-      transform: translateY(-50%);
-      z-index: 10;
-      cursor: pointer;
-      display: block; }
+    .about__top--wrapper {
+      position: relative;
+      max-width: 1000px; }
+      .about__top--wrapper .dots_left {
+        position: absolute;
+        top: 50%;
+        left: -35px;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        display: block; }
+      .about__top--wrapper .dots_right {
+        position: absolute;
+        top: 50%;
+        right: -35px;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        display: block; }
     .about__top--title * {
       color: #000;
       font-family: "HelveticaNeueLTGEOW82-75Bd"; }

@@ -71,7 +71,7 @@
 
               li {
                 // min-width: 40vw;
-                display: flex;
+                // display: flex;
               }
             }
           }
@@ -147,6 +147,7 @@
 
 .top_nav {
   transition: all 0.3s;
+
   ul {
     display: flex;
 
@@ -158,6 +159,14 @@
         color: #fff;
         font-family: "HelveticaNeueLTGEOW82-75Bd";
         font-size: 12px;
+      }
+    }
+  }
+
+  &.common {
+    li {
+      &:not(:last-child) {
+        margin-right: 20px !important;
       }
     }
   }

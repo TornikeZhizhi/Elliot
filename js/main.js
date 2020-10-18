@@ -173,30 +173,34 @@ function mouseWheelHandlerServices(event) {
 }
 
 // about slider
+setTimeout(function(){
+  $(".about__top--slider").slick({
+      dots: true,
+      infinite: false,
+      speed: 600,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerPadding: "10px",
+      arrows: true,
+      prevArrow: " .top_dots .dots_left",
+      nextArrow: ".top_dots .dots_right",
+    });
 
-$(".about__top--slider").slick({
-  dots: true,
-  infinite: true,
-  speed: 600,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  centerPadding: "100px",
-  arrows: true,
-  prevArrow: " .top_dots .dots_left",
-  nextArrow: ".top_dots .dots_right",
-});
+    $(".about_bottom_slider").slick({
+      dots: true,
+      infinite: true,
+      speed: 600,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      centerPadding: "10px",
+      arrows: true,
+      prevArrow: ".about_bottom_dots .dots_left",
+      nextArrow: ".about_bottom_dots .dots_right",
+    });
+  },1000)
+  
 
-$(".about_bottom_slider").slick({
-  dots: true,
-  infinite: true,
-  speed: 600,
-  slidesToShow: 7,
-  slidesToScroll: 1,
-  centerPadding: "100px",
-  arrows: true,
-  prevArrow: ".about_bottom_dots .dots_left",
-  nextArrow: ".about_bottom_dots .dots_right",
-});
+
 
 $(".day_night_box").click(function(){
 
