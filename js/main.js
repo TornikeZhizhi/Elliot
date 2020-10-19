@@ -12,26 +12,32 @@ $slider
         case 0:
           $(".home__nav").removeClass().addClass("home__nav nav_section0");
           $(".copyright").removeClass("copyright_section3");
+          $(".home_randomize").removeClass("home_randomize3");
           break;
         case 1:
           $(".home__nav").removeClass().addClass("home__nav nav_section1");
           $(".copyright").removeClass("copyright_section3");
+          $(".home_randomize").removeClass("home_randomize3");
           break;
         case 2:
           $(".home__nav").removeClass().addClass("home__nav nav_section2");
           $(".copyright").removeClass("copyright_section3");
+          $(".home_randomize").removeClass("home_randomize3");
           break;
         case 3:
-          $(".copyright").addClass("copyright_section3");
           $(".home__nav").removeClass().addClass("home__nav nav_section3");
+          $(".copyright").addClass("copyright_section3");
+          $(".home_randomize").addClass("home_randomize3");
           break;
         case 4:
           $(".home__nav").removeClass().addClass("home__nav nav_section4");
           $(".copyright").removeClass("copyright_section3");
+          $(".home_randomize").removeClass("home_randomize3");
           break;
         case 5:
           $(".home__nav").removeClass().addClass("home__nav nav_section5");
           $(".copyright").removeClass("copyright_section3");
+          $(".home_randomize").removeClass("home_randomize3");
           break;
       }
     }, 200);
@@ -51,6 +57,27 @@ $slider
     infinite: true,
   });
 
+
+  $(".home_randomize").click(function(){
+   var rand = Math.floor( Math.random() * 6 );
+   console.log(rand)
+   $("#main_slider").slick('slickGoTo', rand);
+  })
+
+  $(".member_slider").slick({
+    dots: false,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: false,
+    nextArrow: false,
+    // autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    speed: 1000,
+    infinite: true,
+  });
+
+  
 function mouseWheel($slider) {
   if ($(window).width() > 992) {
     $(window).on("wheel", { $slider: $slider }, mouseWheelHandler);

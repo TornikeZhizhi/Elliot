@@ -131,9 +131,25 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    // align-items: center;
     & > div {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .home_randomize {
+      color: #fff;
+      padding-left: 30px;
+      padding-bottom: 23px;
+      font-family: "Conv_NEXA BOLD_0";
+      cursor: pointer;
+
+      &.home_randomize3 {
+        color: #f9485c;
+      }
     }
   }
 
@@ -142,7 +158,15 @@
 
     .homeSlider__item {
       position: relative;
-      padding-right: 10%;
+      padding-right: 20%;
+      padding-top: 5%;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
       img:first-child {
         height: 70vh;
         object-fit: contain;
@@ -150,7 +174,7 @@
 
       img:last-child {
         position: absolute;
-        bottom: 25%;
+        bottom: 41%;
         right: -4%;
         height: 20vh;
       }
@@ -161,7 +185,14 @@
     background-color: #0e1620;
 
     .homeSlider__item {
-      padding-right: 10%;
+      padding-right: 15%;
+      padding-top: 14%;
+      & > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+      }
     }
     img {
       height: 30vh;
@@ -172,11 +203,15 @@
     background-color: #25cad2;
 
     .homeSlider__item {
-      padding-right: 10%;
+      padding-right: 13%;
+      padding-top: 15%;
 
       & > div {
         position: relative;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         .brocoli_title {
           top: 50%;
           left: 0;
@@ -199,13 +234,16 @@
   .main_slider_section4 {
     background-color: #fff;
     .homeSlider__item {
-      padding-right: 10%;
+      padding-right: 13%;
+      padding-top: 7%;
     }
   }
 
   .main_slider_section5 {
     background-color: #f9485c;
     .homeSlider__item {
+      padding-right: 10%;
+      padding-top: 2%;
       img {
         height: 80vh;
       }
@@ -215,7 +253,8 @@
   .main_slider_section6 {
     background-color: #43a041;
     .homeSlider__item {
-      padding-right: 18%;
+      padding-right: 20%;
+      padding-top: 11%;
 
       img:first-child {
         height: 300px;
@@ -231,13 +270,13 @@
       img:nth-child(3) {
         animation: upDown 2.5s infinite;
         position: absolute;
-        bottom: 18px;
+        bottom: 220px;
         right: -99px;
       }
 
       img:nth-child(4) {
         position: absolute;
-        bottom: -155px;
+        bottom: 53px;
         left: -103px;
         animation: upDown2 2.5s infinite;
       }

@@ -4,12 +4,23 @@
   overflow: hidden;
   background-color: #f9485c;
   padding: 50px 60px;
+
+  &.member {
+    background-color: #0056b8;
+  }
   &__logo {
     transform: translateX(-70px);
     svg {
       width: 300px;
       fill: #fff;
     }
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 70px;
+    font-family: "Conv_NEXA BOLD_0";
+    transform: translateX(-30px);
   }
 
   &__fluid {
@@ -26,12 +37,12 @@
     justify-content: center;
   }
   &__leftFluid {
-    max-width: 45%;
-    flex: 0 0 45%;
+    max-width: 40%;
+    flex: 0 0 40%;
   }
-  &__ {
-    flex: 0 0 55%;
-    max-width: 55%;
+  &__img {
+    // flex: 0 0 65%;
+    // max-width: 65%;
   }
 
   &__info {
@@ -64,6 +75,19 @@
           color: #fff;
         }
       }
+    }
+  }
+}
+
+.members_slider_item {
+  display: flex !important;
+  justify-content: center;
+
+  .members__img {
+    img {
+      height: 65vh;
+      width: 35vw;
+      object-fit: contain;
     }
   }
 }
