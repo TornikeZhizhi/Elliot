@@ -60,7 +60,6 @@ $slider
 
   $(".home_randomize").click(function(){
    var rand = Math.floor( Math.random() * 6 );
-   console.log(rand)
    $("#main_slider").slick('slickGoTo', rand);
   })
 
@@ -68,15 +67,19 @@ $slider
     dots: false,
     fade: true,
     cssEase: "linear",
-    prevArrow: false,
-    nextArrow: false,
+    prevArrow: ".members_dots .dots_left",
+    nextArrow: ".members_dots .dots_right",
     // autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
     infinite: true,
   });
-
+  $(".member_randomize").click(function(){
+    var rand = Math.floor( Math.random() * $(".members_slider_item").length );
+    var activesliderIndex = $(".member_slider .slick-active").attr("data-slick-index")
+    $(".member_slider").slick('slickGoTo', rand);
+   })
   
 function mouseWheel($slider) {
   if ($(window).width() > 992) {

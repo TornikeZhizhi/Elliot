@@ -755,10 +755,36 @@ a:hover {
 .members_slider_item {
   display: flex !important;
   justify-content: center; }
-  .members_slider_item .members__img img {
-    height: 65vh;
-    width: 35vw;
-    object-fit: contain; }
+  .members_slider_item .members__img {
+    position: relative; }
+    .members_slider_item .members__img > img {
+      height: 65vh;
+      width: 35vw;
+      object-fit: contain; }
+    .members_slider_item .members__img .members_dots span {
+      position: absolute;
+      cursor: pointer; }
+      .members_slider_item .members__img .members_dots span img {
+        height: 14px; }
+    .members_slider_item .members__img .members_dots .dots_left {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5px;
+      z-index: 1;
+      filter: brightness(0) invert(1); }
+    .members_slider_item .members__img .members_dots .dots_right {
+      top: 50%;
+      filter: brightness(0) invert(1);
+      transform: translateY(-50%);
+      right: 5px;
+      z-index: 1; }
+
+.member_randomize {
+  color: #fff;
+  padding-top: 23px;
+  font-family: "Conv_NEXA BOLD_0";
+  cursor: pointer;
+  text-align: center; }
 
 .portfolio {
   width: calc(100vw - 150px);
