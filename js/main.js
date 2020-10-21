@@ -59,8 +59,19 @@ $slider
 
 
   $(".home_randomize").click(function(){
-   var rand = Math.floor( Math.random() * 6 );
-   $("#main_slider").slick('slickGoTo', rand);
+   var rand = Math.floor( Math.random() * $(".homeSlider__structure").length );
+   var activesliderIndex2 = $(".member_slider .slick-active").attr("data-slick-index")
+
+   if(rand == activesliderIndex2){
+    while(rand == activesliderIndex2){
+      var rand = Math.floor( Math.random() * $(".homeSlider__structure").length );
+      $("#main_slider").slick('slickGoTo', rand);
+    }
+   }else {
+
+
+     $("#main_slider").slick('slickGoTo', rand);
+   }
   })
 
   $(".member_slider").slick({
@@ -78,7 +89,20 @@ $slider
   $(".member_randomize").click(function(){
     var rand = Math.floor( Math.random() * $(".members_slider_item").length );
     var activesliderIndex = $(".member_slider .slick-active").attr("data-slick-index")
-    $(".member_slider").slick('slickGoTo', rand);
+
+      if(rand == activesliderIndex){
+
+        while(rand == activesliderIndex){
+
+          var rand = Math.floor( Math.random() * $(".members_slider_item").length );
+          $(".member_slider").slick('slickGoTo', rand);
+        }
+      }else {
+        $(".member_slider").slick('slickGoTo', rand);
+
+      }
+
+    
    })
   
 function mouseWheel($slider) {
