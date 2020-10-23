@@ -244,7 +244,7 @@ setTimeout(function(){
       dots: true,
       infinite: true,
       speed: 600,
-      slidesToShow: 7,
+      slidesToShow: 6,
       slidesToScroll: 1,
       centerPadding: "10px",
       arrows: true,

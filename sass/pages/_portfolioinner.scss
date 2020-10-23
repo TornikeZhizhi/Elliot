@@ -4,7 +4,7 @@
   margin-left: auto;
 
   .portfolio_inner_right_wrapper {
-    padding-top: 80px;
+    padding-top: 60px;
     li {
       margin-right: 40px;
     }
@@ -254,7 +254,7 @@ input[type="checkbox"] {
 /* Third toggle btn completed */
 .day_night_box {
   position: absolute !important;
-  top: 40px;
+  top: 25px;
   z-index: 3333;
   left: 102px;
 }
@@ -296,5 +296,11 @@ input[type="checkbox"] {
   }
   * {
     color: #fff !important;
+  }
+  .top_dots,
+  .about_bottom_dots {
+    img {
+      filter: brightness(0) invert(1) !important;
+    }
   }
 }
