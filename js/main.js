@@ -50,7 +50,7 @@ $slider
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,

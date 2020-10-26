@@ -597,6 +597,11 @@ a:hover {
       margin-left: 27px;
       cursor: pointer;
       transform: scale(0.8); }
+      .menu__hamburger__wrapper.b-white {
+        display: none;
+        margin-left: 0 !important; }
+        .menu__hamburger__wrapper.b-white:before {
+          border-top: transparent !important; }
       .menu__hamburger__wrapper div {
         overflow: hidden;
         height: 24px;
@@ -967,7 +972,10 @@ a:hover {
       max-width: 350px; }
     .innerPortfolio .portfolio_inner_left_content.shrink2 {
       flex: 0 0 150px;
-      max-width: 150px; }
+      max-width: 150px;
+      padding: 50px 26px; }
+      .innerPortfolio .portfolio_inner_left_content.shrink2 .menu__hamburger__wrapper.b-white {
+        display: block !important; }
       .innerPortfolio .portfolio_inner_left_content.shrink2 .top_nav,
       .innerPortfolio .portfolio_inner_left_content.shrink2 .portfolio_inner_left_title,
       .innerPortfolio .portfolio_inner_left_content.shrink2 .portfolio_inner_left_text {
@@ -1121,6 +1129,9 @@ input[type="checkbox"] {
 .portfolioInner.night .top_dots img,
 .portfolioInner.night .about_bottom_dots img {
   filter: brightness(0) invert(1) !important; }
+
+.casino_copy_img:visited {
+  transform: translateY(5px); }
 
 .services {
   width: calc(100vw - 150px);

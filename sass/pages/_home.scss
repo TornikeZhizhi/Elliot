@@ -680,6 +680,14 @@
       cursor: pointer;
       transform: scale(0.8);
 
+      &.b-white {
+        display: none;
+        margin-left: 0 !important;
+        &:before {
+          border-top: transparent !important;
+        }
+      }
+
       div {
         overflow: hidden;
         height: 24px;

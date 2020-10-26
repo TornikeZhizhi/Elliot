@@ -103,6 +103,10 @@
     &.shrink2 {
       flex: 0 0 150px;
       max-width: 150px;
+      padding: 50px 26px;
+      .menu__hamburger__wrapper.b-white {
+        display: block !important;
+      }
 
       .top_nav,
       .portfolio_inner_left_title,
@@ -303,4 +307,8 @@ input[type="checkbox"] {
       filter: brightness(0) invert(1) !important;
     }
   }
+}
+
+.casino_copy_img:visited {
+  transform: translateY(5px);
 }
