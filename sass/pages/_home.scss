@@ -630,6 +630,7 @@
         .right_text {
           position: relative;
           margin-left: 13px;
+          overflow: hidden;
           img {
             width: calc(100% + 25px);
             height: calc(100% + 34px);
