@@ -251,6 +251,15 @@ setTimeout(function(){
       prevArrow: ".about_bottom_dots .dots_left",
       nextArrow: ".about_bottom_dots .dots_right",
     });
+    
+    $(".grid").isotope({
+      itemSelector: ".grid-item",
+       percentPosition: !0,
+        masonry: 
+        { columnWidth: 0,
+          horizontalOrder: !0, 
+          gutter: 14.7 } })
+
   },1000)
   
 
@@ -260,5 +269,17 @@ $(".day_night_box").click(function(){
 
 $(this).toggleClass("night")
 $(".portfolioInner").toggleClass("night")
+
+})
+
+
+
+$(".b-white").click(function(){
+
+  $("#carousel .mCSB_container").css("left","0")
+  $("#carousel .mCSB_dragger").css("left","20px")
+  $(".portfolio_inner_left_content").removeClass("shrink1")
+  $(".portfolio_inner_left_content").removeClass("shrink2")
+  $(".mCSB_scrollTools").removeClass("pos")
 
 })

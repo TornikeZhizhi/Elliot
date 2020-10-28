@@ -561,7 +561,8 @@ a:hover {
         align-items: center; }
       .menu__commonTabs ul li .right_text {
         position: relative;
-        margin-left: 13px; }
+        margin-left: 13px;
+        overflow: hidden; }
         .menu__commonTabs ul li .right_text img {
           width: calc(100% + 25px);
           height: calc(100% + 34px);
@@ -1133,6 +1134,15 @@ input[type="checkbox"] {
 .casino_copy_img:visited {
   transform: translateY(5px); }
 
+.portfolio_masorny {
+  max-height: 500px;
+  overflow-y: scroll; }
+  .portfolio_masorny .grid-item {
+    width: 30.5%; }
+    .portfolio_masorny .grid-item img {
+      width: 100%;
+      margin-bottom: 20px; }
+
 .services {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -1220,7 +1230,9 @@ input[type="checkbox"] {
               color: #000000; }
 
 .about {
-  padding-left: 50px; }
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column-reverse; }
   .about__top {
     position: relative; }
     .about__top--wrapper {
@@ -1248,6 +1260,7 @@ input[type="checkbox"] {
       color: #000;
       font-family: "HelveticaNeueLTGEOW82-75Bd"; }
   .about .about_bottom--sliderwrapper {
+    height: 280px;
     position: relative; }
     .about .about_bottom--sliderwrapper .about_bottom_slider_title {
       text-align: left; }

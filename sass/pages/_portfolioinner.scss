@@ -68,8 +68,8 @@
             ul {
               height: 100vh !important;
               display: flex;
-
               li {
+                // display: inline-block;
                 // min-width: 40vw;
                 // display: flex;
               }
@@ -311,4 +311,16 @@ input[type="checkbox"] {
 
 .casino_copy_img:visited {
   transform: translateY(5px);
+}
+
+.portfolio_masorny {
+  max-height: 500px;
+  overflow-y: scroll;
+  .grid-item {
+    width: 30.5%;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 }
