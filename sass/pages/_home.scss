@@ -575,6 +575,9 @@
 
   &.shrink {
     width: 350px;
+    .right_text {
+      overflow: visible;
+    }
 
     .menu__commonTabs {
       span {

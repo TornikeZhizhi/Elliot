@@ -593,6 +593,20 @@
   background-position: 4px 1px;
   background-size: contain;
 }
+
+.portfolioInner.night
+  .slider
+  > div
+  .mCSB_horizontal
+  > .mCSB_scrollTools
+  .mCSB_dragger
+  .mCSB_dragger_bar {
+  background: url("../images/elliot-white.png");
+  background-repeat: no-repeat;
+  background-position: 4px 1px;
+  background-size: contain;
+}
+
 .slider ul {
   position: relative;
   float: left;
@@ -656,6 +670,13 @@
 .mCSB_draggerContainer {
   background-image: url("../images/isari-copy.png"),
     url("../images/logo_right.png");
+  background-repeat: no-repeat;
+  background-position: 0px 5px, right;
+}
+
+.portfolioInner.night .mCSB_draggerContainer {
+  background-image: url("../images/arrow_white.png"),
+    url("../images/arrow_right_white.png");
   background-repeat: no-repeat;
   background-position: 0px 5px, right;
 }

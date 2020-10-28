@@ -324,3 +324,17 @@ input[type="checkbox"] {
     }
   }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0056b8;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9485c;
+}

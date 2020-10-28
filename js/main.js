@@ -251,7 +251,8 @@ setTimeout(function(){
       prevArrow: ".about_bottom_dots .dots_left",
       nextArrow: ".about_bottom_dots .dots_right",
     });
-    
+
+    if($(".grid").length>0){
     $(".grid").isotope({
       itemSelector: ".grid-item",
        percentPosition: !0,
@@ -259,9 +260,9 @@ setTimeout(function(){
         { columnWidth: 0,
           horizontalOrder: !0, 
           gutter: 14.7 } })
-
+        }
   },1000)
-  
+
 
 
 
