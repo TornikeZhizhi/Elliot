@@ -35,7 +35,7 @@
         .services_text {
           max-width: 700px;
           margin: 30px 0 70px;
-          * {
+          .services_text_wrapper * {
             font-family: "HelveticaNeueLTGEOW82-45Lt";
             font-size: 14px;
             color: #000;
@@ -97,6 +97,12 @@
               font-family: "HelveticaNeueLTGEOW82-45Lt";
               font-size: 18px;
               position: relative;
+              a {
+                font-family: "HelveticaNeueLTGEOW82-45Lt";
+                font-size: 18px;
+                position: relative;
+                color: #000;
+              }
 
               &::after {
                 position: absolute;
@@ -120,5 +126,27 @@
         }
       }
     }
+  }
+}
+
+.services__slider
+  .services__slider__item:nth-child(1)
+  .services_tabs
+  ul
+  li
+  a:hover {
+  color: #f9485c !important;
+}
+
+.contact_us_href {
+  text-align: right;
+
+  a {
+    font-family: "HelveticaNeueLTGEOW82-45Lt";
+    background-color: #43a041;
+    border: none;
+    padding: 8px 70px;
+    border-radius: 0;
+    color: #fff;
   }
 }

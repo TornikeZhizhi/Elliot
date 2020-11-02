@@ -137,6 +137,22 @@ $(".menu__hamburger div").click(function () {
   }
 });
 
+$(".menu").mouseenter(function(){
+  
+  $(".menu__hamburger div").addClass("cross");
+  $(".menu").addClass("shrink");
+  $(".menu__hamburger__wrapper").addClass("hide");
+})
+
+$(".menu").mouseleave(function(){
+  
+  $(".menu__hamburger div").removeClass("cross");
+    $(".menu").removeClass("shrink");
+    setTimeout(function () {
+      $(".menu__hamburger__wrapper").removeClass("hide");
+    }, 300);
+})
+
 // Portfolio slider
 
 var $sliderPortfolio = $(".portfolio__slider");
