@@ -50,7 +50,7 @@ $slider
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
@@ -163,6 +163,7 @@ $sliderPortfolio
     currentSlide,
     nextSlide
   ) {
+    console.log(currentSlide)
     mouseWheel($sliderPortfolio);
   })
   .slick({
@@ -178,6 +179,20 @@ $sliderPortfolio
     speed: 1500,
     infinite: true,
   });
+
+  // $( function() {
+  //   $( "#slider" ).slider();
+  //   $( "#slider" )
+  //   .on( "slide", function( event, ui ) {
+  //     // console.log(ui.value)
+  //     var SliderPosition = ui.value
+  //     var sliderLength = 100 / Number($(".portfolio__slider .slick-active").not(".slick-cloned"))
+  //     console.log(sliderLength)
+  //     $(".portfolio__slider").slick('slickGoTo', 1);
+   
+  //   });
+  
+  // } );
 
 function mouseWheelPortfolio($sliderPortfolio) {
   if ($(window).width() > 992) {
@@ -220,7 +235,7 @@ $sliderServices
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 500,
-    infinite: true,
+    // infinite: true,
   });
 
 function mouseWheelServices($sliderServices) {
@@ -300,3 +315,5 @@ $(".b-white").click(function(){
   $(".mCSB_scrollTools").removeClass("pos")
 
 })
+
+

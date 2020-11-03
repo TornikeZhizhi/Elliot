@@ -1189,7 +1189,7 @@ input[type="checkbox"] {
         background-position: 90% -130px; }
       .services__slider__item--down .services_text {
         max-width: 700px;
-        margin: 30px 0 70px; }
+        margin: 20px 0 60px; }
         .services__slider__item--down .services_text .services_text_wrapper * {
           font-family: "HelveticaNeueLTGEOW82-45Lt";
           font-size: 14px;
@@ -1204,8 +1204,8 @@ input[type="checkbox"] {
           .services__slider__item--down .services_likeshares > div:not(:last-child) {
             margin-right: 40px; }
           .services__slider__item--down .services_likeshares > div span:first-child {
-            width: 50px;
-            flex: 0 0 50px;
+            width: 70px;
+            flex: 0 0 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -1236,7 +1236,8 @@ input[type="checkbox"] {
               font-family: "HelveticaNeueLTGEOW82-45Lt";
               font-size: 18px;
               position: relative;
-              color: #000; }
+              color: #000;
+              transition: all 0.3s; }
             .services__slider__item--up .services_tabs ul li::after {
               position: absolute;
               top: 11px;
@@ -1258,10 +1259,18 @@ input[type="checkbox"] {
 ul
 li
 a:hover {
-  color: #f9485c !important; }
+  color: #43a041 !important; }
+
+.services__slider
+.services__slider__item:nth-child(2)
+.services_tabs
+ul
+li
+a:hover {
+  color: #0056b8 !important; }
 
 .contact_us_href {
-  text-align: right; }
+  text-align: left; }
   .contact_us_href a {
     font-family: "HelveticaNeueLTGEOW82-45Lt";
     background-color: #43a041;
@@ -1269,6 +1278,11 @@ a:hover {
     padding: 8px 70px;
     border-radius: 0;
     color: #fff; }
+
+#slider {
+  width: 500px; }
+  #slider span {
+    margin-left: 0; }
 
 .about {
   padding-left: 50px;
