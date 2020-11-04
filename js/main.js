@@ -50,7 +50,7 @@ $slider
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
@@ -80,7 +80,7 @@ $slider
     cssEase: "linear",
     prevArrow: ".members_dots .dots_left",
     nextArrow: ".members_dots .dots_right",
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
@@ -110,13 +110,34 @@ function mouseWheel($slider) {
     $(window).on("wheel", { $slider: $slider }, mouseWheelHandler);
   }
 }
+var leftIndex = true;
+var rightIndex = true;
 function mouseWheelHandler(event) {
+
   var $slider = event.data.$slider;
   var delta = event.originalEvent.deltaY;
   if (delta > 0) {
-    $slider.slick("slickNext");
+
+    if(leftIndex) {
+      $slider.slick("slickNext");
+      leftIndex = false
+
+      setTimeout(function(){
+        leftIndex = true
+      },1500)
+    }
+  
   } else {
-    $slider.slick("slickPrev");
+    if(rightIndex) {
+      $slider.slick("slickPrev");
+      rightIndex = false
+
+      setTimeout(function(){
+        rightIndex = true
+      },1500)
+    }
+
+  
   }
 }
 
@@ -193,6 +214,8 @@ $sliderPortfolio
   //   });
   
   // } );
+  var leftIndexp = true;
+  var rightIndexp = true;
 
 function mouseWheelPortfolio($sliderPortfolio) {
   if ($(window).width() > 992) {
@@ -207,9 +230,27 @@ function mouseWheelHandlerPortfolio(event) {
   var $sliderPortfolio = event.data.$sliderPortfolio;
   var delta = event.originalEvent.deltaY;
   if (delta > 0) {
-    $sliderPortfolio.slick("slickNext");
+
+    if(leftIndexp) {
+      $sliderPortfolio.slick("slickNext");
+      leftIndexp = false
+
+      setTimeout(function(){
+        leftIndexp = true
+      },2500)
+    }
+    
   } else {
-    $sliderPortfolio.slick("slickPrev");
+    
+    if(rightIndexp) {
+      $sliderPortfolio.slick("slickPrev");
+      rightIndexp = false
+
+      setTimeout(function(){
+        rightIndexp = true
+      },2500)
+    }
+    
   }
 }
 
@@ -247,13 +288,34 @@ function mouseWheelServices($sliderServices) {
     );
   }
 }
+
+
+var leftIndexs = true;
+  var rightIndexs = true;
+
 function mouseWheelHandlerServices(event) {
   var $sliderServices = event.data.$sliderServices;
   var delta = event.originalEvent.deltaY;
   if (delta > 0) {
-    $sliderServices.slick("slickNext");
+    if(leftIndexs) {
+      $sliderServices.slick("slickNext");
+      leftIndexs = false
+
+      setTimeout(function(){
+        leftIndexs = true
+      },2500)
+    }
+  
   } else {
-    $sliderServices.slick("slickPrev");
+    if(rightIndexs) {
+      $sliderServices.slick("slickPrev");
+      rightIndexs = false
+
+      setTimeout(function(){
+        rightIndexs = true
+      },2500)
+    }
+  
   }
 }
 
@@ -316,4 +378,12 @@ $(".b-white").click(function(){
 
 })
 
+
+var track = $(".portfolio_masorny").attr("data-track")
+var thumb = $(".portfolio_masorny").attr("data-thumb")
+var portfDiv = $(".portfolio_masorny")
+var styleElement = document.createElement("style");
+styleElement.appendChild(document.createTextNode
+  ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+track+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+thumb+"}"));
+document.getElementsByTagName("head")[0].appendChild(styleElement);
 

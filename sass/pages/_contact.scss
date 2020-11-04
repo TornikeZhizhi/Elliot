@@ -1,5 +1,5 @@
 .contact {
-  padding: 65px 65px 20px 65px;
+  padding: 40px 65px 20px 65px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
     }
     form {
       & > div {
-        margin-top: 30px;
+        margin-top: 18px;
       }
 
       .form-row {
@@ -63,7 +63,8 @@
       }
     }
     input,
-    textarea {
+    textarea,
+    select {
       background-color: #f2f2f2;
       border: none;
       border-radius: 0;
@@ -73,6 +74,19 @@
       padding-left: 30px;
       resize: none;
       color: #000;
+    }
+    select {
+      -moz-appearance: window;
+      -webkit-appearance: none;
+    }
+    select {
+      width: 100%;
+      height: 54px;
+      cursor: pointer;
+      background-image: url("../../images/select_dropdown.png");
+      background-repeat: no-repeat;
+      background-position: 97% center;
+      background-size: 17px;
     }
 
     input {
