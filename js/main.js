@@ -50,7 +50,7 @@ $slider
     cssEase: "linear",
     prevArrow: false,
     nextArrow: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
@@ -255,69 +255,69 @@ function mouseWheelHandlerPortfolio(event) {
 }
 
 // services slider
-var $sliderServices = $(".services__slider");
-$sliderServices
-  .on("init reInit beforeChange", function (
-    event,
-    slick,
-    currentSlide,
-    nextSlide
-  ) {
-    mouseWheel($sliderServices);
-  })
-  .slick({
-    // dots: true,
-    fade: true,
-    cssEase: "linear",
-    arrows: true,
-    prevArrow: "#Services_left",
-    nextArrow: "#Services_right",
-    // autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnHover: false,
-    speed: 500,
-    // infinite: true,
-  });
+// var $sliderServices = $(".services__slider");
+// $sliderServices
+//   .on("init reInit beforeChange", function (
+//     event,
+//     slick,
+//     currentSlide,
+//     nextSlide
+//   ) {
+//     mouseWheel($sliderServices);
+//   })
+//   .slick({
+//     // dots: true,
+//     fade: true,
+//     cssEase: "linear",
+//     arrows: true,
+//     prevArrow: "#Services_left",
+//     nextArrow: "#Services_right",
+//     // autoplay: true,
+//     autoplaySpeed: 4000,
+//     pauseOnHover: false,
+//     speed: 500,
+//     // infinite: true,
+//   });
 
-function mouseWheelServices($sliderServices) {
-  if ($(window).width() > 992) {
-    $(window).on(
-      "wheel",
-      { $sliderServices: $sliderServices },
-      mouseWheelHandlerServices
-    );
-  }
-}
+// function mouseWheelServices($sliderServices) {
+//   if ($(window).width() > 992) {
+//     $(window).on(
+//       "wheel",
+//       { $sliderServices: $sliderServices },
+//       mouseWheelHandlerServices
+//     );
+//   }
+// }
 
 
-var leftIndexs = true;
-  var rightIndexs = true;
+// var leftIndexs = true;
+//   var rightIndexs = true;
 
-function mouseWheelHandlerServices(event) {
-  var $sliderServices = event.data.$sliderServices;
-  var delta = event.originalEvent.deltaY;
-  if (delta > 0) {
-    if(leftIndexs) {
-      $sliderServices.slick("slickNext");
-      leftIndexs = false
+// function mouseWheelHandlerServices(event) {
+//   var $sliderServices = event.data.$sliderServices;
+//   var delta = event.originalEvent.deltaY;
+//   if (delta > 0) {
+//     if(leftIndexs) {
+//       $sliderServices.slick("slickNext");
+//       leftIndexs = false
 
-      setTimeout(function(){
-        leftIndexs = true
-      },2500)
-    }
+//       setTimeout(function(){
+//         leftIndexs = true
+//       },2500)
+//     }
   
-  } else {
-    if(rightIndexs) {
-      $sliderServices.slick("slickPrev");
-      rightIndexs = false
+//   } else {
+//     if(rightIndexs) {
+//       $sliderServices.slick("slickPrev");
+//       rightIndexs = false
 
-      setTimeout(function(){
-        rightIndexs = true
-      },2500)
-    }
+//       setTimeout(function(){
+//         rightIndexs = true
+//       },2500)
+//     }
   
-  }
-}
+//   }
+// }
 
 // about slider
 setTimeout(function(){
