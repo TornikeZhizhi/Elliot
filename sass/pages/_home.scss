@@ -605,13 +605,14 @@
     ul {
       li {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         .left_img {
           pointer-events: none;
           padding: 2px;
           background-repeat: no-repeat;
           background-position: center center;
           background-size: 100% 100%;
+          margin-right: 12px;
           &.active {
             background-image: url("../../images/art_circle.png");
           }

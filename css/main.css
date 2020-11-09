@@ -41,7 +41,6 @@ a:hover {
     transform: translateY(10px); }
   100% {
     transform: translateY(0px); } }
-
 @keyframes upDown2 {
   0% {
     transform: translateY(0px); }
@@ -49,7 +48,6 @@ a:hover {
     transform: translateY(-5px); }
   100% {
     transform: translateY(0px); } }
-
 @keyframes lightSpeedInLeft {
   from {
     -webkit-transform: translate3d(-100%, 0, 0) skewX(30deg);
@@ -65,7 +63,6 @@ a:hover {
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-
 /* ==== Slider Image Transition === */
 @keyframes Slick-SlideIn {
   from {
@@ -74,7 +71,6 @@ a:hover {
   to {
     -webkit-transform: rotate3d(0, 1, 0, 0deg) skewX(0deg) perspective(400px);
     transform: rotate3d(0, 1, 0, 0deg) skewX(0deg) perspective(400px); } }
-
 @keyframes Slick-SlideOut {
   from {
     -webkit-transform: rotate3d(0, 1, 0, 0deg) skewX(0deg) perspective(400px);
@@ -82,61 +78,52 @@ a:hover {
   to {
     -webkit-transform: rotate3d(0, 1, 0, -60deg) skewX(10deg) perspective(400px);
     transform: rotate3d(0, 1, 0, -60deg) skewX(10deg) perspective(400px); } }
-
 @keyframes ProgressDots {
   from {
     width: 0px; }
   to {
     width: 100%; } }
-
 @keyframes fade {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-
 @font-face {
   font-family: "Conv_NEXA BOLD_0";
   src: url("../fonts/NEXA BOLD_0.eot");
-  src: local("☺"), url("../fonts/NEXA BOLD_0.woff") format("woff"), url("../fonts/NEXA BOLD_0.ttf") format("truetype"), url("../fonts/NEXA BOLD_0.svg") format("svg");
+  src: local("Γÿ║"), url("../fonts/NEXA BOLD_0.woff") format("woff"), url("../fonts/NEXA BOLD_0.ttf") format("truetype"), url("../fonts/NEXA BOLD_0.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: "Futura";
   src: url("../fonts/Futura-CondExtraBoldObl.woff2") format("woff2"), url("../fonts/Futura-CondExtraBoldObl.woff") format("woff");
   font-weight: 800;
   font-style: italic;
   font-display: swap; }
-
 @font-face {
   font-family: "HelveticaNeueLTGEOW82-75Bd";
   src: url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTGEOW82-75Bd.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
-
 @font-face {
   font-family: "HelveticaNeueLTGEOW82-45Lt";
   src: url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff2") format("woff2"), url("../fonts/HelveticaNeueLTGEOW82-45Lt-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
-
 @font-face {
   font-family: "Nexa";
   src: url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
-
 @font-face {
   font-family: "GL Gordeziani";
   src: url("../fonts/GLGordeziani-Bold.woff2") format("woff2"), url("../fonts/GLGordeziani-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
-
 #main_slider {
   width: 100%;
   height: 100vh;
@@ -159,7 +146,6 @@ a:hover {
   left: 10%;
   transform: translateY(-40%);
   z-index: 100; }
-
 .home__nav__list__item {
   margin-bottom: 10px; }
   .home__nav__list__item a {
@@ -453,20 +439,17 @@ a:hover {
   background-color: #fff; }
   .home__nav.nav_section0 ul li a:hover {
     background: #ffd600; }
-
 .home__nav.nav_section1 ul li a {
   color: #0e1620;
   background-color: #fff; }
   .home__nav.nav_section1 ul li a:hover {
     background: #f9485c;
     color: #fff; }
-
 .home__nav.nav_section2 ul li a {
   color: #25cad2;
   background-color: #fff; }
   .home__nav.nav_section2 ul li a:hover {
     background: #45a041; }
-
 .home__nav.nav_section3 ul li a {
   color: #fff;
   background-color: #f9485c; }
@@ -474,14 +457,12 @@ a:hover {
     fill: #f9485c; }
   .home__nav.nav_section3 ul li a:hover {
     background: #43a041; }
-
 .home__nav.nav_section4 ul li a {
   color: #f9485c;
   background-color: #fff; }
   .home__nav.nav_section4 ul li a:hover {
     background: #0056b8;
     color: #fff; }
-
 .home__nav.nav_section5 ul li a {
   color: #43a041;
   background-color: #ffffff; }
@@ -542,14 +523,15 @@ a:hover {
     padding-top: 70px; }
     .menu__commonTabs ul li {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       margin-bottom: 20px; }
       .menu__commonTabs ul li .left_img {
         pointer-events: none;
         padding: 2px;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 100% 100%; }
+        background-size: 100% 100%;
+        margin-right: 12px; }
         .menu__commonTabs ul li .left_img.active {
           background-image: url("../../images/art_circle.png"); }
         .menu__commonTabs ul li .left_img img {
@@ -1136,16 +1118,13 @@ input[type="checkbox"] {
 
 .portfolioInner #content {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
-
 .portfolioInner * {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .portfolioInner.night #content {
   background-color: #000 !important; }
-
 .portfolioInner.night * {
   color: #fff !important; }
-
 .portfolioInner.night .top_dots img,
 .portfolioInner.night .about_bottom_dots img {
   filter: brightness(0) invert(1) !important; }
@@ -1406,7 +1385,6 @@ a:hover {
 
 .about__top .slick-slide {
   margin: 0 27px; }
-
 .about__top .slick-list {
   margin: 0 -27px; }
 
@@ -1418,3 +1396,5 @@ a:hover {
 
 .slick-dotted.slick-slider {
   margin-bottom: 15px; }
+
+/*# sourceMappingURL=main.css.map */
