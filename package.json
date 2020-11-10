@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/TornikeZhizhi/Elliot#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "sass": "^4.14.1"
   }
 }
