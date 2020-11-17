@@ -94,16 +94,42 @@
     max-width: 550px;
     padding: 50px 60px;
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+    position: relative;
+    .menu__hamburger,
+    .top_nav {
+      position: relative;
+      z-index: 100;
+    }
+    .portfolio_inner_shrink_bg {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s;
+      height: 100%;
+    }
     &.shrink1 {
       flex: 0 0 350px;
       max-width: 350px;
+
+      .portfolio_inner_shrink_bg {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .top_nav ul {
+        flex-wrap: unset !important;
+      }
     }
 
     &.shrink2 {
       flex: 0 0 150px;
       max-width: 150px;
       padding: 50px 26px;
+
+      .portfolio_inner_shrink_bg {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
       .menu__hamburger__wrapper.b-white {
         display: block !important;
       }
@@ -154,6 +180,7 @@
 
   ul {
     display: flex;
+    flex-wrap: wrap;
 
     li {
       &:not(:last-child) {
