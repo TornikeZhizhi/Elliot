@@ -387,3 +387,21 @@ styleElement.appendChild(document.createTextNode
   ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+track+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+thumb+"}"));
 document.getElementsByTagName("head")[0].appendChild(styleElement);
 
+
+
+var wordLength = $(".changed_words span").length
+
+var wordIndex = 1;
+$(".changed_text").text($(".changed_words span").eq(wordIndex).text())
+
+setInterval(function() {
+  if(wordIndex == wordLength){
+    wordIndex =0;
+  }
+
+  $(".changed_words span").fadeOut(0)
+  $(".changed_words span").eq(wordIndex).fadeIn(550)
+
+  wordIndex++;
+
+},2000);

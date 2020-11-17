@@ -838,6 +838,17 @@ a:hover {
   cursor: pointer;
   text-align: center; }
 
+.changed_words {
+  margin-right: 10px; }
+  .changed_words span {
+    display: none; }
+  .changed_words span:first-child {
+    display: block; }
+
+.changed_words_wrapper {
+  display: flex;
+  align-items: center; }
+
 .portfolio {
   width: calc(100vw - 150px);
   margin-left: auto;

@@ -124,3 +124,18 @@
   cursor: pointer;
   text-align: center;
 }
+
+.changed_words {
+  margin-right: 10px;
+  span {
+    display: none;
+  }
+  span:first-child {
+    display: block;
+  }
+}
+
+.changed_words_wrapper {
+  display: flex;
+  align-items: center;
+}
