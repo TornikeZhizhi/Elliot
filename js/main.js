@@ -394,7 +394,19 @@ var wordLength = $(".changed_words span").length
 var wordIndex = 1;
 $(".changed_text").text($(".changed_words span").eq(wordIndex).text())
 
-setInterval(function() {
+// setInterval(function() {
+//   if(wordIndex == wordLength){
+//     wordIndex =0;
+//   }
+
+//   $(".changed_words span").fadeOut(0)
+//   $(".changed_words span").eq(wordIndex).fadeIn(550)
+
+//   wordIndex++;
+
+// },2000);
+var k ;
+ k = setInterval(function() {
   if(wordIndex == wordLength){
     wordIndex =0;
   }
@@ -403,5 +415,84 @@ setInterval(function() {
   $(".changed_words span").eq(wordIndex).fadeIn(550)
 
   wordIndex++;
-
+ 
 },2000);
+
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+
+    k = setInterval(function() {
+      if(wordIndex == wordLength){
+        wordIndex =0;
+      }
+    
+      $(".changed_words span").fadeOut(0)
+      $(".changed_words span").eq(wordIndex).fadeIn(550)
+    
+      wordIndex++;
+     
+    },2000);
+  
+  } else {
+
+    clearInterval(k)
+   
+  }
+});
+
+// ()
+
+
+var container = document.querySelector (".member_randomize");
+var starth = document.querySelector(".starth");
+var middleh = document.querySelector(".middleh");
+var lasth = document.querySelector(".lasth");
+var forehead = document.querySelector(".forehead");
+var eyes = document.querySelector(".eyes");
+var nose = document.querySelector(".nose");
+var lips = document.querySelector(".lips");
+var chin = document.querySelector(".chin");
+var length = document.querySelector (".face_contaiener").getAttribute("data-length");
+
+
+container.addEventListener("click", function () {
+
+  $('.face_contaiener img').css("display","none")
+  $('.face_contaiener img').css("opacity","0")
+  setTimeout(function() {
+    
+    $(".face_contaiener img").css("display","block")
+    $('.face_contaiener img').css("opacity","1")
+  },20)
+
+var num1 = Math.floor(Math.random() * length) + 1;
+starth.src = "images/faces/starth_" + num1 + ".png";
+
+var num2 = Math.floor(Math.random() * length) + 1;
+  middleh.src = "images/faces/middleh_" + num2 + ".png";
+
+var num3 = Math.floor(Math.random() * length) + 1;
+lasth.src = "images/faces/lasth_" + num3 + ".png";
+
+var num4 = Math.floor(Math.random() * length) + 1;
+
+forehead.src = "images/faces/forehead_" + num4 + ".png";
+
+var num5 = Math.floor(Math.random() * length) + 1;
+
+eyes.src = "images/faces/eyes_" + num5 + ".png";
+
+var num6 = Math.floor(Math.random() * length) + 1;
+
+nose.src = "images/faces/nose_" + num6 + ".png";
+
+var num7 = Math.floor(Math.random() * length) + 1;
+lips.src = "images/faces/lips_" + num7 + ".png";
+
+var num8 = Math.floor(Math.random() * length) + 1;
+chin.src = "images/faces/chin_" + num8 + ".png";
+
+})
+
+

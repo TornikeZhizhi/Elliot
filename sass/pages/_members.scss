@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding-bottom: 5%;
   }
 
   &__slider {
@@ -138,4 +139,97 @@
 .changed_words_wrapper {
   display: flex;
   align-items: center;
+}
+
+.members__img {
+  max-width: 400px;
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: auto;
+    height: 58px;
+    object-fit: cover;
+  }
+}
+
+.face_contaiener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 436px;
+
+  img {
+    animation-delay: 100ms;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    transition: all 0.3s 0.3s;
+  }
+
+  img:nth-child(odd) {
+    animation-name: faceLeft;
+    opacity: 1;
+  }
+  img:nth-child(even) {
+    animation-name: faceRight;
+    opacity: 1;
+  }
+  img:first-child {
+    -webkit-animation-delay: 50ms;
+  }
+  img:nth-child(2) {
+    -webkit-animation-delay: 150ms;
+  }
+  img:nth-child(3) {
+    -webkit-animation-delay: 250ms;
+  }
+  img:nth-child(4) {
+    -webkit-animation-delay: 350ms;
+  }
+  img:nth-child(5) {
+    -webkit-animation-delay: 450ms;
+  }
+  img:nth-child(6) {
+    -webkit-animation-delay: 550ms;
+  }
+  img:nth-child(7) {
+    -webkit-animation-delay: 650ms;
+  }
+}
+
+@keyframes faceLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+  70% {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes faceRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+  70% {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
 }

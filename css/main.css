@@ -775,7 +775,8 @@ a:hover {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding-bottom: 5%; }
   .members__slider {
     display: flex;
     max-width: 1200px;
@@ -848,6 +849,77 @@ a:hover {
 .changed_words_wrapper {
   display: flex;
   align-items: center; }
+
+.members__img {
+  max-width: 400px;
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .members__img img {
+    width: auto;
+    height: 58px;
+    object-fit: cover; }
+
+.face_contaiener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 436px; }
+  .face_contaiener img {
+    animation-delay: 100ms;
+    animation-duration: 900ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    transition: all 0.3s 0.3s; }
+  .face_contaiener img:nth-child(odd) {
+    animation-name: faceLeft;
+    opacity: 1; }
+  .face_contaiener img:nth-child(even) {
+    animation-name: faceRight;
+    opacity: 1; }
+  .face_contaiener img:first-child {
+    -webkit-animation-delay: 50ms; }
+  .face_contaiener img:nth-child(2) {
+    -webkit-animation-delay: 150ms; }
+  .face_contaiener img:nth-child(3) {
+    -webkit-animation-delay: 250ms; }
+  .face_contaiener img:nth-child(4) {
+    -webkit-animation-delay: 350ms; }
+  .face_contaiener img:nth-child(5) {
+    -webkit-animation-delay: 450ms; }
+  .face_contaiener img:nth-child(6) {
+    -webkit-animation-delay: 550ms; }
+  .face_contaiener img:nth-child(7) {
+    -webkit-animation-delay: 650ms; }
+
+@keyframes faceLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px); }
+  70% {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes faceRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px); }
+  70% {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
 
 .portfolio {
   width: calc(100vw - 150px);
