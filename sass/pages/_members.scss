@@ -88,7 +88,7 @@
     position: relative;
     & > img {
       height: 65vh;
-      width: 35vw;
+      width: 25vw;
       object-fit: contain;
     }
 
@@ -147,6 +147,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   img {
     width: auto;
     height: 58px;
@@ -199,6 +200,9 @@
   img:nth-child(7) {
     -webkit-animation-delay: 650ms;
   }
+  img:nth-child(8) {
+    -webkit-animation-delay: 750ms;
+  }
 }
 
 @keyframes faceLeft {
@@ -232,4 +236,8 @@
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
+}
+
+.member .members__fluid {
+  padding-bottom: 0;
 }

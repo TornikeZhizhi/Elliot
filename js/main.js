@@ -80,7 +80,7 @@ $slider
     cssEase: "linear",
     prevArrow: ".members_dots .dots_left",
     nextArrow: ".members_dots .dots_right",
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
     speed: 1000,
@@ -145,12 +145,14 @@ var x = true;
 $(".menu__hamburger div").click(function () {
   if (x) {
     $(".menu__hamburger div").addClass("cross");
+    $(".section_translate").addClass("active");
     $(".menu").addClass("shrink");
     $(".menu__hamburger__wrapper").addClass("hide");
     x = false;
   } else {
     $(".menu__hamburger div").removeClass("cross");
     $(".menu").removeClass("shrink");
+    $(".section_translate").removeClass("active");
     setTimeout(function () {
       $(".menu__hamburger__wrapper").removeClass("hide");
     }, 300);
@@ -162,6 +164,7 @@ $(".menu").mouseenter(function(){
   
   $(".menu__hamburger div").addClass("cross");
   $(".menu").addClass("shrink");
+  $(".section_translate").addClass("active");
   $(".menu__hamburger__wrapper").addClass("hide");
 })
 
@@ -169,6 +172,7 @@ $(".menu").mouseleave(function(){
   
   $(".menu__hamburger div").removeClass("cross");
     $(".menu").removeClass("shrink");
+    $(".section_translate").removeClass("active");
     setTimeout(function () {
       $(".menu__hamburger__wrapper").removeClass("hide");
     }, 300);
@@ -381,10 +385,12 @@ $(".b-white").click(function(){
 
 var track = $(".portfolio_masorny").attr("data-track")
 var thumb = $(".portfolio_masorny").attr("data-thumb")
+// var barbg = $(".portfolio_masorny").attr("data-barbg")
 var portfDiv = $(".portfolio_masorny")
 var styleElement = document.createElement("style");
 styleElement.appendChild(document.createTextNode
-  ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+track+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+thumb+"}"));
+  ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+track+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+
+  thumb+"}div.portfolio_masorny{--scrollbarBG:"+ track+"}"));
 document.getElementsByTagName("head")[0].appendChild(styleElement);
 
 

@@ -167,3 +167,15 @@
     margin-left: 0;
   }
 }
+
+.section_translate {
+  transition: all 0.4s;
+
+  &.active {
+    transform: translateX(150px);
+  }
+}
+
+.fluid_wrapper {
+  overflow: hidden;
+}
