@@ -339,7 +339,7 @@ setTimeout(function(){
 
     $(".about_bottom_slider").slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 600,
       slidesToShow: 6,
       slidesToScroll: 1,
@@ -500,5 +500,7 @@ var num8 = Math.floor(Math.random() * length) + 1;
 chin.src = "images/faces/chin_" + num8 + ".png";
 
 })
+
+
 
 

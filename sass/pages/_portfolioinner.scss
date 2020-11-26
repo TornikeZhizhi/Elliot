@@ -114,6 +114,11 @@
       flex: 0 0 350px;
       max-width: 350px;
 
+      .portfolio_inner_left_text {
+        opacity: 0;
+        visibility: hidden;
+      }
+
       .portfolio_inner_shrink_bg {
         background-color: rgba(0, 0, 0, 0.4);
       }
@@ -137,6 +142,7 @@
       .top_nav,
       .portfolio_inner_left_title,
       .portfolio_inner_left_text {
+        transition: all 0.3s;
         visibility: hidden;
         opacity: 0;
         display: none;
