@@ -42,3 +42,15 @@ a:hover {
 * {
   cursor: url("../images/mouse2.png"), auto;
 }
+
+.night {
+  * {
+    cursor: url("../images/mousewhite.png"), auto !important;
+  }
+}
+
+a,
+.day_night_box,
+.mCSB_draggerContainer {
+  cursor: pointer;
+}
