@@ -983,6 +983,9 @@ a:hover {
         height: 49%;
         margin-bottom: 1%;
         display: flex; }
+        .portfolio__slider__item__box:hover a img {
+          filter: grayscale(0);
+          transform: scale(1.1); }
         .portfolio__slider__item__box:nth-child(1) .portfolio__slider__item__box__info, .portfolio__slider__item__box:nth-child(2) .portfolio__slider__item__box__info {
           display: flex;
           flex-direction: column-reverse; }
@@ -1010,11 +1013,14 @@ a:hover {
           height: 100%;
           display: flex;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          overflow: hidden; }
         .portfolio__slider__item__box__img img {
           width: 70%;
           height: 70%;
-          object-fit: contain; }
+          object-fit: contain;
+          filter: grayscale(1);
+          transition: all 0.3s; }
 
 .portfolioInner {
   width: calc(100vw - 100px);
@@ -1027,8 +1033,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
-    max-width: 500px;
-    flex: 0 0 500px; }
+    width: 500px; }
     .portfolioInner .portfolio_inner_right_content .portfolio_inner_main_text * {
       font-family: "HelveticaNeueLTGEOW82-75Bd";
       font-size: 12px;
@@ -1268,6 +1273,7 @@ input[type="checkbox"] {
 
 .portfolio_masorny {
   max-height: 500px;
+  width: 800px;
   overflow-y: scroll; }
   .portfolio_masorny .grid-item {
     width: 30.5%; }
@@ -1293,6 +1299,9 @@ input[type="checkbox"] {
 /* Handle */
 .portfolio_masorny {
   --scrollbarBG: #cfd8dc; }
+
+.portfolio_inner_right_wrapper {
+  width: 2700px !important; }
 
 .services {
   width: calc(100vw - 150px);
