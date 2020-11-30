@@ -396,3 +396,25 @@ input[type="checkbox"] {
 .portfolio_inner_right_wrapper {
   width: 2700px !important;
 }
+.b-white {
+  cursor: pointer;
+}
+.b-white:after {
+  content: unset !important;
+}
+
+.b-white:before {
+  content: unset !important;
+}
+.portfolio_inner_arrow {
+  width: 50px;
+  cursor: pointer;
+  fill: #fff;
+}
+
+.portfolio_inner_shrink_bg ~ .menu__hamburger {
+  justify-content: center;
+}
+.portfolio_inner_top_nav {
+  width: 430px;
+}

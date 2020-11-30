@@ -34,6 +34,9 @@ a:hover {
   width: calc(100% - 150px);
   margin-left: auto; }
 
+* {
+  cursor: url("../images/mouse2.png"), auto; }
+
 @keyframes upDown {
   0% {
     transform: translateY(0px); }
@@ -1303,6 +1306,26 @@ input[type="checkbox"] {
 .portfolio_inner_right_wrapper {
   width: 2700px !important; }
 
+.b-white {
+  cursor: pointer; }
+
+.b-white:after {
+  content: unset !important; }
+
+.b-white:before {
+  content: unset !important; }
+
+.portfolio_inner_arrow {
+  width: 50px;
+  cursor: pointer;
+  fill: #fff; }
+
+.portfolio_inner_shrink_bg ~ .menu__hamburger {
+  justify-content: center; }
+
+.portfolio_inner_top_nav {
+  width: 430px; }
+
 .services {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -1384,8 +1407,8 @@ input[type="checkbox"] {
               transition: all 0.3s; }
             .services__slider__item--up .services_tabs ul li::after {
               position: absolute;
-              top: 11px;
-              left: -12px;
+              top: 14px;
+              left: 0px;
               width: 0;
               height: 0;
               border-top: 3px solid transparent;
@@ -1396,22 +1419,6 @@ input[type="checkbox"] {
             .services__slider__item--up .services_tabs ul li:not(:last-child) {
               margin-right: 15%;
               color: #000000; }
-
-.services__slider
-.services__slider__item:nth-child(1)
-.services_tabs
-ul
-li
-a:hover {
-  color: #43a041 !important; }
-
-.services__slider
-.services__slider__item:nth-child(2)
-.services_tabs
-ul
-li
-a:hover {
-  color: #0056b8 !important; }
 
 .contact_us_href {
   text-align: left; }
@@ -1435,6 +1442,39 @@ a:hover {
 
 .fluid_wrapper {
   overflow: hidden; }
+
+.services .services_tabs ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.1s 0.2s;
+  padding: 3px 14px; }
+  .services .services_tabs ul li a span {
+    position: relative;
+    z-index: 10; }
+
+.services .services_tabs ul li a::after {
+  content: "";
+  background: #000;
+  width: calc(100% + 10px);
+  transform: translateX(-50%);
+  height: 0;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+.services .services_tabs ul li a:hover {
+  cursor: pointer;
+  color: #fff; }
+  .services .services_tabs ul li a:hover span {
+    color: #fff;
+    transition: all 0.2s 0.2s;
+    cursor: pointer; }
+
+.services .services_tabs ul li a:hover::after {
+  height: calc(100% + 2px); }
 
 .about {
   padding-left: 50px;
@@ -1566,6 +1606,3 @@ a:hover {
 
 .slick-disabled {
   opacity: 0.4; }
-
-* {
-  cursor: url("../images/mouse.png"), auto; }

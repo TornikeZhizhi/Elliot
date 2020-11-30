@@ -109,8 +109,8 @@
 
               &::after {
                 position: absolute;
-                top: 11px;
-                left: -12px;
+                top: 14px;
+                left: 0px;
                 width: 0;
                 height: 0;
                 border-top: 3px solid transparent;
@@ -132,22 +132,6 @@
   }
 }
 
-.services__slider
-  .services__slider__item:nth-child(1)
-  .services_tabs
-  ul
-  li
-  a:hover {
-  color: #43a041 !important;
-}
-.services__slider
-  .services__slider__item:nth-child(2)
-  .services_tabs
-  ul
-  li
-  a:hover {
-  color: #0056b8 !important;
-}
 .contact_us_href {
   text-align: left;
 
@@ -179,4 +163,49 @@
 
 .fluid_wrapper {
   overflow: hidden;
+}
+
+.services {
+  .services_tabs {
+    ul {
+      li {
+        a {
+          display: block;
+          color: #000;
+          text-decoration: none;
+          position: relative;
+          transition: all 0.1s 0.2s;
+          padding: 3px 14px;
+          span {
+            position: relative;
+            z-index: 10;
+          }
+        }
+
+        a::after {
+          content: "";
+          background: #000;
+          width: calc(100% + 10px);
+          transform: translateX(-50%);
+          height: 0;
+          position: absolute;
+          bottom: -1px;
+          left: 50%;
+          transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+        a:hover {
+          cursor: pointer;
+          color: #fff;
+          span {
+            color: #fff;
+            transition: all 0.2s 0.2s;
+            cursor: pointer;
+          }
+        }
+        a:hover::after {
+          height: calc(100% + 2px);
+        }
+      }
+    }
+  }
 }
