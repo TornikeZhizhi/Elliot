@@ -43,7 +43,8 @@ a:hover {
   cursor: url("../images/mouse2.png"), auto;
 }
 
-.night {
+.night,
+.menu {
   * {
     cursor: url("../images/mousewhite.png"), auto !important;
   }
