@@ -160,12 +160,19 @@ $(".menu__hamburger div").click(function () {
   }
 });
 
+var delayMenu = true
+
 $(".menu").mouseenter(function(){
+
+  if(delayMenu){
+    $(".menu__hamburger div").addClass("cross");
+    $(".menu").addClass("shrink");
+    $(".section_translate").addClass("active");
+    $(".menu__hamburger__wrapper").addClass("hide");
+    delayMenu = false
+  }
   
-  $(".menu__hamburger div").addClass("cross");
-  $(".menu").addClass("shrink");
-  $(".section_translate").addClass("active");
-  $(".menu__hamburger__wrapper").addClass("hide");
+
 })
 
 $(".menu").mouseleave(function(){
@@ -176,6 +183,11 @@ $(".menu").mouseleave(function(){
     setTimeout(function () {
       $(".menu__hamburger__wrapper").removeClass("hide");
     }, 300);
+    setTimeout(function () {
+      delayMenu = true
+    }, 500);
+
+    
 })
 
 // Portfolio slider

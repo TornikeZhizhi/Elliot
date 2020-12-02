@@ -39,19 +39,44 @@ a:hover {
   margin-left: auto;
 }
 
-* {
+*:not(a) {
   cursor: url("../images/mouse2.png"), auto;
 }
 
-.night,
-.menu {
-  * {
-    cursor: url("../images/mousewhite.png"), auto !important;
-  }
-}
+// .night,
+// .menu {
+//   *:not(a) {
+//     cursor: url("../images/mousewhite.png"), auto !important;
+//   }
+//   a,
+//   a img {
+//     cursor: unset !important;
+//     cursor: pointer !important;
+//   }
+// }
 
-a,
-.day_night_box,
-.mCSB_draggerContainer {
-  cursor: pointer;
+.menu *:not(a) {
+  cursor: url("../images/mousewhite.png"), auto;
 }
+.menu *:not(a img) {
+  cursor: url("../images/mousewhite.png"), auto;
+}
+.night *:not(a) {
+  cursor: url("../images/mousewhite.png"), auto;
+}
+.night *:not(a img) {
+  cursor: url("../images/mousewhite.png"), auto;
+}
+// a,
+// .day_night_box,
+// .mCSB_draggerContainer {
+//   cursor: pointer;
+// }
+// .menu a,
+// .menu .menu__commonTabs a {
+//   cursor: pointer !important;
+// }
+
+// *:not(a) {
+//   background-color: red;
+// }

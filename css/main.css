@@ -34,17 +34,20 @@ a:hover {
   width: calc(100% - 150px);
   margin-left: auto; }
 
-* {
+*:not(a) {
   cursor: url("../images/mouse2.png"), auto; }
 
-.night *,
-.menu * {
-  cursor: url("../images/mousewhite.png"), auto !important; }
+.menu *:not(a) {
+  cursor: url("../images/mousewhite.png"), auto; }
 
-a,
-.day_night_box,
-.mCSB_draggerContainer {
-  cursor: pointer; }
+.menu *:not(a img) {
+  cursor: url("../images/mousewhite.png"), auto; }
+
+.night *:not(a) {
+  cursor: url("../images/mousewhite.png"), auto; }
+
+.night *:not(a img) {
+  cursor: url("../images/mousewhite.png"), auto; }
 
 @keyframes upDown {
   0% {
@@ -688,6 +691,9 @@ a,
     .menu__hamburger .cross path#middle {
       stroke-dashoffset: -115px;
       stroke-dasharray: 1px 220px; }
+
+.menu__hamburger__wrapper.cross .cross {
+  width: 0; }
 
 .contact {
   padding: 40px 65px 20px 65px;
@@ -1335,6 +1341,12 @@ input[type="checkbox"] {
 .portfolio_inner_top_nav {
   width: 430px; }
 
+.about_bottom_slider ul {
+  display: none !important; }
+
+.mCSB_dragger_bar {
+  cursor: grab; }
+
 .services {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -1352,7 +1364,6 @@ input[type="checkbox"] {
       justify-content: space-between;
       padding: 6% 0px 0 7% !important;
       height: 100%;
-      background-size: contain !important;
       background-position: center;
       background-repeat: no-repeat; }
       .services__slider__item--down .services_text {
@@ -1477,6 +1488,41 @@ input[type="checkbox"] {
 .services .services_tabs ul li a:hover::after {
   height: calc(100% + 2px); }
 
+.service_item {
+  background-image: url("../images/services.png");
+  background-size: 54%;
+  background-position: 74% 124px; }
+
+.service_item1 {
+  background-image: url("../images/services1.png");
+  background-size: 46%;
+  background-position: 72% -124px; }
+
+.service_item2 {
+  background-image: url("../images/services2.png");
+  background-size: 12%;
+  background-position: 62% center; }
+
+.service_item3 {
+  background-image: url("../images/services3.png");
+  background-size: 55%;
+  background-position: 40% 0%; }
+
+.service_item4 {
+  background-image: url("../images/services4.png");
+  background-size: 45%;
+  background-position: center; }
+
+.service_item5 {
+  background-image: url("../images/services5.png");
+  background-size: 60%;
+  background-position: 113% 39px; }
+
+.service_item6 {
+  background-image: url("../images/services6.png");
+  background-size: 54%;
+  background-position: 88% 83px; }
+
 .about {
   padding-left: 50px;
   display: flex;
@@ -1585,8 +1631,10 @@ input[type="checkbox"] {
   .about .top_slider__item .top_slider_img_box a {
     display: block;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    cursor: pointer; }
     .about .top_slider__item .top_slider_img_box a img {
+      cursor: pointer;
       width: 100%;
       height: 200px;
       object-fit: cover; }
