@@ -1352,17 +1352,9 @@ input[type="checkbox"] {
       justify-content: space-between;
       padding: 6% 0px 0 7% !important;
       height: 100%;
-      background-size: contain !important; }
-      .services__slider__item:first-child {
-        background: url("../images/services.png");
-        background-repeat: no-repeat;
-        background-size: 54%;
-        background-position: 85% 100px; }
-      .services__slider__item:nth-child(2) {
-        background: url("../images/fullservice.png");
-        background-repeat: no-repeat;
-        background-size: 43%;
-        background-position: 90% -130px; }
+      background-size: contain !important;
+      background-position: center;
+      background-repeat: no-repeat; }
       .services__slider__item--down .services_text {
         max-width: 700px;
         margin: 20px 0 60px; }
