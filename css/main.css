@@ -1762,7 +1762,15 @@ input[type="checkbox"] {
 .about_bottom_img:after {
   background-image: url("../images/Path 3.png"); }
 
+@media only screen and (min-width: 992px) {
+  .m_show {
+    display: none; } }
+
 @media only screen and (max-width: 992px) {
+  .m_show {
+    display: block; }
+  .m_hide {
+    display: none !important; }
   .home__navigation {
     position: absolute;
     top: 95px;
@@ -1800,11 +1808,11 @@ input[type="checkbox"] {
     height: calc(100vh - 300px);
     object-fit: contain; }
   .homeSlider .main_slider_section1 .homeSlider__item img:last-child {
-    position: absolute;
     bottom: 97px;
     right: 11px;
-    height: 72px;
-    height: calc(100vh - 574px); }
+    position: unset;
+    height: calc(100vh - 400px);
+    margin-top: 35px; }
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2) {
     top: 34px;
     left: 54px;
