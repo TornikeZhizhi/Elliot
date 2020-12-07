@@ -112,7 +112,7 @@
   .homeSlider .main_slider_section4.slick-active img {
     width: 85%;
     margin: 0 auto;
-    height: calc(100vh - 270px);
+    max-height: calc(100vh - 270px);
     object-fit: contain;
   }
 
