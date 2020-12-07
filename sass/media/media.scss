@@ -154,11 +154,13 @@
   .main_slider_section1 .homeSlider__item div {
     position: relative;
   }
-  .homeSlider__item > div {
-    justify-content: flex-start;
-  }
 
   .homeSlider__item .home_randomize {
     margin-top: 30px;
+  }
+
+  .copyright {
+    position: absolute;
+    top: calc(100% - 145px);
   }
 }
