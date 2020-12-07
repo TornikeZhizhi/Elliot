@@ -1,6 +1,6 @@
 @media only screen and (min-width: 992px) {
   .m_show {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -162,5 +162,9 @@
   .copyright {
     position: absolute;
     top: calc(100% - 145px);
+  }
+
+  .homeSlider .main_slider_section1 .homeSlider__item > div {
+    justify-content: center !important;
   }
 }
