@@ -5,6 +5,52 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .members_slider_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .members {
+    height: auto;
+    min-height: 100vh;
+    padding: 15px 15px;
+  }
+  .top_nav {
+    display: flex;
+    justify-content: center;
+  }
+  .members__info--title {
+    text-align: center;
+  }
+
+  .members__name {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Conv_NEXA BOLD_0";
+    transform: translateX(0);
+    text-align: center;
+  }
+
+  .members_slider_item .members__img > img {
+    width: 83%;
+    object-fit: contain;
+    margin-top: 30px;
+    height: unset;
+    max-height: 250px;
+  }
+
+  .members__leftFluid {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .members__img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .members__slider {
+    max-width: 100%;
+  }
   .m_show {
     display: block;
   }
