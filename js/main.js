@@ -141,54 +141,84 @@ function mouseWheelHandler(event) {
   }
 }
 
-var x = true;
-$(".menu__hamburger div").click(function () {
-  if (x) {
-    $(".menu__hamburger div").addClass("cross");
-    $(".section_translate").addClass("active");
-    $(".menu").addClass("shrink");
-    $(".menu__hamburger__wrapper").addClass("hide");
-    x = false;
-  } else {
+$(window).on('load resize', function () {
+  if($(window).width() > 992) {
+    console.log($(window).width())
+    var x = true;
+    $(".menu__hamburger div").click(function () {
+      if (x) {
+        $(".menu__hamburger div").addClass("cross");
+        $(".section_translate").addClass("active");
+        $(".menu").addClass("shrink");
+        $(".menu__hamburger__wrapper").addClass("hide");
+        x = false;
+      } else {
+        $(".menu__hamburger div").removeClass("cross");
+        $(".menu").removeClass("shrink");
+        $(".section_translate").removeClass("active");
+        setTimeout(function () {
+          $(".menu__hamburger__wrapper").removeClass("hide");
+        }, 300);
+        x = true;
+      }
+    });
+    
+  
+  var delayMenu = true
+  
+  $(".menu").mouseenter(function(){
+  
+    if(delayMenu){
+      $(".menu__hamburger div").addClass("cross");
+      $(".menu").addClass("shrink");
+      $(".section_translate").addClass("active");
+      $(".menu__hamburger__wrapper").addClass("hide");
+      delayMenu = false
+    }
+    
+  
+  })
+  
+  $(".menu").mouseleave(function(){
+    
     $(".menu__hamburger div").removeClass("cross");
-    $(".menu").removeClass("shrink");
-    $(".section_translate").removeClass("active");
-    setTimeout(function () {
-      $(".menu__hamburger__wrapper").removeClass("hide");
-    }, 300);
-    x = true;
+      $(".menu").removeClass("shrink");
+      $(".section_translate").removeClass("active");
+      setTimeout(function () {
+        $(".menu__hamburger__wrapper").removeClass("hide");
+      }, 300);
+      setTimeout(function () {
+        delayMenu = true
+      }, 500);
+  
+      
+  })
+  }else {
+    var x = true;
+    $(".menu__hamburger div").click(function () {
+      if (x) {
+        $(".menu__hamburger div").addClass("cross");
+        // $(".section_translate").addClass("active");
+        // $(".menu").addClass("shrink");
+        $(".menu__commonTabs").addClass("active")
+        $(".menu__hamburger__wrapper").addClass("hide");
+        x = false;
+      } else {
+        $(".menu__hamburger div").removeClass("cross");
+        // $(".menu").removeClass("shrink");
+        // $(".section_translate").removeClass("active");
+        $(".menu__commonTabs").removeClass("active")
+        setTimeout(function () {
+          $(".menu__hamburger__wrapper").removeClass("hide");
+        }, 300);
+        x = true;
+      }
+    });
+  
+  
   }
 });
 
-var delayMenu = true
-
-$(".menu").mouseenter(function(){
-
-  if(delayMenu){
-    $(".menu__hamburger div").addClass("cross");
-    $(".menu").addClass("shrink");
-    $(".section_translate").addClass("active");
-    $(".menu__hamburger__wrapper").addClass("hide");
-    delayMenu = false
-  }
-  
-
-})
-
-$(".menu").mouseleave(function(){
-  
-  $(".menu__hamburger div").removeClass("cross");
-    $(".menu").removeClass("shrink");
-    $(".section_translate").removeClass("active");
-    setTimeout(function () {
-      $(".menu__hamburger__wrapper").removeClass("hide");
-    }, 300);
-    setTimeout(function () {
-      delayMenu = true
-    }, 500);
-
-    
-})
 
 // Portfolio slider
 

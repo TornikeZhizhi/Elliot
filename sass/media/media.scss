@@ -5,6 +5,151 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .services__slider__item--down .services_likeshares {
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+
+  .menu__hamburger {
+    .top_nav {
+      display: none !important;
+    }
+  }
+
+  .menu.shrink .top_nav li {
+    animation: unset !important;
+  }
+
+  .contact__footer,
+  .contact__back {
+    display: none;
+  }
+  .modal {
+    padding-left: 0 !important;
+  }
+  .modal-body {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .contact .close {
+    top: 12px;
+    right: 9px;
+  }
+  .contact__form select {
+    background-position: 95% center;
+    background-size: 11px;
+  }
+  .contact__title h3 {
+    font-size: 40px;
+  }
+  .contact__form form .form-row .col {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: unset;
+
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+  .contact {
+    padding: 0px 5px 5px 5px;
+  }
+  .services__slider__item--up .services_tabs ul li:not(:last-child) {
+    margin-right: 15px;
+  }
+  .services {
+    width: 100%;
+    height: unset;
+  }
+  .services__slider__item {
+    background-position: center !important;
+    background-size: contain !important;
+  }
+  .menu {
+    position: unset;
+    height: unset;
+    width: 100%;
+    background-color: transparent;
+  }
+  .menu__hamburger__wrapper {
+    margin-left: -13px;
+  }
+  .services__slider__item--down .services_likeshares > div:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .services__slider__item--up .services_title * {
+    font-size: 32px;
+  }
+  .services__slider__item--up .services_tabs {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+
+  .menu .menu__commonTabs span {
+    visibility: visible !important;
+    display: block;
+    animation: fade 1s 0.5s forwards;
+  }
+  .menu__commonTabs {
+    background-color: #1e2b3b;
+    padding-top: 20px;
+    margin-left: 0;
+    height: calc(100vh - 45px);
+    ul {
+      padding-left: 20px;
+    }
+  }
+  .menu__commonTabs {
+    position: absolute;
+    top: 74px;
+    z-index: 111;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.7s;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .top_nav {
+      padding-left: 5px;
+      ul {
+        display: block;
+        margin-bottom: 20px;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &.active {
+      width: 80%;
+    }
+  }
+
+  .menu__commonTabs ul li .left_img img {
+    width: 30px;
+    height: 30px;
+  }
+  .menu__hamburger {
+    margin-top: 0;
+    background-color: #000;
+    position: relative;
+
+    .mobile_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  }
+
   .members_slider_item {
     flex-direction: column;
     align-items: center;
