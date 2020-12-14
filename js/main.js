@@ -245,6 +245,12 @@ $sliderPortfolio
     pauseOnHover: false,
     speed: 1500,
     infinite: true,
+    responsive: [
+      {
+          breakpoint: 992,
+          settings: "unslick"
+      }
+  ]
   });
 
   // $( function() {
