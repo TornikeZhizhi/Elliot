@@ -156,7 +156,7 @@
   }
   .menu__commonTabs {
     background-color: #1e2b3b;
-    padding-top: 20px;
+    padding-top: 35px;
     margin-left: 0;
     height: calc(100vh - 45px);
     ul {
@@ -175,6 +175,20 @@
 
     .top_nav {
       padding-left: 5px;
+      width: 100%;
+      position: relative;
+      padding-bottom: 43px;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 29px;
+        width: calc(100% - 40px);
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        background-color: #2f435d;
+        z-index: 100;
+      }
       ul {
         display: block;
         margin-bottom: 20px;
@@ -183,7 +197,7 @@
           margin-bottom: 10px;
 
           a {
-            font-size: 14px;
+            font-size: 17px;
           }
         }
       }
