@@ -351,10 +351,21 @@ input[type="checkbox"] {
   transform: translateY(5px);
 }
 
+@media only screen and (min-width: 992px) {
+  .portfolio_masorny {
+    height: calc(100vh - 140px) !important;
+    width: 800px;
+    overflow-y: scroll;
+    .grid-item {
+      width: 30.5%;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
 .portfolio_masorny {
-  height: calc(100vh - 140px) !important;
-  width: 800px;
-  overflow-y: scroll;
   .grid-item {
     width: 30.5%;
     img {

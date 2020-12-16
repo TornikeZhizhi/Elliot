@@ -1292,15 +1292,22 @@ input[type="checkbox"] {
 .casino_copy_img:visited {
   transform: translateY(5px); }
 
-.portfolio_masorny {
-  height: calc(100vh - 140px) !important;
-  width: 800px;
-  overflow-y: scroll; }
-  .portfolio_masorny .grid-item {
-    width: 30.5%; }
-    .portfolio_masorny .grid-item img {
-      width: 100%;
-      margin-bottom: 20px; }
+@media only screen and (min-width: 992px) {
+  .portfolio_masorny {
+    height: calc(100vh - 140px) !important;
+    width: 800px;
+    overflow-y: scroll; }
+    .portfolio_masorny .grid-item {
+      width: 30.5%; }
+      .portfolio_masorny .grid-item img {
+        width: 100%;
+        margin-bottom: 20px; } }
+
+.portfolio_masorny .grid-item {
+  width: 30.5%; }
+  .portfolio_masorny .grid-item img {
+    width: 100%;
+    margin-bottom: 20px; }
 
 /* width */
 .portfolio_masorny::-webkit-scrollbar {
@@ -2111,4 +2118,83 @@ input[type="checkbox"] {
     margin-right: 0;
     height: 140px;
     margin-bottom: 25px;
-    display: flex; } }
+    display: flex; }
+  .portfolio_inner_left_content {
+    display: none; }
+  .portfolioInner {
+    width: 100%; }
+  .content {
+    padding: 0 20px; }
+  .portfolio_inner_right_wrapper,
+  .about_bottom_slider {
+    width: 100% !important; }
+  .portfolioInner {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important; }
+  .about__top--wrapper {
+    width: 100% !important;
+    height: auto !important; }
+  .slider ul {
+    height: auto; }
+  .portfolioInner .main {
+    height: auto; }
+  .content {
+    margin-bottom: 10px; }
+  .about {
+    padding-left: 0px; }
+  .portfolioInner .portfolio_inner_right_wrapper li {
+    margin-right: 0;
+    width: 100%; }
+  .portfolio_masorny {
+    width: 100%;
+    overflow-y: unset; }
+  .portfolioInner .portfolio_inner_right_content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    max-height: auto;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%; }
+  .portfolio_masorny .grid-item {
+    width: 30.5%; }
+    .portfolio_masorny .grid-item img {
+      width: 100%;
+      margin-bottom: 20px; }
+  .about .about_bottom--sliderwrapper .about_bottom_dots .dots_left {
+    left: 10px; }
+  .about .about_bottom--sliderwrapper .about_bottom_dots .dots_right {
+    right: 10px; }
+  .about__top--wrapper .dots_left {
+    left: 0px;
+    transform: translateY(-34px); }
+  .about__top--wrapper .dots_right {
+    right: 0px;
+    transform: translateY(-34px); }
+  .about__top--slider.slick-slider {
+    padding: 0 22px !important; }
+  .portfolio_inner_common_section {
+    width: 100%;
+    height: 290px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 576px) {
+  .about__top--slider.slick-slider {
+    padding: 0 0px !important; }
+  .about__top .slick-slide {
+    margin: 0 0px; }
+  .top_slider_img_box {
+    height: 180px; }
+  .top_slider_title_box {
+    text-indent: 40px; }
+  .about .top_slider__item .top_slider_img_box a img {
+    cursor: pointer;
+    width: calc(100% - 83px);
+    margin: 0 auto;
+    height: 180px;
+    object-fit: cover; } }

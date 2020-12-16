@@ -56,7 +56,7 @@
             </div>
             <div class="slider clearfix" >
               <div id="carousel">
-                <ul class="portfolio_inner_right_wrapper" style="height: 70vh">
+                <ul class="portfolio_inner_right_wrapper">
                   <li class="first_" style="width: 100px; flex: 0 0 100px;margin-right: 0;"></li>
                   <li>
                     <div class="portfolio_inner_right_content">
@@ -292,7 +292,9 @@
     <script src="js/horizonralscroll.js"></script>
     <script src="js/scroll.js"></script>
     <script>
-      AI.init();
+           if($(window).width() > 992){
+        AI.init();
+      }
     </script>
     <script src="js/slick.js"></script>
     <script src="js/izotope.js"></script>
