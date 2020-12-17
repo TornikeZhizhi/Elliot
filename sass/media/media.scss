@@ -181,7 +181,7 @@
     background-color: #1e2b3b;
     padding-top: 35px;
     margin-left: 0;
-    height: calc(100vh - 45px);
+    min-height: calc(100vh - 75px);
     ul {
       padding-left: 20px;
     }
