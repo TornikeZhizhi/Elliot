@@ -5,6 +5,29 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .portfolio_mobile_content {
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 60px 20px 30px 20px;
+  }
+  .portfolio_inner_up_title {
+    margin-bottom: 20px;
+    h3 {
+      font-family: "GL Gordeziani";
+      color: #fff;
+      font-size: 90px;
+      line-height: 80px;
+    }
+  }
+  .portfolio_mobile_up_text {
+    * {
+      color: #fff;
+      font-family: "HelveticaNeueLTGEOW82-75Bd";
+      font-size: 12px;
+    }
+  }
+
   .members__slider {
     flex-direction: column;
   }
@@ -548,6 +571,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+  }
+
+  .portfolio_inner_link a {
+    margin-bottom: 15px;
+  }
+  .portfolio_inner_link {
+    order: -1;
   }
 }
 
