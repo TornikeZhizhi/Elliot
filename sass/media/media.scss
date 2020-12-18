@@ -178,25 +178,23 @@
     display: block;
     animation: fade 1s 0.5s forwards;
   }
-  .menu__commonTabs {
-    background-color: #1e2b3b;
-    padding-top: 35px;
-    margin-left: 0;
-    min-height: calc(100vh - 75px);
-    ul {
-      padding-left: 20px;
-    }
-  }
+
   .menu__commonTabs {
     position: absolute;
     top: 74px;
     z-index: 111;
     width: 0%;
-    overflow: hidden;
+    overflow: auto;
     transition: all 0.7s;
     flex-direction: column;
     align-items: flex-start;
-
+    background-color: #1e2b3b;
+    padding-top: 35px;
+    margin-left: 0;
+    height: calc(100vh - 74px);
+    ul {
+      padding-left: 20px;
+    }
     .top_nav {
       padding-left: 5px;
       width: 100%;
