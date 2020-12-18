@@ -151,9 +151,10 @@
     background-size: contain !important;
   }
   .menu {
-    position: unset;
+    position: relative;
     height: unset;
     width: 100%;
+    z-index: 9999;
     background-color: transparent;
   }
   .menu__hamburger__wrapper {
@@ -227,7 +228,7 @@
     }
 
     &.active {
-      width: 80%;
+      width: 100%;
     }
   }
 

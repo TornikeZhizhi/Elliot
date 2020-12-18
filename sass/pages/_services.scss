@@ -239,3 +239,14 @@
   background-size: 54%;
   background-position: 88% 83px;
 }
+
+.services_tabs_text {
+  display: none;
+}
+
+.services .services_tabs ul li a.active {
+  color: #fff;
+  &::after {
+    height: calc(100% + 2px);
+  }
+}

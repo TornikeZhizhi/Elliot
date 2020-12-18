@@ -1401,6 +1401,13 @@ input[type="checkbox"] {
     background-color: #000;
     color: #fff !important; }
 
+.night .portfolio_inner_link a {
+  border: 1px solid #fff; }
+
+.night .portfolio_inner_link a:hover {
+  background-color: #fff !important;
+  color: #000 !important; }
+
 .services {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -1576,6 +1583,14 @@ input[type="checkbox"] {
   background-image: url("../images/services6.png");
   background-size: 54%;
   background-position: 88% 83px; }
+
+.services_tabs_text {
+  display: none; }
+
+.services .services_tabs ul li a.active {
+  color: #fff; }
+  .services .services_tabs ul li a.active::after {
+    height: calc(100% + 2px); }
 
 .about {
   padding-left: 50px;
@@ -1920,9 +1935,10 @@ input[type="checkbox"] {
     background-position: center !important;
     background-size: contain !important; }
   .menu {
-    position: unset;
+    position: relative;
     height: unset;
     width: 100%;
+    z-index: 9999;
     background-color: transparent; }
   .menu__hamburger__wrapper {
     margin-left: -13px; }
@@ -1975,7 +1991,7 @@ input[type="checkbox"] {
           .menu__commonTabs .top_nav ul li a {
             font-size: 17px; }
     .menu__commonTabs.active {
-      width: 80%; }
+      width: 100%; }
   .menu__commonTabs ul li .left_img img {
     width: 30px;
     height: 30px; }
