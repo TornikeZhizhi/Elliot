@@ -206,6 +206,7 @@ $(window).on('load resize', function () {
         $(".menu__hamburger div").removeClass("cross");
 
         $(".menu__commonTabs").removeClass("active")
+        $("body").css("overflow","unset")
         setTimeout(function () {
           $(".menu__hamburger__wrapper").removeClass("hide");
         }, 300);
