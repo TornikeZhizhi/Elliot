@@ -241,3 +241,16 @@
 .member .members__fluid {
   padding-bottom: 0;
 }
+
+.members__slider .slick-slide .hover_img {
+  // animation: fade 1s forwards;
+  display: none !important;
+}
+.members__slider .slick-slide .members__img .members_img_wrapper:hover {
+  & > img {
+    display: none !important;
+  }
+  .hover_img {
+    display: block !important;
+  }
+}

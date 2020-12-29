@@ -4,7 +4,7 @@
   margin-left: auto;
 
   .portfolio_inner_right_wrapper {
-    padding-top: 60px;
+    padding-top: 90px;
     li {
       margin-right: 40px;
     }
@@ -156,7 +156,7 @@
   }
 
   .portfolio_inner_left_title {
-    margin: 80px 0 50px;
+    margin: 45px 0 50px;
     transform: translateX(-7px);
     min-width: 430px;
     transition: all 0.3s;
@@ -296,7 +296,7 @@ input[type="checkbox"] {
 /* Third toggle btn completed */
 .day_night_box {
   position: absolute !important;
-  top: 25px;
+  top: 45px;
   z-index: 3333;
   left: 102px;
 }
@@ -353,7 +353,7 @@ input[type="checkbox"] {
 
 @media only screen and (min-width: 992px) {
   .portfolio_masorny {
-    height: calc(100vh - 140px) !important;
+    height: calc(100vh - 170px) !important;
     width: 800px;
     overflow-y: scroll;
     .grid-item {
