@@ -1,4 +1,13 @@
 // Home slider
+
+var ll = $(".portfolio_inner_right_content").length
+console.log(ll)
+
+if(ll > 1) {
+
+  $('.portfolio_inner_right_wrapper').addClass("shrink")
+}
+
 var $slider = $("#main_slider");
 $slider
   .on("init reInit beforeChange", function (
