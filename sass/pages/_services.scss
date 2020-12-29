@@ -16,13 +16,13 @@
     &__item {
       display: flex !important;
       flex-direction: column;
-      justify-content: space-between;
       padding: 6% 0px 0 7% !important;
       height: 100%;
 
       background-position: center;
       background-repeat: no-repeat;
       &--down {
+        margin-top: 30px;
         .services_text {
           max-width: 700px;
           margin: 20px 0 60px;
@@ -131,6 +131,8 @@
     padding: 8px 70px;
     border-radius: 0;
     color: #fff;
+    display: inline-block;
+    margin-top: 15px;
   }
 }
 
