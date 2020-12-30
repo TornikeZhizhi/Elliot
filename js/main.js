@@ -1,7 +1,15 @@
 // Home slider
 
+
+if($(window).width() > 992){
+  $(".portfolio_inner_main_text p").each(function(){
+    if($(this).text() == "") {
+      $(this).css("display","none")
+    }
+  })
+}
 var ll = $(".portfolio_inner_right_content").length
-console.log(ll)
+
 
 if(ll > 1) {
 
