@@ -93,7 +93,7 @@
         &:nth-child(2) {
           .portfolio__slider__item__box__info {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
 
             .portfolio__text {
               margin-top: 0;

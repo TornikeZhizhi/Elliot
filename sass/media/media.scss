@@ -5,6 +5,11 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
+  .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
+    display: none;
+  }
+
   .portfolio_mobile_content {
     background-position: center;
     background-size: cover;
@@ -521,7 +526,7 @@
   }
   .portfolio_masorny {
     // height: auto !important;
-    width: 100%;
+    width: 100% !important;
     overflow-y: unset;
   }
 
