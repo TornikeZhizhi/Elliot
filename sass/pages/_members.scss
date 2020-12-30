@@ -150,8 +150,9 @@
   align-items: center;
   img {
     width: auto;
-    height: 58px;
-    object-fit: cover;
+    max-width: 80%;
+    margin: 0 auto;
+    object-fit: contain;
   }
 }
 

@@ -858,8 +858,9 @@ a:hover {
   align-items: center; }
   .members__img img {
     width: auto;
-    height: 58px;
-    object-fit: cover; }
+    max-width: 80%;
+    margin: 0 auto;
+    object-fit: contain; }
 
 .face_contaiener {
   display: flex;
@@ -1031,6 +1032,13 @@ a:hover {
           object-fit: cover;
           transition: all 0.3s;
           cursor: pointer; }
+
+.fluid_wrapper .menu__hamburger {
+  margin-top: 30px; }
+
+.menu__hamburger .top_nav {
+  width: 225px;
+  height: 25px; }
 
 .portfolioInner {
   width: calc(100vw - 100px);

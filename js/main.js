@@ -360,11 +360,12 @@ setTimeout(function(){
 
     $(".about_bottom_slider").slick({
       dots: true,
-      infinite: false,
       speed: 600,
       slidesToShow: 6,
       slidesToScroll: 1,
       centerPadding: "10px",
+      infinite: true,
+
       arrows: true,
       prevArrow: ".about_bottom_dots .dots_left",
       nextArrow: ".about_bottom_dots .dots_right",
@@ -504,11 +505,6 @@ container.addEventListener("click", function () {
 var num1 = Math.floor(Math.random() * length) + 1;
 starth.src = "images/faces/starth_" + num1 + ".png";
 
-var num2 = Math.floor(Math.random() * length) + 1;
-  middleh.src = "images/faces/middleh_" + num2 + ".png";
-
-var num3 = Math.floor(Math.random() * length) + 1;
-lasth.src = "images/faces/lasth_" + num3 + ".png";
 
 var num4 = Math.floor(Math.random() * length) + 1;
 
