@@ -9,7 +9,12 @@
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
     display: none;
   }
-
+  .fluid_wrapper {
+    min-height: 100vh;
+  }
+  .fluid_wrapper .menu__hamburger {
+    margin-top: 0;
+  }
   .portfolio_mobile_content {
     background-position: center;
     background-size: cover;
