@@ -482,13 +482,12 @@ document.addEventListener("visibilitychange", function() {
 
 var container = document.querySelector (".member_randomize");
 var starth = document.querySelector(".starth");
-var middleh = document.querySelector(".middleh");
-var lasth = document.querySelector(".lasth");
 var forehead = document.querySelector(".forehead");
 var eyes = document.querySelector(".eyes");
 var nose = document.querySelector(".nose");
 var lips = document.querySelector(".lips");
 var chin = document.querySelector(".chin");
+var last = document.querySelector(".last");
 var length = document.querySelector (".face_contaiener").getAttribute("data-length");
 
 
@@ -503,26 +502,29 @@ container.addEventListener("click", function () {
   },20)
 
 var num1 = Math.floor(Math.random() * length) + 1;
-starth.src = "images/faces/starth_" + num1 + ".png";
+starth.src = "images/faces/a" + num1 + ".png";
 
 
 var num4 = Math.floor(Math.random() * length) + 1;
 
-forehead.src = "images/faces/forehead_" + num4 + ".png";
+forehead.src = "images/faces/b" + num4 + ".png";
 
 var num5 = Math.floor(Math.random() * length) + 1;
 
-eyes.src = "images/faces/eyes_" + num5 + ".png";
+eyes.src = "images/faces/c" + num5 + ".png";
 
 var num6 = Math.floor(Math.random() * length) + 1;
 
-nose.src = "images/faces/nose_" + num6 + ".png";
+nose.src = "images/faces/d" + num6 + ".png";
 
 var num7 = Math.floor(Math.random() * length) + 1;
-lips.src = "images/faces/lips_" + num7 + ".png";
+lips.src = "images/faces/e" + num7 + ".png";
 
 var num8 = Math.floor(Math.random() * length) + 1;
-chin.src = "images/faces/chin_" + num8 + ".png";
+chin.src = "images/faces/f" + num8 + ".png";
+
+var num9 = Math.floor(Math.random() * length) + 1;
+last.src = "images/faces/g" + num9 + ".png";
 
 })
 

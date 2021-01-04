@@ -142,17 +142,26 @@
 }
 
 .members__img {
-  max-width: 400px;
-  flex: 0 0 400px;
+  max-width: 350px;
+  flex: 0 0 350px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-left: 50px;
   img {
     width: auto;
     max-width: 80%;
     margin: 0 auto;
     object-fit: contain;
+  }
+}
+
+.members.member {
+  .members__img {
+    max-width: 400px;
+    flex: 0 0 400px;
+    margin-left: 50px;
   }
 }
 
@@ -263,4 +272,24 @@
 }
 .members_img_wrapper img {
   filter: grayscale(1);
+}
+
+.starth {
+  width: 61% !important;
+}
+
+.last {
+  width: 50% !important;
+}
+
+.forehead,
+.eyes {
+  width: 74% !important;
+}
+
+.chin {
+  width: 74% !important;
+}
+.lips {
+  width: 74% !important;
 }
