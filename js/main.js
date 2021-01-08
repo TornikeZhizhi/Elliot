@@ -511,20 +511,20 @@ forehead.src = "images/faces/b" + num4 + ".png";
 
 var num5 = Math.floor(Math.random() * length) + 1;
 
-eyes.src = "images/faces/c" + num5 + ".png";
+eyes.src = "images/faces2/c" + num5 + ".png";
 
 var num6 = Math.floor(Math.random() * length) + 1;
 
-nose.src = "images/faces/d" + num6 + ".png";
+nose.src = "images/faces2/d" + num6 + ".png";
 
 var num7 = Math.floor(Math.random() * length) + 1;
-lips.src = "images/faces/e" + num7 + ".png";
+lips.src = "images/faces2/e" + num7 + ".png";
 
 var num8 = Math.floor(Math.random() * length) + 1;
-chin.src = "images/faces/f" + num8 + ".png";
+chin.src = "images/faces2/f" + num8 + ".png";
 
-var num9 = Math.floor(Math.random() * length) + 1;
-last.src = "images/faces/g" + num9 + ".png";
+// var num9 = Math.floor(Math.random() * length) + 1;
+// last.src = "images/faces2/g" + num9 + ".png";
 
 })
 

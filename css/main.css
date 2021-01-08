@@ -945,22 +945,6 @@ a:hover {
 .members_img_wrapper img {
   filter: grayscale(1); }
 
-.starth {
-  width: 61% !important; }
-
-.last {
-  width: 50% !important; }
-
-.forehead,
-.eyes {
-  width: 74% !important; }
-
-.chin {
-  width: 74% !important; }
-
-.lips {
-  width: 74% !important; }
-
 .portfolio {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -1868,6 +1852,12 @@ input[type="checkbox"] {
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
     display: none; }
+
+  .fluid_wrapper {
+    min-height: 100vh; }
+
+  .fluid_wrapper .menu__hamburger {
+    margin-top: 0; }
 
   .portfolio_mobile_content {
     background-position: center;
