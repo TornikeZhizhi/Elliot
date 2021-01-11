@@ -123,6 +123,7 @@
             object-fit: contain;
             margin: 0 auto;
             cursor: pointer;
+            filter: grayscale(100%);
           }
         }
       }
@@ -229,14 +230,14 @@
   .about_bottom_slider
   .about_bottom_item:nth-child(6)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 6.png");
+  background-image: url("../images/Path\ 1.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(7)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 1.png");
+  background-image: url("../images/Path\ 2.png");
 }
 
 .about
@@ -244,49 +245,49 @@
   .about_bottom_slider
   .about_bottom_item:nth-child(8)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 2.png");
+  background-image: url("../images/Path\ 3.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(9)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 3.png");
+  background-image: url("../images/Path\ 4.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(10)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 4.png");
+  background-image: url("../images/Path\ 5.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(11)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 5.png");
+  background-image: url("../images/Path\ 1.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(12)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 6.png");
+  background-image: url("../images/Path\ 2.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(13)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 1.png");
+  background-image: url("../images/Path\ 3.png");
 }
 .about
   .about_bottom--sliderwrapper
   .about_bottom_slider
   .about_bottom_item:nth-child(14)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 2.png");
+  background-image: url("../images/Path\ 4.png");
 }
 
 .about
@@ -294,5 +295,11 @@
   .about_bottom_slider
   .about_bottom_item:nth-child(15)
   .about_bottom_img:after {
-  background-image: url("../images/Path\ 3.png");
+  background-image: url("../images/Path\ 5.png");
+}
+
+.top_slider_title_box {
+  * {
+    font-family: "Futura";
+  }
 }

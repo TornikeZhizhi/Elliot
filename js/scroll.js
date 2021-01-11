@@ -36,7 +36,7 @@ AI.carousel = (function () {
       horizontalScroll: true,
       autoHideScrollbar: true,
       contentTouchScroll: true,
-      mouseWheelPixels: 220,
+      mouseWheelPixels: 150,
       callbacks: {
         whileScrolling: function () {
           var leftPositionLength = $(".mCSB_dragger").css("left").length - 2;

@@ -472,6 +472,20 @@ input[type="checkbox"] {
     height: 90%;
     object-fit: contain;
   }
+
+  &.iframes {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: calc(100vh - 165px);
+    overflow: auto;
+    iframe {
+      width: 47%;
+      max-width: 47%;
+      margin-right: 2%;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
 }
 @media only screen and (min-width: 1550px) {
   .portfolio_inner_right_wrapper {
@@ -520,4 +534,8 @@ input[type="checkbox"] {
       color: #000 !important;
     }
   }
+}
+
+.slick-arrow.slick-hidden {
+  display: none !important;
 }
