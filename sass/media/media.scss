@@ -65,8 +65,13 @@
     display: inline-block;
   }
 
-  .contact_us_href {
-    padding-top: 45px;
+  .services_links_wrapper {
+    flex-direction: column;
+  }
+
+  .services_links_wrapper .portfolio_inner_link {
+    margin-left: 0px;
+    margin-bottom: 15px;
   }
 
   .services__slider__item--down .services_text {

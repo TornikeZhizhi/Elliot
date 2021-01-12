@@ -1,6 +1,5 @@
 // Home slider
 
-
 if($(window).width() > 992){
   $(".portfolio_inner_main_text p").each(function(){
     if($(this).text() == "") {
@@ -237,6 +236,12 @@ $(window).on('load resize', function () {
 
 
 // Portfolio slider
+if($(window).width() > 992){
+ 
+var tr_left = $(".portfolio__slider__item__box__img img").width() / 2+ "px"
+$(".portfolio__slider.up").css("transform","translateX("+tr_left+")")
+}
+
 
 var $sliderPortfolio = $(".portfolio__slider");
 $sliderPortfolio
@@ -246,20 +251,21 @@ $sliderPortfolio
     currentSlide,
     nextSlide
   ) {
-    console.log(currentSlide)
+
     mouseWheel($sliderPortfolio);
   })
   .slick({
-    // dots: true,
     fade: false,
     cssEase: "linear",
     arrows: true,
     prevArrow: "#portfolio_left",
     nextArrow: "#portfolio_right",
-    // autoplay: true,
-    autoplaySpeed: 4000,
+    autoplay: true,
+    slidesToShow: 2,
+  slidesToScroll: 1,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
-    speed: 1500,
+    speed: 800,
     infinite: true,
     responsive: [
       {
@@ -269,6 +275,17 @@ $sliderPortfolio
   ]
   });
 
+
+  $("#portfolio_right").click(function(){
+
+    $(".portfolio__slider.up").slick("slickNext");
+  })
+  
+  $("#portfolio_left").click(function(){
+
+    $(".portfolio__slider.up").slick("slickPrev");
+  })
+ 
  
   var leftIndexp = true;
   var rightIndexp = true;

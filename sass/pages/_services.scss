@@ -205,29 +205,29 @@
 .service_item {
   background-image: url("../images/services.png");
   background-size: 54%;
-  background-position: 74% 124px;
+  background-position: 100% 124px;
 }
 
 .service_item1 {
   background-image: url("../images/services1.png");
   background-size: 46%;
-  background-position: 72% -124px;
+  background-position: 100% 80px;
 }
 
 .service_item2 {
   background-image: url("../images/services2.png");
   background-size: 12%;
-  background-position: 62% center;
+  background-position: 78% center;
 }
 .service_item3 {
   background-image: url("../images/services3.png");
   background-size: 55%;
-  background-position: 40% 0%;
+  background-position: 95% 50%;
 }
 .service_item4 {
   background-image: url("../images/services4.png");
   background-size: 45%;
-  background-position: center;
+  background-position: 100% 40%;
 }
 
 .service_item5 {
@@ -239,7 +239,7 @@
 .service_item6 {
   background-image: url("../images/services6.png");
   background-size: 54%;
-  background-position: 88% 83px;
+  background-position: 100% 85px;
 }
 
 .services_tabs_text {
@@ -250,5 +250,24 @@
   color: #fff;
   &::after {
     height: calc(100% + 2px);
+  }
+}
+
+.services_links_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  .contact_us_href {
+    a {
+      margin: 0;
+    }
+  }
+  .portfolio_inner_link {
+    margin-left: 30px;
+
+    a {
+      margin: 0;
+      padding: 7px 68px;
+    }
   }
 }
