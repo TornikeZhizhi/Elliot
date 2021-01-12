@@ -62,12 +62,10 @@
   }
 
   &__slider {
-    height: calc((100vh - 260px) / 2);
+    height: calc((100vh - 210px) / 2);
     width: calc(100% - 200px);
     margin-left: auto;
-    .slick-list {
-      // height: calc(100% - 60px) !important;
-    }
+
     &__item {
       display: flex !important;
       flex-wrap: wrap;
@@ -176,6 +174,6 @@
 .portfolio__wrapper {
   .slick-slider .slick-track,
   .slick-slider .slick-list {
-    padding: 5px 0;
+    padding: 8px 0;
   }
 }

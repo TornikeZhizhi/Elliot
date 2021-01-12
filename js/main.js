@@ -263,7 +263,7 @@ $sliderPortfolio
     autoplay: true,
     slidesToShow: 2,
   slidesToScroll: 1,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 7000,
     pauseOnHover: false,
     speed: 800,
     infinite: true,
@@ -275,6 +275,14 @@ $sliderPortfolio
   ]
   });
 
+
+  var portfolioupQuantity = $(".portfolio__slider.up .portfolio__slider__item").length
+  console.log(portfolioupQuantity)
+
+  if(portfolioupQuantity % 2 == 0){
+
+    $(".portfolio__slider.down").addClass("odd")
+  }
 
   $("#portfolio_right").click(function(){
 

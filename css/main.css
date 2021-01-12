@@ -1041,7 +1041,7 @@ a:hover {
       .portfolio__wrapper .portfolio_slider_footer #portfolio_right {
         margin-left: auto; }
   .portfolio__slider {
-    height: calc((100vh - 260px) / 2);
+    height: calc((100vh - 210px) / 2);
     width: calc(100% - 200px);
     margin-left: auto; }
     .portfolio__slider__item {
@@ -1106,7 +1106,7 @@ a:hover {
 
 .portfolio__wrapper .slick-slider .slick-track,
 .portfolio__wrapper .slick-slider .slick-list {
-  padding: 5px 0; }
+  padding: 8px 0; }
 
 .portfolioInner {
   width: calc(100vw - 100px);
@@ -1946,6 +1946,14 @@ input[type="checkbox"] {
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
     display: none; }
+  .portfolio__slider.up .portfolio__slider__item:nth-child(even) .portfolio__slider__item__box__img {
+    order: 1; }
+  .portfolio__slider.down .portfolio__slider__item:nth-child(odd) .portfolio__slider__item__box__img {
+    order: 1; }
+  .portfolio__slider.down.odd .portfolio__slider__item:nth-child(odd) .portfolio__slider__item__box__img {
+    order: -1; }
+  .portfolio__slider.down.odd .portfolio__slider__item:nth-child(even) .portfolio__slider__item__box__img {
+    order: 1; }
   .portfolio_inner_common_section.iframes {
     height: auto;
     display: flex;
