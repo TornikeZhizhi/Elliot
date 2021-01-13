@@ -1455,6 +1455,15 @@ input[type="checkbox"] {
 
 .portfolio_inner_right_wrapper {
   width: 2700px !important; }
+  .portfolio_inner_right_wrapper.test {
+    width: 5500px !important; }
+    .portfolio_inner_right_wrapper.test .portfolio_inner_common_section {
+      display: flex;
+      flex-wrap: unset;
+      width: 3500px; }
+      .portfolio_inner_right_wrapper.test .portfolio_inner_common_section iframe {
+        margin-right: 20px;
+        height: 55%; }
 
 .portfolio_inner_right_wrapper.shrink {
   width: 3300px !important; }

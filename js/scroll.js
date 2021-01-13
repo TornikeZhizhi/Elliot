@@ -1,3 +1,7 @@
+
+if($(".portfolioInner").length > 0){
+
+
 var AI = (function () {
   function initializer() {
     AI.carousel.init();
@@ -117,3 +121,4 @@ AI.carousel = (function () {
 
   return { init: initializer, destroy: destroy };
 })();
+}

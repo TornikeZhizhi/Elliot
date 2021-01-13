@@ -12,6 +12,76 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
+
+    
+<!-- Contact Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <div class="contact">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div>
+            <div class="contact__back">
+              <a href="">
+                <img src="images/Vector-Smart-Object-copy-5.png" alt="" />
+              </a>
+            </div>
+    
+            <div class="contact__title">
+              <h3>Contact Us</h3>
+            </div>
+    
+            <div class="contact__form">
+              <form>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Name" />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select>
+                    <option value="">Services</option>
+                    <option value="">Services</option>
+                    <option value="">Services</option>
+                    <option value="">Services</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="form_button">
+                  <button type="submit" class="btn btn-primary mb-2">Send</button>
+                </div>
+              </form>
+              <div class="contact_info">
+                <a href="" target="_blank">Fb.com/elliotagency</a>
+                <a href="tel:(+995) 555 555 555">555 555 555</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__footer">
+            <a href=""> < </a>
+            <a href="">elliot/></a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- Contact Modal -->
+
     <div class="members">
       <div class="top_nav">
         <ul>
@@ -106,7 +176,7 @@
               </div>
               <div class="members__info--footer">
                 <div class="members_email">
-                  <a class="mailto_href" href="elliot@elliot.ge">elliot@elliot.ge</a>
+                  <a class="mailto_href" href="" data-toggle="modal" data-target="#exampleModal">elliot@elliot.ge</a>
                 </div>
                 <div class="members_social_wrapper">
                   <ul class="members_social">
