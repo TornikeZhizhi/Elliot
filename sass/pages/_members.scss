@@ -298,14 +298,102 @@
   width: 66% !important;
 }
 
-.members_social {
+.members_social_wrapper {
   width: 60%;
+}
+
+.members_social {
   display: flex;
+  margin-left: auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  div {
-    flex: 0 0 45%;
-    max-width: 45%;
+
+  li {
+    list-style: none;
     text-align: right;
+  }
+
+  li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    z-index: 1;
+    border-radius: 50%;
+
+    svg,
+    path {
+      cursor: pointer;
+    }
+  }
+
+  li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+    width: 17px;
+    height: 17px;
+  }
+  li a:hover .icon path:hover {
+    cursor: pointer;
+  }
+  li a:hover .icon {
+    fill: #fff;
+    cursor: pointer;
+    path {
+      fill: #fff;
+    }
+    .youtube_path {
+      fill: #ff0000;
+    }
+    transform: rotateY(360deg);
+  }
+
+  li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  li a:hover:before {
+    top: 0;
+    cursor: pointer;
+  }
+
+  li:nth-child(1) a:before {
+    background: #3b5999;
+  }
+
+  li:nth-child(2) a:before {
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+  }
+
+  li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+
+  li:nth-child(4) a:before {
+    background: #ff0000;
   }
 }

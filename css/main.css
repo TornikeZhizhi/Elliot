@@ -988,15 +988,72 @@ a:hover {
 .lips {
   width: 66% !important; }
 
+.members_social_wrapper {
+  width: 60%; }
+
 .members_social {
-  width: 60%;
   display: flex;
+  margin-left: auto;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .members_social div {
-    flex: 0 0 45%;
-    max-width: 45%;
+  .members_social li {
+    list-style: none;
     text-align: right; }
+  .members_social li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    z-index: 1;
+    border-radius: 50%; }
+    .members_social li a svg,
+    .members_social li a path {
+      cursor: pointer; }
+  .members_social li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+    width: 17px;
+    height: 17px; }
+  .members_social li a:hover .icon path:hover {
+    cursor: pointer; }
+  .members_social li a:hover .icon {
+    fill: #fff;
+    cursor: pointer;
+    transform: rotateY(360deg); }
+    .members_social li a:hover .icon path {
+      fill: #fff; }
+    .members_social li a:hover .icon .youtube_path {
+      fill: #ff0000; }
+  .members_social li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2; }
+  .members_social li a:hover:before {
+    top: 0;
+    cursor: pointer; }
+  .members_social li:nth-child(1) a:before {
+    background: #3b5999; }
+  .members_social li:nth-child(2) a:before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+  .members_social li:nth-child(3) a:before {
+    background: #0077b5; }
+  .members_social li:nth-child(4) a:before {
+    background: #ff0000; }
 
 .portfolio {
   width: calc(100vw - 150px);
