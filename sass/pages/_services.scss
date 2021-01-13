@@ -271,3 +271,31 @@
     }
   }
 }
+.service_item {
+  animation: test 5s infinite backwards;
+}
+@keyframes test {
+  0% {
+    background-position: 100% 124px;
+  }
+  50% {
+    background-position: 85% 124px;
+  }
+  100% {
+    background-position: 100% 124px;
+  }
+}
+.service_item1 {
+  animation: test2 5s infinite backwards;
+}
+@keyframes test2 {
+  0% {
+    background-position: 100% 80px;
+  }
+  50% {
+    background-position: 100% 110px;
+  }
+  100% {
+    background-position: 100% 80px;
+  }
+}
