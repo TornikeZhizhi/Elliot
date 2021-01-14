@@ -1583,7 +1583,7 @@ input[type="checkbox"] {
       .services__slider__item--down {
         margin-top: 30px; }
         .services__slider__item--down .services_text {
-          max-width: 700px;
+          max-width: 650px;
           margin: 20px 0 60px; }
           .services__slider__item--down .services_text .services_text_wrapper * {
             font-family: "HelveticaNeueLTGEOW82-45Lt";

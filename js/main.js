@@ -1,5 +1,7 @@
 // Home slider
 
+
+
 var $slider = $("#main_slider");
 $slider
   .on("init reInit beforeChange", function (
