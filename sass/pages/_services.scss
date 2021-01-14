@@ -126,13 +126,18 @@
 
   a {
     font-family: "HelveticaNeueLTGEOW82-45Lt";
-    background-color: #43a041;
-    border: none;
+    border: 1px solid #43a041;
     padding: 8px 70px;
     border-radius: 0;
-    color: #fff;
+    color: #000;
     display: inline-block;
     margin-top: 15px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #43a041;
+      color: #fff;
+      border-color: #43a041;
+    }
   }
 }
 
