@@ -1,3 +1,20 @@
+
+//p_INNER
+
+
+if($(window).width()>992){
+
+  var iframeLength = $(".portfolio_inner_common_section iframe").length
+  
+  if(iframeLength > 1) {
+    
+    $(".portfolio_inner_right_wrapper").
+    addClass("iframe iframes"+iframeLength+"")
+  }
+}
+
+
+
 // Home slider
 
 

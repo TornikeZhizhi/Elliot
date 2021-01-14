@@ -177,3 +177,12 @@
     padding: 8px 0;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  @media only screen and (max-height: 1366px) {
+    .portfolio__slider {
+      width: calc(100% - 1px);
+      height: calc((100vh - 710px) / 2);
+    }
+  }
+}
