@@ -1,6 +1,10 @@
 
 //p_INNER
 
+$(window).on("load",function(){
+
+  $(".loader__wrap").fadeOut()
+})
 
 if($(window).width()>992){
 
