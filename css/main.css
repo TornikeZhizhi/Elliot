@@ -1682,10 +1682,11 @@ input[type="checkbox"] {
       flex-direction: column;
       padding: 6% 0px 0 7% !important;
       height: 100%;
+      align-items: flex-start;
       background-position: center;
       background-repeat: no-repeat; }
       .services__slider__item--down {
-        margin-top: 30px; }
+        padding-top: 30px; }
         .services__slider__item--down .services_text {
           max-width: 700px;
           margin: 20px 0 60px; }
@@ -1814,41 +1815,6 @@ input[type="checkbox"] {
 .services .services_tabs ul li a:hover::after {
   height: calc(100% + 2px); }
 
-.service_item {
-  background-image: url("../images/services.png");
-  background-size: 54%;
-  background-position: 100% 124px; }
-
-.service_item1 {
-  background-image: url("../images/services1.png");
-  background-size: 46%;
-  background-position: 100% 80px; }
-
-.service_item2 {
-  background-image: url("../images/services2.png");
-  background-size: 12%;
-  background-position: 78% center; }
-
-.service_item3 {
-  background-image: url("../images/services3.png");
-  background-size: 55%;
-  background-position: 95% 50%; }
-
-.service_item4 {
-  background-image: url("../images/services4.png");
-  background-size: 45%;
-  background-position: 100% 40%; }
-
-.service_item5 {
-  background-image: url("../images/services5.png");
-  background-size: 60%;
-  background-position: 113% 39px; }
-
-.service_item6 {
-  background-image: url("../images/services6.png");
-  background-size: 54%;
-  background-position: 100% 85px; }
-
 .services_tabs_text {
   display: none; }
 
@@ -1868,6 +1834,21 @@ input[type="checkbox"] {
     .services_links_wrapper .portfolio_inner_link a {
       margin: 0;
       padding: 7px 68px; }
+
+.services__slider__item {
+  position: relative; }
+  .services__slider__item .services__slider__item--up,
+  .services__slider__item .services__slider__item--down {
+    position: relative;
+    z-index: 100; }
+  .services__slider__item canvas {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    cursor: none !important; }
 
 .about {
   padding-left: 50px;
