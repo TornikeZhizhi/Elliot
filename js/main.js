@@ -538,12 +538,12 @@ container.addEventListener("click", function () {
   },20)
 
 var num1 = Math.floor(Math.random() * length) + 1;
-starth.src = "images/faces/a" + num1 + ".png";
+starth.src = "images/faces2/a" + num1 + ".png";
 
 
 var num4 = Math.floor(Math.random() * length) + 1;
 
-forehead.src = "images/faces/b" + num4 + ".png";
+forehead.src = "images/faces2/b" + num4 + ".png";
 
 var num5 = Math.floor(Math.random() * length) + 1;
 

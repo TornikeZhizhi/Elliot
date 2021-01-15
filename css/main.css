@@ -2120,6 +2120,8 @@ input[type="checkbox"] {
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
     display: none; }
+  .member_randomize {
+    padding-top: 0; }
   .portfolio__slider.up .portfolio__slider__item:nth-child(even) .portfolio__slider__item__box__img {
     order: 1; }
   .portfolio__slider.down .portfolio__slider__item:nth-child(odd) .portfolio__slider__item__box__img {
