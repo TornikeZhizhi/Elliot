@@ -48,7 +48,6 @@ var canvas = document.getElementById('bgAnimation');
 // var url = document.getElementsByClassName('services__slider__item')[0].style.backgroundImage;
 // var canvasImgSource = url.substring(5, url.length-2)
 var url = canvas.getAttribute("data-source")
-console.log(url)
 var ctx = canvas.getContext('2d');;
 var dots = [];
 var smallDots = [];
