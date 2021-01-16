@@ -1815,6 +1815,41 @@ input[type="checkbox"] {
 .services .services_tabs ul li a:hover::after {
   height: calc(100% + 2px); }
 
+.service_item {
+  background-image: url("../images/services.png");
+  background-size: 54%;
+  background-position: 100% 124px; }
+
+.service_item1 {
+  background-image: url("../images/services1.png");
+  background-size: 46%;
+  background-position: 100% 80px; }
+
+.service_item2 {
+  background-image: url("../images/services2.png");
+  background-size: 12%;
+  background-position: 78% center; }
+
+.service_item3 {
+  background-image: url("../images/services3.png");
+  background-size: 55%;
+  background-position: 95% 50%; }
+
+.service_item4 {
+  background-image: url("../images/services4.png");
+  background-size: 45%;
+  background-position: 100% 40%; }
+
+.service_item5 {
+  background-image: url("../images/services5.png");
+  background-size: 60%;
+  background-position: 113% 39px; }
+
+.service_item6 {
+  background-image: url("../images/services6.png");
+  background-size: 54%;
+  background-position: 100% 85px; }
+
 .services_tabs_text {
   display: none; }
 
