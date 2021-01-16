@@ -3,7 +3,7 @@
 var charColor = '#f9485c';
 var bgColor = '#fcd700';
 var bgPoz = 170;
-var rightIndex = 100;
+
 if($(".service_item").length>0){
 
 	charColor = '#f9485c';
@@ -45,8 +45,7 @@ else if($(".service_item6").length>0){
 
 var canvas = document.getElementById('bgAnimation');
 
-// var url = document.getElementsByClassName('services__slider__item')[0].style.backgroundImage;
-// var canvasImgSource = url.substring(5, url.length-2)
+
 var url = canvas.getAttribute("data-source")
 var ctx = canvas.getContext('2d');;
 var dots = [];
@@ -66,7 +65,7 @@ function reduceDots(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	var imageHeight = canvas.height;
 	var imageWidth = image.width * (canvas.height / image.height);
-	ctx.drawImage(image, canvas.width-imageWidth,bgPoz, imageWidth, imageHeight);
+	// ctx.drawImage(image, canvas.width-imageWidth,bgPoz, imageWidth, imageHeight);
 	dots.forEach(function(item, index)
 	{
 		if(item.reduce())

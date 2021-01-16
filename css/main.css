@@ -2130,9 +2130,7 @@ input[type="checkbox"] {
 
 @media only screen and (min-width: 992px) {
   .m_show {
-    display: none !important; }
-  .services__slider__item {
-    background-image: unset !important; } }
+    display: none !important; } }
 
 @media only screen and (max-width: 992px) {
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
