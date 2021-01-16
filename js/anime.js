@@ -1,28 +1,71 @@
-var canvas = document.getElementById('bgAnimation');;
+
+
+var charColor = '#f9485c';
+var bgColor = '#fcd700';
+var bgPoz = 170;
+var rightIndex = 100;
+if($(".service_item").length>0){
+
+	charColor = '#f9485c';
+	bgColor = '#fcd700';
+	bgPoz = 170
+
+}else if($(".service_item1").length>0){
+	charColor = '#43a041';
+	bgColor = '#f9485c';
+	bgPoz = 90
+}else if($(".service_item2").length>0){
+	charColor = '#25cad2';
+	bgColor = '#43a041';
+	bgPoz = 0
+
+}else if($(".service_item3").length>0){
+	charColor = '#f9485c';
+	bgColor = '#fcd700';
+	bgPoz = 170
+
+}else if($(".service_item4").length>0){
+	charColor = '#fcd700';
+	bgColor = '#f9485c';
+	bgPoz = 10
+
+}else if($(".service_item5").length>0){
+	charColor = '#0056b8';
+	bgColor = '#43a041';
+	bgPoz = 90
+
+}
+else if($(".service_item6").length>0){
+	charColor = '#fcd700';
+	bgColor = '#f9485c';
+	bgPoz = 10
+
+}
+
+
+var canvas = document.getElementById('bgAnimation');
+
+var url = document.getElementsByClassName('services__slider__item')[0].style.backgroundImage;
+var canvasImgSource = url.substring(5, url.length-2)
 var ctx = canvas.getContext('2d');;
 var dots = [];
 var smallDots = [];
 var image = new Image();
-var x = canvas.getAttribute("data-source")
-image.src = x;
+image.src = canvasImgSource;
 
-var charColor = '#f9485c';
-var bgColor = '#fcd700';
+
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 canvas.addEventListener('mousemove', createDot);
-
 var inter = setInterval(reduceDots, 15);
 
 function reduceDots(){
+
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	
 	var imageHeight = canvas.height;
 	var imageWidth = image.width * (canvas.height / image.height);
-	ctx.drawImage(image, canvas.width-imageWidth,170, imageWidth, imageHeight);
-		
+	ctx.drawImage(image, canvas.width-imageWidth,bgPoz, imageWidth, imageHeight);
 	dots.forEach(function(item, index)
 	{
 		if(item.reduce())

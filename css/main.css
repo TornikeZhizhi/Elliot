@@ -2095,7 +2095,9 @@ input[type="checkbox"] {
 
 @media only screen and (min-width: 992px) {
   .m_show {
-    display: none !important; } }
+    display: none !important; }
+  .services__slider__item {
+    background-image: unset !important; } }
 
 @media only screen and (max-width: 992px) {
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
@@ -2111,6 +2113,8 @@ input[type="checkbox"] {
     order: -1; }
   .portfolio__slider.down.odd .portfolio__slider__item:nth-child(even) .portfolio__slider__item__box__img {
     order: 1; }
+  #bgAnimation {
+    display: none; }
   .portfolio_inner_common_section.iframes {
     height: auto;
     display: flex;

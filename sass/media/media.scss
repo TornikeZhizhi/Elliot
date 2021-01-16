@@ -2,6 +2,9 @@
   .m_show {
     display: none !important;
   }
+  .services__slider__item {
+    background-image: unset !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -41,6 +44,10 @@
         order: 1;
       }
     }
+  }
+
+  #bgAnimation {
+    display: none;
   }
 
   .portfolio_inner_common_section.iframes {
