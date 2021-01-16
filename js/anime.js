@@ -47,6 +47,8 @@ var canvas = document.getElementById('bgAnimation');
 
 var url = document.getElementsByClassName('services__slider__item')[0].style.backgroundImage;
 var canvasImgSource = url.substring(5, url.length-2)
+
+console.log(url,canvasImgSource)
 var ctx = canvas.getContext('2d');;
 var dots = [];
 var smallDots = [];
