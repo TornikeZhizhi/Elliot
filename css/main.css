@@ -1111,6 +1111,9 @@ a:hover {
   .members_social li:nth-child(4) a:before {
     background: #ff0000; }
 
+.members__info--footer .members_social {
+  margin-left: unset; }
+
 .portfolio {
   width: calc(100vw - 150px);
   margin-left: auto;
@@ -2371,7 +2374,7 @@ input[type="checkbox"] {
     max-width: 100%;
     width: 100%;
     margin-top: 35px;
-    margin-left: 0; }
+    margin-left: 0 !important; }
   .members__slider {
     max-width: 100%; }
   .m_show {
