@@ -1574,15 +1574,13 @@ input[type="checkbox"] {
   width: 900px; }
 
 .portfolio_inner_common_section {
-  width: 900px;
   height: calc(100vh - 160px);
   display: flex;
   align-items: center;
   justify-content: center; }
   .portfolio_inner_common_section img {
-    width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: contain; }
   .portfolio_inner_common_section iframe,
   .portfolio_inner_common_section video {
     width: 90%;

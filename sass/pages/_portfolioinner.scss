@@ -455,15 +455,15 @@ input[type="checkbox"] {
   width: 900px;
 }
 .portfolio_inner_common_section {
-  width: 900px;
+  // width: 900px;
   height: calc(100vh - 160px);
   display: flex;
   align-items: center;
   justify-content: center;
   img {
-    width: 100%;
+    // width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   iframe,
