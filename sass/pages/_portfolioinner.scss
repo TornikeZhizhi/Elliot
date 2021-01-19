@@ -355,7 +355,7 @@ input[type="checkbox"] {
   .portfolio_masorny {
     height: calc(100vh - 170px) !important;
     width: 800px;
-    overflow-y: scroll;
+    overflow-y: auto;
     .grid-item {
       width: 30.5%;
       img {
@@ -456,14 +456,14 @@ input[type="checkbox"] {
 }
 .portfolio_inner_common_section {
   width: 900px;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 160px);
   display: flex;
   align-items: center;
   justify-content: center;
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   iframe,
