@@ -375,11 +375,11 @@
     cursor: pointer;
   }
 
-  li:nth-child(1) a:before {
+  .member_fb a:before {
     background: #3b5999;
   }
 
-  li:nth-child(2) a:before {
+  .member_instagram a:before {
     background: radial-gradient(
       circle at 30% 107%,
       #fdf497 0%,
@@ -390,11 +390,11 @@
     );
   }
 
-  li:nth-child(3) a:before {
+  .member_linkedin a:before {
     background: #0077b5;
   }
 
-  li:nth-child(4) a:before {
+  .member_youtube a:before {
     background: #ff0000;
   }
 }
