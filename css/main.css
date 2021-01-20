@@ -707,7 +707,6 @@ a:hover {
 
 .loader {
   --sz: 7rem;
-  width: calc(var(--sz) * 2);
   height: var(--sz);
   margin: auto;
   display: flex;
@@ -721,10 +720,10 @@ a:hover {
   align-items: flex-end;
   justify-content: space-evenly;
   height: 100%;
-  width: 50%; }
+  width: 186px; }
   .loader__sq img {
-    height: 30px;
-    width: 30px;
+    height: 60px !important;
+    width: 60px !important;
     object-fit: contain;
     width: var(--p-sz);
     height: var(--p-sz);
@@ -1701,7 +1700,6 @@ input[type="checkbox"] {
     .services__slider__item {
       display: flex !important;
       flex-direction: column;
-      padding: 6% 0px 0 7% !important;
       height: 100%;
       align-items: flex-start;
       background-position: center;
@@ -1848,17 +1846,17 @@ input[type="checkbox"] {
 
 .service_item2 {
   background-image: url("../images/services2.png");
-  background-size: 12%;
+  background-size: 14%;
   background-position: 78% center; }
 
 .service_item3 {
   background-image: url("../images/services3.png");
-  background-size: 55%;
-  background-position: 95% 50%; }
+  background-size: 70%;
+  background-position: 95% 80%; }
 
 .service_item4 {
   background-image: url("../images/services4.png");
-  background-size: 45%;
+  background-size: 55%;
   background-position: 100% 40%; }
 
 .service_item5 {
@@ -1896,7 +1894,12 @@ input[type="checkbox"] {
   .services__slider__item .services__slider__item--up,
   .services__slider__item .services__slider__item--down {
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    padding-left: 6%; }
+  .services__slider__item .services__slider__item--up {
+    padding-top: 5%; }
+  .services__slider__item .services__slider__item--down {
+    height: 100%; }
   .services__slider__item canvas {
     display: block;
     background-color: transparent;
@@ -2154,6 +2157,11 @@ input[type="checkbox"] {
     display: none !important; } }
 
 @media only screen and (max-width: 992px) {
+  .loader__sq {
+    width: 153px; }
+    .loader__sq img {
+      height: 48px !important;
+      width: 48px !important; }
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(2),
   .homeSlider .main_slider_section6 .homeSlider__item img:nth-child(3) {
     display: none; }
@@ -2217,7 +2225,7 @@ input[type="checkbox"] {
     transform: translateX(0px);
     text-align: center; }
   .services__slider__item--down .services_likeshares {
-    margin-top: 25px;
+    margin-top: 0px;
     flex-wrap: wrap; }
   .portfolio__slider__item__box__info h2 {
     font-size: 24px;

@@ -818,7 +818,6 @@
 
 .loader {
   --sz: 7rem;
-  width: calc(var(--sz) * 2);
   height: var(--sz);
   margin: auto;
   display: flex;
@@ -833,11 +832,11 @@
   align-items: flex-end;
   justify-content: space-evenly;
   height: 100%;
-  width: 50%;
+  width: 186px;
 
   img {
-    height: 30px;
-    width: 30px;
+    height: 60px !important;
+    width: 60px !important;
     object-fit: contain;
     @include same-size(var(--p-sz));
     content: "";
