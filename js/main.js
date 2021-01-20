@@ -462,11 +462,30 @@ var thumb = $(".portfolio_masorny").attr("data-thumb")
 var portfDiv = $(".portfolio_masorny")
 var styleElement = document.createElement("style");
 styleElement.appendChild(document.createTextNode
-  ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+track+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+
-  thumb+"}div.portfolio_masorny{--scrollbarBG:"+ track+"}"));
+  ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+"#000"+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+
+  "#fff"+"}div.portfolio_masorny{--scrollbarBG:"+ "#000"+"}"));
 document.getElementsByTagName("head")[0].appendChild(styleElement);
+var scrolltrue = true;
+$(".day_night_box").click(function(){
 
+  if(scrolltrue){
 
+    styleElement.appendChild(document.createTextNode
+      ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+"#fff"+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+
+      "#000"+"}div.portfolio_masorny{--scrollbarBG:"+ "#fff"+"}"));
+    document.getElementsByTagName("head")[0].appendChild(styleElement);
+
+    scrolltrue = false
+  }else {
+    styleElement.appendChild(document.createTextNode
+      ("div.portfolio_masorny::-webkit-scrollbar-track {background:"+"#000"+"}div.portfolio_masorny::-webkit-scrollbar-thumb {background-color:"+
+      "#fff"+"}div.portfolio_masorny{--scrollbarBG:"+ "#000"+"}"));
+    document.getElementsByTagName("head")[0].appendChild(styleElement);
+
+    scrolltrue = true
+  }
+
+})
 
 var wordLength = $(".changed_words span").length
 
