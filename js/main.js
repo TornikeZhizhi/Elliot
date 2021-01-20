@@ -17,10 +17,6 @@ if($(window).width()>992){
   }
 }
 
-$(".members__info--text").mCustomScrollbar({
-  theme:"rounded-dots",
-  scrollInertia:400
-});
 
 
 // Home slider

@@ -342,11 +342,11 @@
     animation: fadeInBottomRight 1s both 0.5s;
   }
 
-  .main_slider_section6 .homeSlider__item > div {
+  .main_slider_section6 .homeSlider__item > div > div {
     animation: fadeOutLeft 1s both;
   }
 
-  .main_slider_section6.slick-active .homeSlider__item > div {
+  .main_slider_section6.slick-active .homeSlider__item > div > div {
     animation: jackInTheBox 1s both;
   }
 }
