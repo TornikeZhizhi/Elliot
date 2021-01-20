@@ -2268,7 +2268,8 @@ input[type="checkbox"] {
   .contact__back {
     display: none; }
   .modal {
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    z-index: 999999; }
   .modal-body {
     height: 100vh;
     overflow-y: scroll; }
