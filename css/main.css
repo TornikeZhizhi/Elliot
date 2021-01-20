@@ -1909,6 +1909,9 @@ input[type="checkbox"] {
     z-index: 10;
     cursor: none !important; }
 
+.service_item4 .services__slider__item--down .services_text {
+  max-width: 495px; }
+
 .about {
   padding-left: 50px;
   display: flex;
