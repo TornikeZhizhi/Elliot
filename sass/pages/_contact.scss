@@ -1,5 +1,5 @@
 .contact {
-  padding: 40px 65px 20px 65px;
+  padding: 20px 65px 20px 65px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -109,4 +109,9 @@
       }
     }
   }
+}
+
+.contact__back,
+.contact__footer {
+  display: none;
 }
