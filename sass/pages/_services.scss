@@ -216,8 +216,8 @@
 
 .service_item1 {
   background-image: url("../images/services1.png");
-  background-size: 46%;
-  background-position: 100% 80px;
+  background-size: 38%;
+  background-position: 102% 128px;
 }
 
 .service_item2 {
@@ -238,8 +238,8 @@
 
 .service_item5 {
   background-image: url("../images/services5.png");
-  background-size: 60%;
-  background-position: 113% 39px;
+  background-size: 51%;
+  background-position: 116% 112px;
 }
 
 .service_item6 {
@@ -289,7 +289,7 @@
   }
 
   .services__slider__item--up {
-    padding-top: 5%;
+    padding-top: 3%;
   }
   .services__slider__item--down {
     height: 100%;
@@ -307,4 +307,21 @@
 
 .service_item4 .services__slider__item--down .services_text {
   max-width: 495px;
+}
+
+.service_item .services__slider__item--down .services_text {
+  max-width: 550px;
+}
+
+.service_item2 .services__slider__item--down .services_text {
+  max-width: 550px;
+}
+.service_item3 .services__slider__item--down .services_text {
+  max-width: 550px;
+}
+.service_item5 .services__slider__item--down .services_text {
+  max-width: 600px;
+}
+.service_item1 .services__slider__item--down .services_text {
+  max-width: 600px;
 }
