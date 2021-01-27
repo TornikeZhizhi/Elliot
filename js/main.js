@@ -445,15 +445,15 @@ $(".portfolioInner").toggleClass("night")
 
 
 
-$(".b-white").click(function(){
+// $(".b-white").click(function(){
 
-  $("#carousel .mCSB_container").css("left","0")
-  $("#carousel .mCSB_dragger").css("left","20px")
-  $(".portfolio_inner_left_content").removeClass("shrink1")
-  $(".portfolio_inner_left_content").removeClass("shrink2")
-  $(".mCSB_scrollTools").removeClass("pos")
+//   $("#carousel .mCSB_container").css("left","0")
+//   $("#carousel .mCSB_dragger").css("left","20px")
+//   $(".portfolio_inner_left_content").removeClass("shrink1")
+//   $(".portfolio_inner_left_content").removeClass("shrink2")
+//   $(".mCSB_scrollTools").removeClass("pos")
 
-})
+// })
 
 
 var track = $(".portfolio_masorny").attr("data-track")

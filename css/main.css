@@ -1227,6 +1227,12 @@ a:hover {
   .portfolio__slider {
     width: calc(100% - 1px);
     height: calc((100vh - 710px) / 2); } }
+@media only screen and (min-width: 992px) {
+  .portfolio__slider {
+    margin-right: 15px; } }
+.portfolio_inner_arrow * {
+  cursor: pointer; }
+
 .portfolioInner {
   width: calc(100vw - 100px);
   margin-left: auto; }
