@@ -13,6 +13,22 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .structure {
+    width: 100%;
+  }
+  .contact__form .form_button {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+  .form_footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .error_fluid {
     display: block;
     height: auto;
@@ -302,6 +318,9 @@
   }
   .contact {
     padding: 0px 5px 5px 5px;
+  }
+  .contact.structure {
+    padding: 0px 20px 5px 20px;
   }
   .services__slider__item--up .services_tabs ul li:not(:last-child) {
     margin-right: 15px;
