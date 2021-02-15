@@ -487,47 +487,47 @@ $(".day_night_box").click(function(){
 
 })
 
-var wordLength = $(".changed_words span").length
+// var wordLength = $(".changed_words span").length
 
-var wordIndex = 1;
-$(".changed_text").text($(".changed_words span").eq(wordIndex).text())
+// var wordIndex = 1;
+// $(".changed_text").text($(".changed_words span").eq(wordIndex).text())
 
 
-var k ;
- k = setInterval(function() {
-  if(wordIndex == wordLength){
-    wordIndex =0;
-  }
+// var k ;
+//  k = setInterval(function() {
+//   if(wordIndex == wordLength){
+//     wordIndex =0;
+//   }
 
-  $(".changed_words span").fadeOut(0)
-  $(".changed_words span").eq(wordIndex).fadeIn(550)
+//   $(".changed_words span").fadeOut(0)
+//   $(".changed_words span").eq(wordIndex).fadeIn(550)
 
-  wordIndex++;
+//   wordIndex++;
  
-},2000);
+// },2000);
 
 
-document.addEventListener("visibilitychange", function() {
-  if (document.visibilityState === 'visible') {
+// document.addEventListener("visibilitychange", function() {
+//   if (document.visibilityState === 'visible') {
 
-    k = setInterval(function() {
-      if(wordIndex == wordLength){
-        wordIndex =0;
-      }
+//     k = setInterval(function() {
+//       if(wordIndex == wordLength){
+//         wordIndex =0;
+//       }
     
-      $(".changed_words span").fadeOut(0)
-      $(".changed_words span").eq(wordIndex).fadeIn(550)
+//       $(".changed_words span").fadeOut(0)
+//       $(".changed_words span").eq(wordIndex).fadeIn(550)
     
-      wordIndex++;
+//       wordIndex++;
      
-    },2000);
+//     },2000);
   
-  } else {
+//   } else {
 
-    clearInterval(k)
+//     clearInterval(k)
    
-  }
-});
+//   }
+// });
 
 // ()
 
@@ -584,5 +584,26 @@ document.addEventListener("visibilitychange", function() {
 // })
 // }
 
+// var imageQuantity = 2;
+// $(".members_randomize").click(function(){
+//   var randomizeNum = Math.floor(Math.random() * imageQuantity + 1)
 
+//   $(".m_box").css("display","none");
+//   $(".m_box").removeClass()
+//   .addClass("m_box members_img_container"+randomizeNum+"").css("display","block")
+
+//   $(".m_box img").eq(0).attr("src","images/fancy/"+ randomizeNum+"a.png")
+//   $(".m_box img").eq(1).attr("src","images/fancy/"+ randomizeNum+"b.png")
+//   $(".m_box img").eq(2).attr("src","images/fancy/"+ randomizeNum+"c.png")
+//   $(".m_box img").eq(3).attr("src","images/fancy/"+ randomizeNum+"d.png")
+//   $(".m_box img").eq(4).attr("src","images/fancy/"+ randomizeNum+"e.png")
+//   $(".m_box img").eq(5).attr("src","images/fancy/"+ randomizeNum+"f.png")
+//   $(".m_box img").eq(6).attr("src","images/fancy/"+ randomizeNum+"g.png")
+//   $(".m_box img").eq(7).attr("src","images/fancy/"+ randomizeNum+"h.png")
+//   $(".m_box img").eq(8).attr("src","images/fancy/"+ randomizeNum+"i.png")
+//   $(".m_box img").eq(9).attr("src","images/fancy/"+ randomizeNum+"j.png")
+//   $(".m_box img").eq(10).attr("src","images/fancy/"+ randomizeNum+"k.png")
+
+
+// })
 
