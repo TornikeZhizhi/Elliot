@@ -889,3 +889,64 @@
     left: 81px;
   }
 }
+
+.members_img_container7 {
+  img {
+    height: 50px;
+  }
+
+  img:nth-child(1) {
+    height: 76px;
+    top: 100px;
+    left: 121px;
+  }
+  img:nth-child(2) {
+    height: 50px;
+    top: 161px;
+    left: 122px;
+    z-index: 1;
+  }
+  img:nth-child(3) {
+    height: 50px;
+    top: 161px;
+    left: 182px;
+    z-index: 1;
+  }
+  img:nth-child(4) {
+    height: 94px;
+    top: 187px;
+    left: 122px;
+  }
+  img:nth-child(5) {
+    height: 55px;
+    top: 176px;
+    left: 110px;
+  }
+  img:nth-child(6) {
+    height: 79px;
+    top: 200px;
+    left: 178px;
+  }
+  img:nth-child(7) {
+    height: 57px;
+    top: 175px;
+    left: 231px;
+  }
+  img:nth-child(8) {
+    height: 75px;
+    top: 226px;
+    left: 144px;
+    z-index: 1;
+  }
+  img:nth-child(9) {
+    height: 72px;
+    top: 250px;
+    left: 84px;
+  }
+  img:nth-child(10) {
+    height: 48px;
+    top: 186px;
+    left: 161px;
+    z-index: 1;
+  }
+}
