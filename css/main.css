@@ -1640,6 +1640,60 @@ a:hover {
   left: 161px;
   z-index: 1; }
 
+.members_img_container8 img {
+  height: 50px; }
+
+.members_img_container8 img:nth-child(1) {
+  height: 118px;
+  top: 62px;
+  left: 102px; }
+
+.members_img_container8 img:nth-child(2) {
+  height: 44px;
+  top: 125px;
+  left: 121px;
+  z-index: 2; }
+
+.members_img_container8 img:nth-child(3) {
+  height: 81px;
+  top: 155px;
+  left: 108px;
+  border-radius: 5px;
+  z-index: 1; }
+
+.members_img_container8 img:nth-child(4) {
+  height: 55px;
+  top: 124px;
+  left: 168px;
+  z-index: 2; }
+
+.members_img_container8 img:nth-child(5) {
+  height: 80px;
+  top: 155px;
+  left: 186px;
+  border-radius: 5px;
+  z-index: 2; }
+
+.members_img_container8 img:nth-child(6) {
+  height: 70px;
+  top: 184px;
+  left: 138px;
+  border-radius: 5px;
+  z-index: 1; }
+
+.members_img_container8 img:nth-child(7) {
+  height: 44px;
+  top: 157px;
+  left: 150px;
+  border-radius: 5px;
+  z-index: 3; }
+
+.members_img_container8 img:nth-child(8) {
+  height: 131px;
+  top: 222px;
+  left: 89px;
+  border-radius: 5px; }
+
 .portfolio {
   width: calc(100vw - 150px);
   margin-left: auto;
