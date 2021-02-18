@@ -584,26 +584,34 @@ $(".day_night_box").click(function(){
 // })
 // }
 
-// var imageQuantity = 2;
-// $(".members_randomize").click(function(){
-//   var randomizeNum = Math.floor(Math.random() * imageQuantity + 1)
+var imageQuantity = 2;
+$(".members_randomize").click(function(){
+  var randomizeNum = Math.floor(Math.random() * imageQuantity + 1)
 
-//   $(".m_box").css("display","none");
-//   $(".m_box").removeClass()
-//   .addClass("m_box members_img_container"+randomizeNum+"").css("display","block")
+  $(".m_box").css("display","none");
+  $(".m_box").css("opacity","0");
 
-//   $(".m_box img").eq(0).attr("src","images/fancy/"+ randomizeNum+"a.png")
-//   $(".m_box img").eq(1).attr("src","images/fancy/"+ randomizeNum+"b.png")
-//   $(".m_box img").eq(2).attr("src","images/fancy/"+ randomizeNum+"c.png")
-//   $(".m_box img").eq(3).attr("src","images/fancy/"+ randomizeNum+"d.png")
-//   $(".m_box img").eq(4).attr("src","images/fancy/"+ randomizeNum+"e.png")
-//   $(".m_box img").eq(5).attr("src","images/fancy/"+ randomizeNum+"f.png")
-//   $(".m_box img").eq(6).attr("src","images/fancy/"+ randomizeNum+"g.png")
-//   $(".m_box img").eq(7).attr("src","images/fancy/"+ randomizeNum+"h.png")
-//   $(".m_box img").eq(8).attr("src","images/fancy/"+ randomizeNum+"i.png")
-//   $(".m_box img").eq(9).attr("src","images/fancy/"+ randomizeNum+"j.png")
-//   $(".m_box img").eq(10).attr("src","images/fancy/"+ randomizeNum+"k.png")
+  setTimeout(function(){
+    $(".m_box").css("display","block");
+    $(".m_box").css("opacity","1");
+    $(".m_box").removeClass()
+    .addClass("m_box members_img_container"+randomizeNum+"").css("display","block")
+  },100)
 
 
-// })
+
+  $(".m_box img").eq(0).attr("src","images/fancy/"+ randomizeNum+"a.png")
+  $(".m_box img").eq(1).attr("src","images/fancy/"+ randomizeNum+"b.png")
+  $(".m_box img").eq(2).attr("src","images/fancy/"+ randomizeNum+"c.png")
+  $(".m_box img").eq(3).attr("src","images/fancy/"+ randomizeNum+"d.png")
+  $(".m_box img").eq(4).attr("src","images/fancy/"+ randomizeNum+"e.png")
+  $(".m_box img").eq(5).attr("src","images/fancy/"+ randomizeNum+"f.png")
+  $(".m_box img").eq(6).attr("src","images/fancy/"+ randomizeNum+"g.png")
+  $(".m_box img").eq(7).attr("src","images/fancy/"+ randomizeNum+"h.png")
+  $(".m_box img").eq(8).attr("src","images/fancy/"+ randomizeNum+"i.png")
+  $(".m_box img").eq(9).attr("src","images/fancy/"+ randomizeNum+"j.png")
+  $(".m_box img").eq(10).attr("src","images/fancy/"+ randomizeNum+"k.png")
+
+
+})
 

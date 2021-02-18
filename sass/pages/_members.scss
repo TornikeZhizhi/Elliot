@@ -454,7 +454,19 @@
 @keyframes fadeup {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(0.7);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
 
   100% {
@@ -463,8 +475,50 @@
   }
 }
 
+@keyframes fadeleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadescale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.m_box {
+  img {
+    opacity: 0;
+  }
+}
 //1
 .members_img_container1 {
+  transform: scale(0.8) translateY(-25px);
   img {
     position: absolute;
   }
@@ -476,7 +530,7 @@
     height: 123px;
     width: 173px;
     object-fit: contain;
-    animation: fadeup 1s linear backwards;
+    animation: fadeup 1s linear forwards;
   }
 
   img:nth-child(2) {
@@ -487,6 +541,7 @@
     z-index: 15;
     width: 80px;
     object-fit: contain;
+    animation: faderight 0.8s linear forwards;
   }
   img:nth-child(3) {
     position: absolute;
@@ -494,12 +549,14 @@
     left: 83px;
     height: 95px;
     z-index: 1;
+    animation: fadeleft 0.8s linear forwards;
   }
   img:nth-child(4) {
     position: absolute;
     top: 111px;
     left: 61px;
     height: 84px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(5) {
     position: absolute;
@@ -509,6 +566,7 @@
     z-index: 15;
     width: 80px;
     object-fit: contain;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(6) {
     position: absolute;
@@ -518,6 +576,7 @@
     width: 58px;
     object-fit: contain;
     z-index: 1;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(7) {
     position: absolute;
@@ -525,6 +584,7 @@
     left: 231px;
     height: 88px;
     width: 36px;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(8) {
     position: absolute;
@@ -534,6 +594,7 @@
     width: 95px;
     z-index: 9;
     object-fit: contain;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(9) {
     position: absolute;
@@ -541,6 +602,7 @@
     left: 53px;
     height: 160px;
     z-index: 10;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(10) {
     position: absolute;
@@ -548,6 +610,7 @@
     left: 139px;
     height: 72px;
     z-index: 11;
+    animation: fadeup 1s linear forwards;
   }
 }
 
@@ -559,12 +622,14 @@
     height: 200px;
     top: 18px;
     left: 70px;
+    animation: fadeup 1s linear forwards;
   }
 
   img:nth-child(2) {
     height: 119px;
     top: 182px;
     left: 124px;
+    animation: fadedown 1s linear forwards;
   }
 
   img:nth-child(3) {
@@ -572,23 +637,27 @@
     top: 105px;
     left: 108px;
     z-index: 10;
+    animation: fadescale 1s linear forwards;
   }
   img:nth-child(4) {
     height: 84px;
     top: 141px;
     left: 115px;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(5) {
     height: 51px;
     top: 101px;
     left: 178px;
     z-index: 1;
+    animation: fadescale 1s linear forwards;
   }
   img:nth-child(6) {
     height: 82px;
     top: 142px;
     left: 176px;
     object-fit: contain;
+    animation: fadeleft 1s linear forwards;
   }
 
   img:nth-child(7) {
@@ -597,6 +666,7 @@
     left: 108px;
     object-fit: contain;
     z-index: 11;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(8) {
     height: 103px;
@@ -604,6 +674,7 @@
     left: 67px;
     object-fit: contain;
     z-index: 11;
+    animation: fadeup 1s linear forwards;
   }
 
   img:nth-child(9) {
@@ -613,17 +684,20 @@
     object-fit: contain;
     border: 5px;
     z-index: 11;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(10) {
     height: 92px;
     top: 51px;
     left: 110px;
     object-fit: contain;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(11) {
     height: 57px;
     top: 124px;
     left: 155px;
+    animation: fadedown 1s linear forwards;
   }
 }
 
@@ -1143,5 +1217,20 @@
     top: 146px;
     left: 173px;
     z-index: 13;
+  }
+}
+
+.members_img_fluid {
+  height: 400px;
+}
+
+.members_img_fluid {
+  position: relative;
+  .members_randomize {
+    position: absolute;
+    bottom: 10px;
+    left: 46%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 }
