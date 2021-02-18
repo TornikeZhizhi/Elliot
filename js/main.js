@@ -584,7 +584,7 @@ $(".day_night_box").click(function(){
 // })
 // }
 
-    var imageQuantity = 8;
+    var imageQuantity = 10;
     var array = []
 $(".members_randomize").click(function(){
 
