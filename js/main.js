@@ -584,7 +584,7 @@ $(".day_night_box").click(function(){
 // })
 // }
 
-var imageQuantity = 2;
+var imageQuantity = 7;
 $(".members_randomize").click(function(){
   var randomizeNum = Math.floor(Math.random() * imageQuantity + 1)
 

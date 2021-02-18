@@ -702,6 +702,8 @@
 }
 
 .members_img_container3 {
+  transform: scale(0.9) translateY(-22px);
+
   img {
     height: 50px;
   }
@@ -712,6 +714,7 @@
     left: 88px;
     height: 150px;
     z-index: 10;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(2) {
     position: absolute;
@@ -719,6 +722,7 @@
     left: 104px;
     height: 50px;
     z-index: 11;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(3) {
     position: absolute;
@@ -726,6 +730,7 @@
     left: 162px;
     height: 53px;
     z-index: 11;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(4) {
     position: absolute;
@@ -733,6 +738,7 @@
     left: 130px;
     height: 81px;
     z-index: 10;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(5) {
     position: absolute;
@@ -740,7 +746,7 @@
     left: 135px;
     height: 63px;
     z-index: 10;
-
+    animation: fadeup 1s linear forwards;
     object-fit: contain;
   }
   img:nth-child(6) {
@@ -749,7 +755,7 @@
     left: 85px;
     height: 132px;
     z-index: 10;
-
+    animation: fadeup 1s linear forwards;
     object-fit: contain;
   }
 
@@ -759,6 +765,7 @@
     left: 69px;
     height: 169px;
     border-radius: 5px;
+    animation: faderight 1s linear forwards;
   }
 }
 
@@ -767,33 +774,38 @@
     height: 50px;
   }
   img:nth-child(1) {
-    height: 159px;
-    top: 188px;
-    left: 64px;
+    height: 144px;
+    top: 189px;
+    left: 72px;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(2) {
     height: 52px;
     top: 97px;
     left: 124px;
     z-index: 7;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(3) {
     height: 200px;
     top: 44px;
     left: 80px;
     z-index: 3;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(4) {
     height: 101px;
     top: 115px;
     left: 108px;
     z-index: 5;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(5) {
     height: 160px;
     top: 48px;
     left: 171px;
     z-index: 3;
+    animation: fadeup 1s linear forwards;
   }
 
   img:nth-child(6) {
@@ -801,39 +813,46 @@
     top: 97px;
     left: 179px;
     z-index: 3;
+    animation: fadedown 1s linear forwards;
   }
 
   img:nth-child(7) {
     height: 108px;
     top: 112px;
     left: 172px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(8) {
     height: 48px;
     top: 194px;
     left: 222px;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(9) {
     height: 28px;
     top: 174px;
     left: 151px;
     z-index: 22;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(10) {
     height: 58px;
     top: 57px;
     left: 118px;
     z-index: 1;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(11) {
     height: 47px;
     top: 125px;
     left: 157px;
     z-index: 7;
+    animation: faderight 1s linear forwards;
   }
 }
 
 .members_img_container5 {
+  transform: scale(0.9) translateY(-20px);
   img {
     height: 50px;
   }
@@ -841,12 +860,14 @@
     height: 95px;
     top: 20px;
     left: 97px;
+    animation: fadeup 1s linear forwards;
   }
 
   img:nth-child(2) {
     height: 79px;
     top: 114px;
     left: 108px;
+    animation: fadeleft 1s linear forwards;
     z-index: 1;
   }
 
@@ -854,12 +875,14 @@
     height: 87px;
     top: 182px;
     left: 112px;
+    animation: faderight 1s linear forwards;
   }
 
   img:nth-child(4) {
     height: 72px;
     top: 118px;
     left: 89px;
+    animation: fadedown 1s linear forwards;
     z-index: 1;
   }
 
@@ -867,43 +890,51 @@
     height: 72px;
     top: 120px;
     left: 176px;
+    animation: fadeup 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(6) {
     height: 89px;
     top: 182px;
     left: 182px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(7) {
     height: 76px;
     top: 110px;
     left: 248px;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(8) {
     height: 45px;
     top: 190px;
     left: 136px;
+    animation: fadedown 1s linear forwards;
   }
 
   img:nth-child(9) {
     height: 139px;
     top: 229px;
     left: 59px;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(10) {
     height: 47px;
     top: 89px;
     left: 97px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(11) {
     height: 50px;
     top: 142px;
     left: 151px;
+    animation: faderight 1s linear forwards;
     z-index: 1;
   }
 }
 
 .members_img_container6 {
+  transform: scale(1.1) translateY(-10px);
   img {
     height: 50px;
   }
@@ -912,24 +943,28 @@
     height: 177px;
     top: 94px;
     left: 102px;
+    animation: fadeup 1s linear forwards;
     z-index: 10;
   }
   img:nth-child(2) {
     height: 38px;
     top: 146px;
     left: 139px;
+    animation: fadedown 1s linear forwards;
     z-index: 10;
   }
   img:nth-child(3) {
     height: 69px;
     top: 174px;
     left: 141px;
+    animation: fadeup 1s linear forwards;
     z-index: 10;
   }
   img:nth-child(4) {
     height: 41px;
     top: 144px;
     left: 181px;
+    animation: faderight 1s linear forwards;
     z-index: 10;
   }
 
@@ -937,23 +972,27 @@
     height: 94px;
     top: 165px;
     left: 175px;
+    animation: faderight 1s linear forwards;
   }
 
   img:nth-child(6) {
     height: 32px;
     top: 201px;
     left: 158px;
+    animation: fadeleft 1s linear forwards;
   }
 
   img:nth-child(7) {
     height: 60px;
     top: 114px;
     left: 123px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(8) {
     height: 39px;
     top: 169px;
     left: 167px;
+    animation: fadedown 1s linear forwards;
     z-index: 10;
   }
 
@@ -961,6 +1000,7 @@
     height: 113px;
     top: 215px;
     left: 81px;
+    animation: fadeup 1s linear forwards;
   }
 }
 
@@ -968,59 +1008,69 @@
   img {
     height: 50px;
   }
-
+  transform: scale(1.2) translateY(-19px);
   img:nth-child(1) {
     height: 76px;
     top: 100px;
     left: 121px;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(2) {
     height: 50px;
     top: 161px;
     left: 122px;
+    animation: fadedown 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(3) {
     height: 50px;
     top: 161px;
     left: 182px;
+    animation: fadeup 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(4) {
     height: 94px;
     top: 187px;
     left: 122px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(5) {
     height: 55px;
     top: 176px;
     left: 110px;
+    animation: fadeleft 1s linear forwards;
   }
   img:nth-child(6) {
     height: 79px;
     top: 200px;
     left: 178px;
+    animation: faderight 1s linear forwards;
   }
   img:nth-child(7) {
     height: 57px;
     top: 175px;
     left: 231px;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(8) {
     height: 75px;
     top: 226px;
     left: 144px;
+    animation: fadedown 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(9) {
     height: 72px;
     top: 250px;
     left: 84px;
+    animation: fadeup 1s linear forwards;
   }
   img:nth-child(10) {
     height: 48px;
     top: 186px;
     left: 161px;
+    animation: fadeup 1s linear forwards;
     z-index: 1;
   }
 }
