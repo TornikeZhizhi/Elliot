@@ -1751,6 +1751,69 @@ a:hover {
   left: 102px;
   border-radius: 5px; }
 
+.members_img_container10 img {
+  height: 50px; }
+
+.members_img_container10 img:nth-child(1) {
+  height: 142px;
+  top: 207px;
+  left: 67px;
+  z-index: 11; }
+
+.members_img_container10 img:nth-child(2) {
+  height: 38px;
+  top: 132px;
+  left: 139px;
+  z-index: 13; }
+
+.members_img_container10 img:nth-child(3) {
+  height: 179px;
+  top: 85px;
+  left: 121px;
+  z-index: 13; }
+
+.members_img_container10 img:nth-child(4) {
+  height: 72px;
+  top: 158px;
+  left: 147px;
+  z-index: 11; }
+
+.members_img_container10 img:nth-child(5) {
+  height: 42px;
+  top: 128px;
+  left: 192px;
+  z-index: 13; }
+
+.members_img_container10 img:nth-child(6) {
+  height: 171px;
+  top: 78px;
+  left: 173px;
+  z-index: 13; }
+
+.members_img_container10 img:nth-child(7) {
+  height: 77px;
+  top: 152px;
+  left: 192px;
+  z-index: 11; }
+
+.members_img_container10 img:nth-child(8) {
+  height: 24px;
+  top: 190px;
+  left: 169px;
+  z-index: 13; }
+
+.members_img_container10 img:nth-child(9) {
+  height: 46px;
+  top: 108px;
+  left: 152px;
+  z-index: 7; }
+
+.members_img_container10 img:nth-child(10) {
+  height: 51px;
+  top: 146px;
+  left: 173px;
+  z-index: 13; }
+
 .portfolio {
   width: calc(100vw - 150px);
   margin-left: auto;
