@@ -1076,6 +1076,7 @@
 }
 
 .members_img_container8 {
+  transform: scale(1.1) translateY(-23px);
   img {
     height: 50px;
   }
@@ -1084,11 +1085,13 @@
     height: 118px;
     top: 62px;
     left: 102px;
+    animation: fadedown 1s linear forwards;
   }
   img:nth-child(2) {
     height: 44px;
     top: 125px;
     left: 121px;
+    animation: fadeleft 1s linear forwards;
     z-index: 2;
   }
 
@@ -1096,6 +1099,7 @@
     height: 81px;
     top: 155px;
     left: 108px;
+    animation: faderight 1s linear forwards;
     border-radius: 5px;
     z-index: 1;
   }
@@ -1104,12 +1108,14 @@
     height: 55px;
     top: 124px;
     left: 168px;
+    animation: fadeup 1s linear forwards;
     z-index: 2;
   }
   img:nth-child(5) {
     height: 80px;
     top: 155px;
     left: 186px;
+    animation: faderight 1s linear forwards;
     border-radius: 5px;
     z-index: 2;
   }
@@ -1118,6 +1124,7 @@
     height: 70px;
     top: 184px;
     left: 138px;
+    animation: fadeleft 1s linear forwards;
     border-radius: 5px;
     z-index: 1;
   }
@@ -1125,6 +1132,7 @@
     height: 44px;
     top: 157px;
     left: 150px;
+    animation: fadeleft 1s linear forwards;
     border-radius: 5px;
     z-index: 3;
   }
@@ -1133,11 +1141,13 @@
     height: 131px;
     top: 222px;
     left: 89px;
+    animation: fadedown 1s linear forwards;
     border-radius: 5px;
   }
 }
 
 .members_img_container9 {
+  transform: translate(-18px, -9px);
   img {
     height: 50px;
   }
@@ -1146,6 +1156,7 @@
     height: 208px;
     top: 53px;
     left: 103px;
+    animation: faderight 1s linear forwards;
     z-index: 11;
   }
 
@@ -1153,6 +1164,7 @@
     height: 37px;
     top: 124px;
     left: 138px;
+    animation: fadeleft 1s linear forwards;
     z-index: 2;
   }
 
@@ -1160,42 +1172,49 @@
     height: 70px;
     top: 158px;
     left: 138px;
+    animation: fadeup 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(4) {
     height: 43px;
     top: 122px;
     left: 181px;
+    animation: fadedown 1s linear forwards;
     z-index: 2;
   }
   img:nth-child(5) {
     height: 87px;
     top: 142px;
     left: 188px;
+    animation: fadedown 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(6) {
     height: 28px;
     top: 183px;
     left: 166px;
+    animation: faderight 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(7) {
     height: 49px;
     top: 83px;
     left: 138px;
+    animation: fadeleft 1s linear forwards;
     z-index: 1;
   }
   img:nth-child(8) {
     height: 39px;
     top: 150px;
     left: 172px;
+    animation: fadeup 1s linear forwards;
     z-index: 4;
   }
   img:nth-child(9) {
     height: 150px;
     top: 205px;
     left: 102px;
+    animation: fadedown 1s linear forwards;
     border-radius: 5px;
   }
 }
@@ -1206,9 +1225,10 @@
   }
 
   img:nth-child(1) {
-    height: 142px;
-    top: 207px;
-    left: 67px;
+    height: 130px;
+    top: 205px;
+    left: 78px;
+    animation: fadeup 1s linear forwards;
     z-index: 11;
   }
 
@@ -1216,30 +1236,35 @@
     height: 38px;
     top: 132px;
     left: 139px;
+    animation: fadeup 1s linear forwards;
     z-index: 13;
   }
   img:nth-child(3) {
     height: 179px;
     top: 85px;
     left: 121px;
+    animation: fadeleft 1s linear forwards;
     z-index: 13;
   }
   img:nth-child(4) {
     height: 72px;
     top: 158px;
     left: 147px;
+    animation: fadeup 1s linear forwards;
     z-index: 11;
   }
   img:nth-child(5) {
     height: 42px;
     top: 128px;
     left: 192px;
+    animation: fadeup 1s linear forwards;
     z-index: 13;
   }
   img:nth-child(6) {
     height: 171px;
     top: 78px;
     left: 173px;
+    animation: faderight 1s linear forwards;
     z-index: 13;
   }
 
@@ -1247,18 +1272,21 @@
     height: 77px;
     top: 152px;
     left: 192px;
+    animation: fadeleft 1s linear forwards;
     z-index: 11;
   }
   img:nth-child(8) {
     height: 24px;
     top: 190px;
     left: 169px;
+    animation: fadedown 1s linear forwards;
     z-index: 13;
   }
   img:nth-child(9) {
     height: 46px;
     top: 108px;
     left: 152px;
+    animation: fadeup 1s linear forwards;
     z-index: 7;
   }
 
@@ -1266,6 +1294,7 @@
     height: 51px;
     top: 146px;
     left: 173px;
+    animation: faderight 1s linear forwards;
     z-index: 13;
   }
 }
