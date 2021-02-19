@@ -584,22 +584,18 @@ $(".day_night_box").click(function(){
 // })
 // }
 
-    var imageQuantity = 10;
-    var array = []
+    var imageQuantity = 1;
+    var array = [1,2,3,4,5,6,7,8,9,10]
 $(".members_randomize").click(function(){
 
 
+  if(imageQuantity == 10){
 
-    var rn =  Math.floor(Math.random() * imageQuantity) + 1
-    
-    // if (rn == array[array.length - 2]){
-    //   while(rn == array[array.length - 2]){
-    //     var rn =  Math.floor(Math.random() * imageQuantity) + 1
-    //   }
-    
-    // }
-
+    imageQuantity = 0;
+  }
+    var rn = array[imageQuantity]
     var randomizeNum = rn
+    imageQuantity++;
 
     $(".m_box").css("display","none");
     $(".m_box").css("opacity","0");

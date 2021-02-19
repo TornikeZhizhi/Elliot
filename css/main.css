@@ -1327,12 +1327,12 @@ a:hover {
 .members_img_container2 img:nth-child(2) {
   height: 119px;
   top: 182px;
-  left: 124px;
+  left: 122px;
   animation: fadedown 1s linear forwards; }
 
 .members_img_container2 img:nth-child(3) {
   height: 50px;
-  top: 105px;
+  top: 100px;
   left: 108px;
   z-index: 10;
   animation: fadescale 1s linear forwards; }
@@ -1411,13 +1411,13 @@ a:hover {
     top: 128px;
     left: 104px;
     height: 50px;
-    z-index: 11;
+    z-index: 12;
     animation: fadedown 1s linear forwards; }
   .members_img_container3 img:nth-child(3) {
     position: absolute;
-    top: 124px;
-    left: 162px;
-    height: 53px;
+    top: 126px;
+    left: 158px;
+    height: 51px;
     z-index: 11;
     animation: fadeup 1s linear forwards; }
   .members_img_container3 img:nth-child(4) {
@@ -1437,8 +1437,8 @@ a:hover {
     object-fit: contain; }
   .members_img_container3 img:nth-child(6) {
     position: absolute;
-    top: 64px;
-    left: 85px;
+    top: 66px;
+    left: 88px;
     height: 132px;
     z-index: 10;
     animation: fadeup 1s linear forwards;
@@ -1469,7 +1469,7 @@ a:hover {
 
 .members_img_container4 img:nth-child(3) {
   height: 200px;
-  top: 44px;
+  top: 41px;
   left: 80px;
   z-index: 3;
   animation: fadeleft 1s linear forwards; }
@@ -1483,14 +1483,14 @@ a:hover {
 
 .members_img_container4 img:nth-child(5) {
   height: 160px;
-  top: 48px;
+  top: 43px;
   left: 171px;
   z-index: 3;
   animation: fadeup 1s linear forwards; }
 
 .members_img_container4 img:nth-child(6) {
-  height: 45px;
-  top: 97px;
+  height: 41px;
+  top: 101px;
   left: 179px;
   z-index: 3;
   animation: fadedown 1s linear forwards; }
@@ -1593,7 +1593,7 @@ a:hover {
     z-index: 1; }
 
 .members_img_container6 {
-  transform: scale(1.1) translateY(-10px); }
+  transform: scale(1.2) translateY(-20px); }
   .members_img_container6 img {
     height: 50px; }
   .members_img_container6 img:nth-child(1) {
@@ -1642,9 +1642,9 @@ a:hover {
     animation: fadedown 1s linear forwards;
     z-index: 10; }
   .members_img_container6 img:nth-child(9) {
-    height: 113px;
-    top: 215px;
-    left: 81px;
+    height: 101px;
+    top: 217px;
+    left: 91px;
     animation: fadeup 1s linear forwards; }
 
 .members_img_container7 {
@@ -1652,9 +1652,9 @@ a:hover {
   .members_img_container7 img {
     height: 50px; }
   .members_img_container7 img:nth-child(1) {
-    height: 76px;
-    top: 100px;
-    left: 121px;
+    height: 86px;
+    top: 96px;
+    left: 112px;
     animation: fadedown 1s linear forwards; }
   .members_img_container7 img:nth-child(2) {
     height: 50px;
@@ -1682,6 +1682,7 @@ a:hover {
     height: 79px;
     top: 200px;
     left: 178px;
+    z-index: 1;
     animation: faderight 1s linear forwards; }
   .members_img_container7 img:nth-child(7) {
     height: 57px;
@@ -1695,9 +1696,9 @@ a:hover {
     animation: fadedown 1s linear forwards;
     z-index: 1; }
   .members_img_container7 img:nth-child(9) {
-    height: 72px;
-    top: 250px;
-    left: 84px;
+    height: 66px;
+    top: 253px;
+    left: 89px;
     animation: fadeup 1s linear forwards; }
   .members_img_container7 img:nth-child(10) {
     height: 48px;
@@ -1775,7 +1776,7 @@ a:hover {
   .members_img_container9 img:nth-child(2) {
     height: 37px;
     top: 124px;
-    left: 138px;
+    left: 141px;
     animation: fadeleft 1s linear forwards;
     z-index: 2; }
   .members_img_container9 img:nth-child(3) {
@@ -1799,7 +1800,7 @@ a:hover {
   .members_img_container9 img:nth-child(6) {
     height: 28px;
     top: 183px;
-    left: 166px;
+    left: 163px;
     animation: faderight 1s linear forwards;
     z-index: 1; }
   .members_img_container9 img:nth-child(7) {
@@ -1811,7 +1812,7 @@ a:hover {
   .members_img_container9 img:nth-child(8) {
     height: 39px;
     top: 150px;
-    left: 172px;
+    left: 170px;
     animation: fadeup 1s linear forwards;
     z-index: 4; }
   .members_img_container9 img:nth-child(9) {
@@ -1825,9 +1826,9 @@ a:hover {
   height: 50px; }
 
 .members_img_container10 img:nth-child(1) {
-  height: 130px;
-  top: 205px;
-  left: 78px;
+  height: 106px;
+  top: 212px;
+  left: 99px;
   animation: fadeup 1s linear forwards;
   z-index: 11; }
 
@@ -1857,7 +1858,7 @@ a:hover {
   top: 128px;
   left: 192px;
   animation: fadeup 1s linear forwards;
-  z-index: 13; }
+  z-index: 15; }
 
 .members_img_container10 img:nth-child(6) {
   height: 171px;
@@ -2962,6 +2963,8 @@ input[type="checkbox"] {
     margin-right: 5%; } }
 
 @media only screen and (max-width: 992px) {
+  .members_img_fluid {
+    margin-left: 10px; }
   .structure {
     width: 100%; }
   .contact__form .form_button {
