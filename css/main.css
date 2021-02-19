@@ -2964,7 +2964,20 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 992px) {
   .members_img_fluid {
-    margin-left: 10px; }
+    margin-left: 10px;
+    flex: 0 0 400px; }
+  .members_img_container10 {
+    transform: scale(1.1) translateX(-22px); }
+  .members_img_container6 {
+    transform: scale(1.2) translateY(-10px) translateX(-12px); }
+  .members_img_container7 {
+    transform: scale(1.2) translateY(-12px) translateX(-12px); }
+  .members_img_container3 {
+    transform: scale(0.9) translateY(-22px) translateX(-6px); }
+  .members_img_container5 {
+    transform: scale(0.85) translateY(-13px) translateX(-10px); }
+  .members_img_container9 {
+    transform: translate(-28px, -8px); }
   .structure {
     width: 100%; }
   .contact__form .form_button {
