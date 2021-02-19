@@ -829,6 +829,9 @@
 }
 
 @media only screen and (max-width: 335px) {
+  .members_img_container1 {
+    transform: scale(0.8) translateY(-25px) translateX(-17px);
+  }
   .members_img_container2 {
     transform: translateX(-23px);
   }
