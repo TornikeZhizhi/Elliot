@@ -487,102 +487,49 @@ $(".day_night_box").click(function(){
 
 })
 
-// var wordLength = $(".changed_words span").length
+var wordLength = $(".changed_words span").length
 
-// var wordIndex = 1;
-// $(".changed_text").text($(".changed_words span").eq(wordIndex).text())
+var wordIndex = 1;
+$(".changed_text").text($(".changed_words span").eq(wordIndex).text())
 
 
-// var k ;
-//  k = setInterval(function() {
-//   if(wordIndex == wordLength){
-//     wordIndex =0;
-//   }
+var k ;
+ k = setInterval(function() {
+  if(wordIndex == wordLength){
+    wordIndex =0;
+  }
 
-//   $(".changed_words span").fadeOut(0)
-//   $(".changed_words span").eq(wordIndex).fadeIn(550)
+  $(".changed_words span").fadeOut(0)
+  $(".changed_words span").eq(wordIndex).fadeIn(550)
 
-//   wordIndex++;
+  wordIndex++;
  
-// },2000);
+},2000);
 
 
-// document.addEventListener("visibilitychange", function() {
-//   if (document.visibilityState === 'visible') {
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
 
-//     k = setInterval(function() {
-//       if(wordIndex == wordLength){
-//         wordIndex =0;
-//       }
+    k = setInterval(function() {
+      if(wordIndex == wordLength){
+        wordIndex =0;
+      }
     
-//       $(".changed_words span").fadeOut(0)
-//       $(".changed_words span").eq(wordIndex).fadeIn(550)
+      $(".changed_words span").fadeOut(0)
+      $(".changed_words span").eq(wordIndex).fadeIn(550)
     
-//       wordIndex++;
+      wordIndex++;
      
-//     },2000);
+    },2000);
   
-//   } else {
+  } else {
 
-//     clearInterval(k)
+    clearInterval(k)
    
-//   }
-// });
-
-// ()
+  }
+});
 
 
-// if($(".member_randomize").length > 0){
-
-
-// var container = document.querySelector (".member_randomize");
-// var starth = document.querySelector(".starth");
-// var forehead = document.querySelector(".forehead");
-// var eyes = document.querySelector(".eyes");
-// var nose = document.querySelector(".nose");
-// var lips = document.querySelector(".lips");
-// var chin = document.querySelector(".chin");
-// var last = document.querySelector(".last");
-// var length = document.querySelector (".face_contaiener").getAttribute("data-length");
-
-
-// container.addEventListener("click", function () {
-
-//   $('.face_contaiener img').css("display","none")
-//   $('.face_contaiener img').css("opacity","0")
-//   setTimeout(function() {
-    
-//     $(".face_contaiener img").css("display","block")
-//     $('.face_contaiener img').css("opacity","1")
-//   },20)
-
-// var num1 = Math.floor(Math.random() * length) + 1;
-// starth.src = "images/faces2/a" + num1 + ".png";
-
-
-// var num4 = Math.floor(Math.random() * length) + 1;
-
-// forehead.src = "images/faces2/b" + num4 + ".png";
-
-// var num5 = Math.floor(Math.random() * length) + 1;
-
-// eyes.src = "images/faces2/c" + num5 + ".png";
-
-// var num6 = Math.floor(Math.random() * length) + 1;
-
-// nose.src = "images/faces2/d" + num6 + ".png";
-
-// var num7 = Math.floor(Math.random() * length) + 1;
-// lips.src = "images/faces2/e" + num7 + ".png";
-
-// var num8 = Math.floor(Math.random() * length) + 1;
-// chin.src = "images/faces2/f" + num8 + ".png";
-
-// // var num9 = Math.floor(Math.random() * length) + 1;
-// // last.src = "images/faces2/g" + num9 + ".png";
-
-// })
-// }
 
     var imageQuantity = 1;
     var array = [1,2,3,4,5,6,7,8,9,10]
