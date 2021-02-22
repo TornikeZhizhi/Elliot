@@ -535,7 +535,6 @@ document.addEventListener("visibilitychange", function() {
     var array = [1,2,3,4,5,6,7,8,9,10]
 $(".members_randomize").click(function(){
 
-
   if(imageQuantity == 10){
 
     imageQuantity = 0;
